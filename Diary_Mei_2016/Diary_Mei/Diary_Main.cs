@@ -183,13 +183,13 @@ namespace Diary_Mei
                         {
                             if(ComboBox_Level.SelectedItem.ToString() == "All")
                             {
-                                SQL_Query += " Archive_Type = 'Friend' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '%" + TextBox_Keyword.Text.Trim() + "%'";
-                                Count_Where = " Archive_Type = 'Friend' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '%" + TextBox_Keyword.Text.Trim() + "%'";
+                                SQL_Query += " Archive_Type = 'Friend' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
+                                Count_Where = " Archive_Type = 'Friend' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
                             }
                             else
                             {
-                                SQL_Query += " Archive_Type = 'Friend' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '%" + TextBox_Keyword.Text.Trim() + "%'";
-                                Count_Where = " Archive_Type = 'Friend' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '%" + TextBox_Keyword.Text.Trim() + "%'";
+                                SQL_Query += " Archive_Type = 'Friend' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
+                                Count_Where = " Archive_Type = 'Friend' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
                             }
                         }
                         break;
@@ -211,13 +211,13 @@ namespace Diary_Mei
                         {
                             if(ComboBox_Level.SelectedItem.ToString() == "All")
                             {
-                                SQL_Query = " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '%" + TextBox_Keyword.Text.Trim() + "%'";
-                                Count_Where = " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '%" + TextBox_Keyword.Text.Trim() + "%'";
+                                SQL_Query += " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
+                                Count_Where = " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
                             }
                             else
                             {
-                                SQL_Query = " Archive_Type = 'Archive' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '%" + TextBox_Keyword.Text.Trim() + "%'";
-                                Count_Where = " Archive_Type = 'Archive' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '%" + TextBox_Keyword.Text.Trim() + "%'";
+                                SQL_Query += " Archive_Type = 'Archive' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
+                                Count_Where = " Archive_Type = 'Archive' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";//like '%" + SearchContent + "%'
                             }
                         }
                         break;
