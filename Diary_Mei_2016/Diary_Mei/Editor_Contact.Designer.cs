@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor_Contact));
             this.Panel_Client_Add = new System.Windows.Forms.Panel();
+            this.dateTimePicker_Birth = new System.Windows.Forms.DateTimePicker();
             this.comboBox_Level_Type = new System.Windows.Forms.ComboBox();
             this.label40 = new System.Windows.Forms.Label();
             this.textBox_Like_Sports = new System.Windows.Forms.TextBox();
@@ -115,7 +116,6 @@
             this.label_Name = new System.Windows.Forms.Label();
             this.Button_Save = new System.Windows.Forms.Button();
             this.Button_Clear = new System.Windows.Forms.Button();
-            this.dateTimePicker_Birth = new System.Windows.Forms.DateTimePicker();
             this.Panel_Client_Add.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -212,6 +212,13 @@
             this.Panel_Client_Add.Size = new System.Drawing.Size(988, 307);
             this.Panel_Client_Add.TabIndex = 11;
             this.Panel_Client_Add.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Client_Add_Paint);
+            // 
+            // dateTimePicker_Birth
+            // 
+            this.dateTimePicker_Birth.Location = new System.Drawing.Point(315, 120);
+            this.dateTimePicker_Birth.Name = "dateTimePicker_Birth";
+            this.dateTimePicker_Birth.Size = new System.Drawing.Size(155, 21);
+            this.dateTimePicker_Birth.TabIndex = 91;
             // 
             // comboBox_Level_Type
             // 
@@ -967,18 +974,11 @@
             this.Button_Clear.UseVisualStyleBackColor = true;
             this.Button_Clear.Click += new System.EventHandler(this.Button_Clear_Click);
             // 
-            // dateTimePicker_Birth
-            // 
-            this.dateTimePicker_Birth.Location = new System.Drawing.Point(315, 120);
-            this.dateTimePicker_Birth.Name = "dateTimePicker_Birth";
-            this.dateTimePicker_Birth.Size = new System.Drawing.Size(155, 21);
-            this.dateTimePicker_Birth.TabIndex = 91;
-            // 
             // Editor_Contact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(984, 376);
             this.Controls.Add(this.Button_Clear);
             this.Controls.Add(this.Button_Save);

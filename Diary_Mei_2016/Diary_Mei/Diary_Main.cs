@@ -170,13 +170,13 @@ namespace Diary_Mei
                         {
                             if(ComboBox_Level.SelectedItem.ToString() == "All")
                             {
-                                SQL_Query += " Archive_Type = 'Friend' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.ToString() + "'";
-                                Count_Where = " Archive_Type = 'Friend'  AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.ToString() + "'";
+                                SQL_Query += " Archive_Type = 'Friend' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
+                                Count_Where = " Archive_Type = 'Friend'  AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
                             }
                             else
                             {
-                                SQL_Query += " Archive_Type = 'Friend' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.ToString() + "'";
-                                Count_Where = " Archive_Type = 'Friend' AND Level_Type = " + ComboBox_Level.SelectedItem.ToString() + " AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.ToString() + "'";
+                                SQL_Query += " Archive_Type = 'Friend' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
+                                Count_Where = " Archive_Type = 'Friend' AND Level_Type = " + ComboBox_Level.SelectedItem.ToString() + " AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
                             }
                         }
                         else
@@ -198,13 +198,13 @@ namespace Diary_Mei
                         {
                             if(ComboBox_Level.SelectedItem.ToString() == "All")
                             {
-                                SQL_Query += " Archive_Type = 'Archive' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.ToString() + "'";
-                                Count_Where = " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.ToString() + "'";
+                                SQL_Query += " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
+                                Count_Where = " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
                             }
                             else
                             {
-                                SQL_Query += " Archive_Type = 'Archive' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.ToString() + "'";
-                                Count_Where = " Archive_Type = 'Archive' AND Level_Type = " + ComboBox_Level.SelectedItem.ToString() + " AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.ToString() + "'";
+                                SQL_Query += " Archive_Type = 'Archive' AND Level_Type = '" + ComboBox_Level.SelectedItem.ToString() + "' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
+                                Count_Where = " Archive_Type = 'Archive' AND Level_Type = " + ComboBox_Level.SelectedItem.ToString() + " AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
                             }
                         }
                         else
