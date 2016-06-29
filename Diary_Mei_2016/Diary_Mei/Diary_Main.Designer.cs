@@ -66,6 +66,8 @@
             this.Label_Client_Address = new System.Windows.Forms.Label();
             this.Label_Client_Phone = new System.Windows.Forms.Label();
             this.Label_Client_Name = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button_Clear = new System.Windows.Forms.Button();
             this.Menu_Panel.SuspendLayout();
             this.Panel_Welcome.SuspendLayout();
             this.Panel_Client_Friend.SuspendLayout();
@@ -76,7 +78,7 @@
             // 
             // Menu_Panel
             // 
-            this.Menu_Panel.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Menu_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Menu_Panel.Controls.Add(this.Button_Close);
             this.Menu_Panel.Controls.Add(this.Button_Picture);
             this.Menu_Panel.Controls.Add(this.Button_Record);
@@ -84,15 +86,15 @@
             this.Menu_Panel.Controls.Add(this.Button_Diary);
             this.Menu_Panel.Controls.Add(this.Button_Client);
             this.Menu_Panel.Controls.Add(this.Button_Password);
-            this.Menu_Panel.Location = new System.Drawing.Point(-7, 361);
+            this.Menu_Panel.Location = new System.Drawing.Point(-7, 362);
             this.Menu_Panel.Name = "Menu_Panel";
-            this.Menu_Panel.Size = new System.Drawing.Size(997, 97);
+            this.Menu_Panel.Size = new System.Drawing.Size(997, 96);
             this.Menu_Panel.TabIndex = 0;
             // 
             // Button_Close
             // 
-            this.Button_Close.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Close.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Close.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Button_Close.Image = ((System.Drawing.Image)(resources.GetObject("Button_Close.Image")));
@@ -108,8 +110,8 @@
             // 
             // Button_Picture
             // 
-            this.Button_Picture.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Button_Picture.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Picture.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Picture.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Picture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Picture.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Button_Picture.Image = ((System.Drawing.Image)(resources.GetObject("Button_Picture.Image")));
@@ -125,8 +127,8 @@
             // 
             // Button_Record
             // 
-            this.Button_Record.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Button_Record.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Record.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Record.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Record.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Record.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Button_Record.Image = ((System.Drawing.Image)(resources.GetObject("Button_Record.Image")));
@@ -142,8 +144,8 @@
             // 
             // Button_Friend
             // 
-            this.Button_Friend.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Button_Friend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Friend.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Friend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Friend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Friend.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Button_Friend.Image = ((System.Drawing.Image)(resources.GetObject("Button_Friend.Image")));
@@ -159,8 +161,8 @@
             // 
             // Button_Diary
             // 
-            this.Button_Diary.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Button_Diary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Diary.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Diary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Diary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Diary.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Button_Diary.Image = ((System.Drawing.Image)(resources.GetObject("Button_Diary.Image")));
@@ -176,8 +178,8 @@
             // 
             // Button_Client
             // 
-            this.Button_Client.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Button_Client.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Client.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Client.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Client.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Client.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Button_Client.Image = ((System.Drawing.Image)(resources.GetObject("Button_Client.Image")));
@@ -193,8 +195,8 @@
             // 
             // Button_Password
             // 
-            this.Button_Password.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Button_Password.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Password.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Password.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Password.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Password.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Button_Password.Image = ((System.Drawing.Image)(resources.GetObject("Button_Password.Image")));
@@ -269,7 +271,7 @@
             this.dataGridView_Archive_Print.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_Archive_Print.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
@@ -289,12 +291,12 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_Archive_Print.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView_Archive_Print.GridColor = System.Drawing.Color.White;
-            this.dataGridView_Archive_Print.Location = new System.Drawing.Point(-4, 31);
+            this.dataGridView_Archive_Print.Location = new System.Drawing.Point(-4, 32);
             this.dataGridView_Archive_Print.MultiSelect = false;
             this.dataGridView_Archive_Print.Name = "dataGridView_Archive_Print";
             this.dataGridView_Archive_Print.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -303,20 +305,22 @@
             this.dataGridView_Archive_Print.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_Archive_Print.RowHeadersVisible = false;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dataGridView_Archive_Print.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dataGridView_Archive_Print.RowTemplate.Height = 23;
             this.dataGridView_Archive_Print.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_Archive_Print.Size = new System.Drawing.Size(991, 264);
+            this.dataGridView_Archive_Print.Size = new System.Drawing.Size(991, 231);
             this.dataGridView_Archive_Print.TabIndex = 10;
             // 
             // Panel_Function
             // 
-            this.Panel_Function.BackColor = System.Drawing.SystemColors.Control;
+            this.Panel_Function.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Panel_Function.Controls.Add(this.button_Clear);
+            this.Panel_Function.Controls.Add(this.label1);
             this.Panel_Function.Controls.Add(this.BirthTimePicker);
             this.Panel_Function.Controls.Add(this.Button_Export);
             this.Panel_Function.Controls.Add(this.TextBox_Keyword);
@@ -329,45 +333,46 @@
             this.Panel_Function.Controls.Add(this.Button_Add);
             this.Panel_Function.Controls.Add(this.Label_Type);
             this.Panel_Function.Controls.Add(this.Button_Search);
-            this.Panel_Function.Location = new System.Drawing.Point(-4, 314);
+            this.Panel_Function.Location = new System.Drawing.Point(-4, 263);
             this.Panel_Function.Name = "Panel_Function";
-            this.Panel_Function.Size = new System.Drawing.Size(997, 44);
+            this.Panel_Function.Size = new System.Drawing.Size(997, 97);
             this.Panel_Function.TabIndex = 9;
             // 
             // BirthTimePicker
             // 
-            this.BirthTimePicker.Location = new System.Drawing.Point(454, 10);
+            this.BirthTimePicker.Location = new System.Drawing.Point(539, 25);
             this.BirthTimePicker.Name = "BirthTimePicker";
-            this.BirthTimePicker.Size = new System.Drawing.Size(107, 21);
+            this.BirthTimePicker.Size = new System.Drawing.Size(123, 21);
             this.BirthTimePicker.TabIndex = 12;
             // 
             // Button_Export
             // 
-            this.Button_Export.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Button_Export.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Export.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Button_Export.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Export.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Export.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Export.Location = new System.Drawing.Point(819, 8);
+            this.Button_Export.Location = new System.Drawing.Point(357, 59);
             this.Button_Export.Name = "Button_Export";
             this.Button_Export.Size = new System.Drawing.Size(75, 26);
             this.Button_Export.TabIndex = 11;
             this.Button_Export.Text = "导出";
-            this.Button_Export.UseVisualStyleBackColor = true;
+            this.Button_Export.UseVisualStyleBackColor = false;
             // 
             // TextBox_Keyword
             // 
             this.TextBox_Keyword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TextBox_Keyword.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TextBox_Keyword.Location = new System.Drawing.Point(352, 9);
+            this.TextBox_Keyword.Location = new System.Drawing.Point(352, 24);
             this.TextBox_Keyword.Name = "TextBox_Keyword";
-            this.TextBox_Keyword.Size = new System.Drawing.Size(96, 23);
+            this.TextBox_Keyword.Size = new System.Drawing.Size(136, 23);
             this.TextBox_Keyword.TabIndex = 10;
             // 
             // Label_Keyword
             // 
             this.Label_Keyword.AutoSize = true;
             this.Label_Keyword.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Keyword.Location = new System.Drawing.Point(289, 12);
+            this.Label_Keyword.Location = new System.Drawing.Point(288, 27);
             this.Label_Keyword.Name = "Label_Keyword";
             this.Label_Keyword.Size = new System.Drawing.Size(63, 14);
             this.Label_Keyword.TabIndex = 9;
@@ -377,7 +382,7 @@
             // 
             this.Label_Level.AutoSize = true;
             this.Label_Level.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Level.Location = new System.Drawing.Point(15, 12);
+            this.Label_Level.Location = new System.Drawing.Point(15, 26);
             this.Label_Level.Name = "Label_Level";
             this.Label_Level.Size = new System.Drawing.Size(49, 14);
             this.Label_Level.TabIndex = 5;
@@ -385,16 +390,17 @@
             // 
             // Button_Delete
             // 
-            this.Button_Delete.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Button_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Delete.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Button_Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Delete.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Delete.Location = new System.Drawing.Point(903, 8);
+            this.Button_Delete.Location = new System.Drawing.Point(468, 59);
             this.Button_Delete.Name = "Button_Delete";
             this.Button_Delete.Size = new System.Drawing.Size(75, 26);
             this.Button_Delete.TabIndex = 4;
             this.Button_Delete.Text = "删除";
-            this.Button_Delete.UseVisualStyleBackColor = true;
+            this.Button_Delete.UseVisualStyleBackColor = false;
             this.Button_Delete.Click += new System.EventHandler(this.Button_Delete_Click);
             // 
             // ComboBox_Type
@@ -443,7 +449,7 @@
             "除父母外，影响最大的三个人",
             "最让自己骄傲的事",
             "备注"});
-            this.ComboBox_Type.Location = new System.Drawing.Point(174, 8);
+            this.ComboBox_Type.Location = new System.Drawing.Point(175, 24);
             this.ComboBox_Type.Name = "ComboBox_Type";
             this.ComboBox_Type.Size = new System.Drawing.Size(106, 22);
             this.ComboBox_Type.TabIndex = 8;
@@ -451,16 +457,17 @@
             // 
             // Button_Editor
             // 
-            this.Button_Editor.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Button_Editor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Editor.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Button_Editor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Editor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Editor.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Editor.Location = new System.Drawing.Point(735, 8);
+            this.Button_Editor.Location = new System.Drawing.Point(247, 59);
             this.Button_Editor.Name = "Button_Editor";
             this.Button_Editor.Size = new System.Drawing.Size(75, 26);
             this.Button_Editor.TabIndex = 3;
             this.Button_Editor.Text = "编辑";
-            this.Button_Editor.UseVisualStyleBackColor = true;
+            this.Button_Editor.UseVisualStyleBackColor = false;
             this.Button_Editor.Click += new System.EventHandler(this.Button_Editor_Click);
             // 
             // ComboBox_Level
@@ -472,7 +479,7 @@
             "All",
             "A",
             "B"});
-            this.ComboBox_Level.Location = new System.Drawing.Point(70, 8);
+            this.ComboBox_Level.Location = new System.Drawing.Point(70, 24);
             this.ComboBox_Level.Name = "ComboBox_Level";
             this.ComboBox_Level.Size = new System.Drawing.Size(49, 22);
             this.ComboBox_Level.TabIndex = 6;
@@ -480,23 +487,24 @@
             // 
             // Button_Add
             // 
-            this.Button_Add.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Button_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Add.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Button_Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Add.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Add.Location = new System.Drawing.Point(650, 8);
+            this.Button_Add.Location = new System.Drawing.Point(138, 59);
             this.Button_Add.Name = "Button_Add";
             this.Button_Add.Size = new System.Drawing.Size(75, 26);
             this.Button_Add.TabIndex = 2;
             this.Button_Add.Text = "添加";
-            this.Button_Add.UseVisualStyleBackColor = true;
+            this.Button_Add.UseVisualStyleBackColor = false;
             this.Button_Add.Click += new System.EventHandler(this.Button_Add_Click);
             // 
             // Label_Type
             // 
             this.Label_Type.AutoSize = true;
             this.Label_Type.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Type.Location = new System.Drawing.Point(129, 11);
+            this.Label_Type.Location = new System.Drawing.Point(132, 26);
             this.Label_Type.Name = "Label_Type";
             this.Label_Type.Size = new System.Drawing.Size(42, 14);
             this.Label_Type.TabIndex = 7;
@@ -504,21 +512,22 @@
             // 
             // Button_Search
             // 
-            this.Button_Search.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Button_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Button_Search.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Button_Search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Search.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Search.Location = new System.Drawing.Point(567, 8);
+            this.Button_Search.Location = new System.Drawing.Point(28, 59);
             this.Button_Search.Name = "Button_Search";
             this.Button_Search.Size = new System.Drawing.Size(75, 26);
             this.Button_Search.TabIndex = 1;
             this.Button_Search.Text = "查询";
-            this.Button_Search.UseVisualStyleBackColor = true;
+            this.Button_Search.UseVisualStyleBackColor = false;
             this.Button_Search.Click += new System.EventHandler(this.Button_Search_Click);
             // 
             // Label_Client
             // 
-            this.Label_Client.BackColor = System.Drawing.Color.White;
+            this.Label_Client.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Label_Client.Controls.Add(this.Label_Client_Company);
             this.Label_Client.Controls.Add(this.Label_Client_Address);
             this.Label_Client.Controls.Add(this.Label_Client_Phone);
@@ -569,6 +578,31 @@
             this.Label_Client_Name.TabIndex = 0;
             this.Label_Client_Name.Text = "姓名";
             this.Label_Client_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(502, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 12);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Date:";
+            // 
+            // button_Clear
+            // 
+            this.button_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_Clear.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button_Clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Clear.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_Clear.Location = new System.Drawing.Point(585, 59);
+            this.button_Clear.Name = "button_Clear";
+            this.button_Clear.Size = new System.Drawing.Size(75, 26);
+            this.button_Clear.TabIndex = 14;
+            this.button_Clear.Text = "清空";
+            this.button_Clear.UseVisualStyleBackColor = false;
+            this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click_1);
             // 
             // Diary_Main
             // 
@@ -634,5 +668,7 @@
         private System.Windows.Forms.Label Label_Client_Name;
         private System.Windows.Forms.DataGridView dataGridView_Archive_Print;
         private System.Windows.Forms.DateTimePicker BirthTimePicker;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button_Clear;
     }
 }

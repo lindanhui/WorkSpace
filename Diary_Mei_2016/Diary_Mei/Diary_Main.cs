@@ -289,5 +289,12 @@ namespace Diary_Mei
             Class_State.Editor_State = "Delete";
         }
 
+        private void button_Clear_Click_1(object sender, EventArgs e)
+        {
+            ComboBox_Level.Text = "All";
+            ComboBox_Type.Text = "全部查询";
+            TextBox_Keyword.Text = string.Empty;
+            BirthTimePicker.Text = DateTime.Now.ToShortDateString();
+        }
     }
 }
