@@ -129,6 +129,12 @@ namespace Diary_Mei
         private void Button_Search_Click(object sender, EventArgs e)
         {
             //
+            StartRows = 0;
+            JudgeElse = 0;
+            Now_Pages = 1;
+            All_Pages = 0;
+            All_Rows = 0;
+            //
             SQL_Query = "SELECT Real_Name, Phone, Address, Now_Company FROM Archive_Table WHERE ";
             #region 全部查询的时候触发的SQL
 
@@ -248,12 +254,23 @@ namespace Diary_Mei
         {
             Set_Page_Button(0);
             Class_SQL_Deal.Open_Connection();
+            Get_DataGridView.DataSource = null;
+            //
+            Get_DataGridView.Columns.Clear();
+            Get_DataGridView.Rows.Clear();
             //
             All_Rows = Class_SQL_Deal.Query_AllRows("Archive_Table", AllRows_SQL);
             //
             if (All_Rows == 0)//只有一页
             {
-                Get_DataGridView.DataSource = null;
+
+                #region 查不到信息时提示信息
+
+                Get_DataGridView.Columns.Add("Message","");
+                Get_DataGridView.Rows.Add("亲，查询不到信息哦！");
+
+                #endregion
+
                 TSLPagesPrint.Text = "0";
                 return;
             }
@@ -316,7 +333,7 @@ namespace Diary_Mei
 
         private void TSBPreviousPage_Click(object sender, EventArgs e)
         {
-            if(Now_Pages > 1)
+            if (Now_Pages > 1)
             {
                 Now_Pages--;
                 StartRows -= PrintRows;
@@ -326,7 +343,7 @@ namespace Diary_Mei
 
         private void TSBNextPage_Click(object sender, EventArgs e)
         {
-            if(Now_Pages < All_Pages)
+            if (Now_Pages < All_Pages)
             {
                 Now_Pages++;
                 StartRows += PrintRows;
@@ -336,7 +353,7 @@ namespace Diary_Mei
 
         private void TSBLastPage_Click(object sender, EventArgs e)
         {
-            if(All_Pages > 0)
+            if (All_Pages > 0)
             {
                 Now_Pages = All_Pages;
                 StartRows = (All_Pages - 1) * PrintRows;
@@ -354,14 +371,14 @@ namespace Diary_Mei
         /// <param name="Set_Value"></param>
         private void Set_Page_Button(int Set_Value)
         {
-            if(Set_Value == 1)
+            if (Set_Value == 1)
             {
                 Class_Control_Deal.Set_Button_True(TSBFirstPage);
                 Class_Control_Deal.Set_Button_True(TSBNextPage);
                 Class_Control_Deal.Set_Button_True(TSBPreviousPage);
                 Class_Control_Deal.Set_Button_True(TSBLastPage);
             }
-            if(Set_Value == 0)
+            if (Set_Value == 0)
             {
                 Class_Control_Deal.Set_Button_False(TSBFirstPage);
                 Class_Control_Deal.Set_Button_False(TSBNextPage);
