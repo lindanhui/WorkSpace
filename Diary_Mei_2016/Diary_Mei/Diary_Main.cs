@@ -266,7 +266,7 @@ namespace Diary_Mei
 
                 #region 查不到信息时提示信息
 
-                Get_DataGridView.Columns.Add("Message","");
+                Get_DataGridView.Columns.Add("Message", "");
                 Get_DataGridView.Rows.Add("亲，查询不到信息哦！");
 
                 #endregion
@@ -322,6 +322,10 @@ namespace Diary_Mei
             ComboBox_Type.Text = "全部查询";
             TextBox_Keyword.Text = string.Empty;
             BirthTimePicker.Text = DateTime.Now.ToShortDateString();
+            Set_Page_Button(0);                              //关闭分页按钮
+            TSLPagesPrint.Text = "0";                        //将总页数置0
+            dataGridView_Archive_Print.Rows.Clear();         //当查不到信息时进行清空
+            dataGridView_Archive_Print.DataSource = null;    //清空DataSource
         }
 
         private void TSBFirstPage_Click(object sender, EventArgs e)
