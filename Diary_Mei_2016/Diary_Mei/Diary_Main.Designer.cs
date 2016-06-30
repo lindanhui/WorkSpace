@@ -49,6 +49,15 @@
             this.Panel_Client_Friend = new System.Windows.Forms.Panel();
             this.dataGridView_Archive_Print = new System.Windows.Forms.DataGridView();
             this.Panel_Function = new System.Windows.Forms.Panel();
+            this.TSDiary = new System.Windows.Forms.ToolStrip();
+            this.TSBFirstPage = new System.Windows.Forms.ToolStripButton();
+            this.TSBPreviousPage = new System.Windows.Forms.ToolStripButton();
+            this.TSBNextPage = new System.Windows.Forms.ToolStripButton();
+            this.TSBLastPage = new System.Windows.Forms.ToolStripButton();
+            this.TSLAllPageS = new System.Windows.Forms.ToolStripLabel();
+            this.TSLPagesPrint = new System.Windows.Forms.ToolStripLabel();
+            this.button_Clear = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.BirthTimePicker = new System.Windows.Forms.DateTimePicker();
             this.Button_Export = new System.Windows.Forms.Button();
             this.TextBox_Keyword = new System.Windows.Forms.TextBox();
@@ -66,13 +75,12 @@
             this.Label_Client_Address = new System.Windows.Forms.Label();
             this.Label_Client_Phone = new System.Windows.Forms.Label();
             this.Label_Client_Name = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button_Clear = new System.Windows.Forms.Button();
             this.Menu_Panel.SuspendLayout();
             this.Panel_Welcome.SuspendLayout();
             this.Panel_Client_Friend.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Archive_Print)).BeginInit();
             this.Panel_Function.SuspendLayout();
+            this.TSDiary.SuspendLayout();
             this.Label_Client.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -319,6 +327,7 @@
             // Panel_Function
             // 
             this.Panel_Function.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Panel_Function.Controls.Add(this.TSDiary);
             this.Panel_Function.Controls.Add(this.button_Clear);
             this.Panel_Function.Controls.Add(this.label1);
             this.Panel_Function.Controls.Add(this.BirthTimePicker);
@@ -338,11 +347,113 @@
             this.Panel_Function.Size = new System.Drawing.Size(997, 97);
             this.Panel_Function.TabIndex = 9;
             // 
+            // TSDiary
+            // 
+            this.TSDiary.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TSDiary.AutoSize = false;
+            this.TSDiary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TSDiary.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.TSDiary.Dock = System.Windows.Forms.DockStyle.None;
+            this.TSDiary.GripMargin = new System.Windows.Forms.Padding(5);
+            this.TSDiary.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.TSDiary.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSBFirstPage,
+            this.TSBPreviousPage,
+            this.TSBNextPage,
+            this.TSBLastPage,
+            this.TSLAllPageS,
+            this.TSLPagesPrint});
+            this.TSDiary.Location = new System.Drawing.Point(652, 59);
+            this.TSDiary.Name = "TSDiary";
+            this.TSDiary.Padding = new System.Windows.Forms.Padding(1, 1, 2, 1);
+            this.TSDiary.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.TSDiary.ShowItemToolTips = false;
+            this.TSDiary.Size = new System.Drawing.Size(326, 26);
+            this.TSDiary.Stretch = true;
+            this.TSDiary.TabIndex = 15;
+            // 
+            // TSBFirstPage
+            // 
+            this.TSBFirstPage.Enabled = false;
+            this.TSBFirstPage.Image = ((System.Drawing.Image)(resources.GetObject("TSBFirstPage.Image")));
+            this.TSBFirstPage.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TSBFirstPage.Name = "TSBFirstPage";
+            this.TSBFirstPage.Size = new System.Drawing.Size(52, 21);
+            this.TSBFirstPage.Text = "首页";
+            this.TSBFirstPage.Click += new System.EventHandler(this.TSBFirstPage_Click);
+            // 
+            // TSBPreviousPage
+            // 
+            this.TSBPreviousPage.Enabled = false;
+            this.TSBPreviousPage.Image = ((System.Drawing.Image)(resources.GetObject("TSBPreviousPage.Image")));
+            this.TSBPreviousPage.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TSBPreviousPage.Name = "TSBPreviousPage";
+            this.TSBPreviousPage.Size = new System.Drawing.Size(64, 21);
+            this.TSBPreviousPage.Text = "上一页";
+            this.TSBPreviousPage.Click += new System.EventHandler(this.TSBPreviousPage_Click);
+            // 
+            // TSBNextPage
+            // 
+            this.TSBNextPage.Enabled = false;
+            this.TSBNextPage.Image = ((System.Drawing.Image)(resources.GetObject("TSBNextPage.Image")));
+            this.TSBNextPage.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TSBNextPage.Name = "TSBNextPage";
+            this.TSBNextPage.Size = new System.Drawing.Size(64, 21);
+            this.TSBNextPage.Text = "下一页";
+            this.TSBNextPage.Click += new System.EventHandler(this.TSBNextPage_Click);
+            // 
+            // TSBLastPage
+            // 
+            this.TSBLastPage.Enabled = false;
+            this.TSBLastPage.Image = ((System.Drawing.Image)(resources.GetObject("TSBLastPage.Image")));
+            this.TSBLastPage.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TSBLastPage.Name = "TSBLastPage";
+            this.TSBLastPage.Size = new System.Drawing.Size(52, 21);
+            this.TSBLastPage.Text = "末页";
+            this.TSBLastPage.Click += new System.EventHandler(this.TSBLastPage_Click);
+            // 
+            // TSLAllPageS
+            // 
+            this.TSLAllPageS.Name = "TSLAllPageS";
+            this.TSLAllPageS.Size = new System.Drawing.Size(56, 21);
+            this.TSLAllPageS.Text = "总页数：";
+            // 
+            // TSLPagesPrint
+            // 
+            this.TSLPagesPrint.Name = "TSLPagesPrint";
+            this.TSLPagesPrint.Size = new System.Drawing.Size(15, 21);
+            this.TSLPagesPrint.Text = "0";
+            // 
+            // button_Clear
+            // 
+            this.button_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_Clear.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button_Clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Clear.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_Clear.Location = new System.Drawing.Point(555, 59);
+            this.button_Clear.Name = "button_Clear";
+            this.button_Clear.Size = new System.Drawing.Size(75, 26);
+            this.button_Clear.TabIndex = 14;
+            this.button_Clear.Text = "清空";
+            this.button_Clear.UseVisualStyleBackColor = false;
+            this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(712, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 14);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "出生日期：";
+            // 
             // BirthTimePicker
             // 
-            this.BirthTimePicker.Location = new System.Drawing.Point(539, 25);
+            this.BirthTimePicker.Location = new System.Drawing.Point(790, 20);
             this.BirthTimePicker.Name = "BirthTimePicker";
-            this.BirthTimePicker.Size = new System.Drawing.Size(123, 21);
+            this.BirthTimePicker.Size = new System.Drawing.Size(150, 21);
             this.BirthTimePicker.TabIndex = 12;
             // 
             // Button_Export
@@ -352,7 +463,7 @@
             this.Button_Export.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Export.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Export.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Export.Location = new System.Drawing.Point(357, 59);
+            this.Button_Export.Location = new System.Drawing.Point(340, 59);
             this.Button_Export.Name = "Button_Export";
             this.Button_Export.Size = new System.Drawing.Size(75, 26);
             this.Button_Export.TabIndex = 11;
@@ -361,32 +472,31 @@
             // 
             // TextBox_Keyword
             // 
-            this.TextBox_Keyword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TextBox_Keyword.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TextBox_Keyword.Location = new System.Drawing.Point(352, 24);
+            this.TextBox_Keyword.Location = new System.Drawing.Point(524, 20);
             this.TextBox_Keyword.Name = "TextBox_Keyword";
-            this.TextBox_Keyword.Size = new System.Drawing.Size(136, 23);
+            this.TextBox_Keyword.Size = new System.Drawing.Size(150, 23);
             this.TextBox_Keyword.TabIndex = 10;
             // 
             // Label_Keyword
             // 
             this.Label_Keyword.AutoSize = true;
             this.Label_Keyword.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Keyword.Location = new System.Drawing.Point(288, 27);
+            this.Label_Keyword.Location = new System.Drawing.Point(462, 22);
             this.Label_Keyword.Name = "Label_Keyword";
             this.Label_Keyword.Size = new System.Drawing.Size(63, 14);
             this.Label_Keyword.TabIndex = 9;
-            this.Label_Keyword.Text = "Keyword:";
+            this.Label_Keyword.Text = "关键字：";
             // 
             // Label_Level
             // 
             this.Label_Level.AutoSize = true;
             this.Label_Level.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Level.Location = new System.Drawing.Point(15, 26);
+            this.Label_Level.Location = new System.Drawing.Point(49, 22);
             this.Label_Level.Name = "Label_Level";
             this.Label_Level.Size = new System.Drawing.Size(49, 14);
             this.Label_Level.TabIndex = 5;
-            this.Label_Level.Text = "Level:";
+            this.Label_Level.Text = "等级：";
             // 
             // Button_Delete
             // 
@@ -395,7 +505,7 @@
             this.Button_Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Delete.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Delete.Location = new System.Drawing.Point(468, 59);
+            this.Button_Delete.Location = new System.Drawing.Point(447, 59);
             this.Button_Delete.Name = "Button_Delete";
             this.Button_Delete.Size = new System.Drawing.Size(75, 26);
             this.Button_Delete.TabIndex = 4;
@@ -449,9 +559,9 @@
             "除父母外，影响最大的三个人",
             "最让自己骄傲的事",
             "备注"});
-            this.ComboBox_Type.Location = new System.Drawing.Point(175, 24);
+            this.ComboBox_Type.Location = new System.Drawing.Point(275, 20);
             this.ComboBox_Type.Name = "ComboBox_Type";
-            this.ComboBox_Type.Size = new System.Drawing.Size(106, 22);
+            this.ComboBox_Type.Size = new System.Drawing.Size(150, 22);
             this.ComboBox_Type.TabIndex = 8;
             this.ComboBox_Type.Text = "全部查询";
             // 
@@ -462,7 +572,7 @@
             this.Button_Editor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Editor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Editor.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Editor.Location = new System.Drawing.Point(247, 59);
+            this.Button_Editor.Location = new System.Drawing.Point(234, 59);
             this.Button_Editor.Name = "Button_Editor";
             this.Button_Editor.Size = new System.Drawing.Size(75, 26);
             this.Button_Editor.TabIndex = 3;
@@ -479,9 +589,9 @@
             "All",
             "A",
             "B"});
-            this.ComboBox_Level.Location = new System.Drawing.Point(70, 24);
+            this.ComboBox_Level.Location = new System.Drawing.Point(99, 20);
             this.ComboBox_Level.Name = "ComboBox_Level";
-            this.ComboBox_Level.Size = new System.Drawing.Size(49, 22);
+            this.ComboBox_Level.Size = new System.Drawing.Size(80, 22);
             this.ComboBox_Level.TabIndex = 6;
             this.ComboBox_Level.Text = "All";
             // 
@@ -492,7 +602,7 @@
             this.Button_Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Add.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Add.Location = new System.Drawing.Point(138, 59);
+            this.Button_Add.Location = new System.Drawing.Point(129, 59);
             this.Button_Add.Name = "Button_Add";
             this.Button_Add.Size = new System.Drawing.Size(75, 26);
             this.Button_Add.TabIndex = 2;
@@ -504,11 +614,11 @@
             // 
             this.Label_Type.AutoSize = true;
             this.Label_Type.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Type.Location = new System.Drawing.Point(132, 26);
+            this.Label_Type.Location = new System.Drawing.Point(201, 22);
             this.Label_Type.Name = "Label_Type";
-            this.Label_Type.Size = new System.Drawing.Size(42, 14);
+            this.Label_Type.Size = new System.Drawing.Size(77, 14);
             this.Label_Type.TabIndex = 7;
-            this.Label_Type.Text = "Type:";
+            this.Label_Type.Text = "查询类型：";
             // 
             // Button_Search
             // 
@@ -517,7 +627,7 @@
             this.Button_Search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Search.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Search.Location = new System.Drawing.Point(28, 59);
+            this.Button_Search.Location = new System.Drawing.Point(25, 59);
             this.Button_Search.Name = "Button_Search";
             this.Button_Search.Size = new System.Drawing.Size(75, 26);
             this.Button_Search.TabIndex = 1;
@@ -579,31 +689,6 @@
             this.Label_Client_Name.Text = "姓名";
             this.Label_Client_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(502, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Date:";
-            // 
-            // button_Clear
-            // 
-            this.button_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_Clear.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button_Clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Clear.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_Clear.Location = new System.Drawing.Point(585, 59);
-            this.button_Clear.Name = "button_Clear";
-            this.button_Clear.Size = new System.Drawing.Size(75, 26);
-            this.button_Clear.TabIndex = 14;
-            this.button_Clear.Text = "清空";
-            this.button_Clear.UseVisualStyleBackColor = false;
-            this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click_1);
-            // 
             // Diary_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -629,6 +714,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Archive_Print)).EndInit();
             this.Panel_Function.ResumeLayout(false);
             this.Panel_Function.PerformLayout();
+            this.TSDiary.ResumeLayout(false);
+            this.TSDiary.PerformLayout();
             this.Label_Client.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -670,5 +757,12 @@
         private System.Windows.Forms.DateTimePicker BirthTimePicker;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_Clear;
+        private System.Windows.Forms.ToolStrip TSDiary;
+        private System.Windows.Forms.ToolStripButton TSBFirstPage;
+        private System.Windows.Forms.ToolStripButton TSBPreviousPage;
+        private System.Windows.Forms.ToolStripButton TSBNextPage;
+        private System.Windows.Forms.ToolStripButton TSBLastPage;
+        private System.Windows.Forms.ToolStripLabel TSLAllPageS;
+        private System.Windows.Forms.ToolStripLabel TSLPagesPrint;
     }
 }

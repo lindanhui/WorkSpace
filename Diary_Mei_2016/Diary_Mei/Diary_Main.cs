@@ -12,8 +12,16 @@ namespace Diary_Mei
 {
     public partial class Diary_Main : Form
     {
+        int StartRows = 0;
+        int PrintRows = 10;
+        int JudgeElse = 0;
+        int Now_Pages = 1;
+        int All_Pages = 0;
+        int All_Rows = 0;
         private static String Windows_State = String.Empty;
         private static string TableName = "Archive_Table";
+        string SQL_Query = "SELECT Real_Name, Phone, Address, Now_Company FROM Archive_Table WHERE ";
+        string Count_Where = string.Empty;
         public Diary_Main()
         {
             InitializeComponent();
@@ -120,9 +128,8 @@ namespace Diary_Mei
         /// <param name="e"></param>
         private void Button_Search_Click(object sender, EventArgs e)
         {
-            string SQL_Query = "SELECT Real_Name, Phone, Address, Now_Company FROM Archive_Table WHERE ";
-            string Count_Where = string.Empty;
             //
+            SQL_Query = "SELECT Real_Name, Phone, Address, Now_Company FROM Archive_Table WHERE ";
             #region 全部查询的时候触发的SQL
 
             if (ComboBox_Type.SelectedItem.ToString() == "全部查询")
@@ -168,7 +175,7 @@ namespace Diary_Mei
                     case "Friend":
                         if (Class_State.Combox_Field(ComboBox_Type).ToString() == "Birth")
                         {
-                            if(ComboBox_Level.SelectedItem.ToString() == "All")
+                            if (ComboBox_Level.SelectedItem.ToString() == "All")
                             {
                                 SQL_Query += " Archive_Type = 'Friend' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
                                 Count_Where = " Archive_Type = 'Friend'  AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
@@ -181,7 +188,7 @@ namespace Diary_Mei
                         }
                         else
                         {
-                            if(ComboBox_Level.SelectedItem.ToString() == "All")
+                            if (ComboBox_Level.SelectedItem.ToString() == "All")
                             {
                                 SQL_Query += " Archive_Type = 'Friend' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
                                 Count_Where = " Archive_Type = 'Friend' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
@@ -196,7 +203,7 @@ namespace Diary_Mei
                     case "Archive":
                         if (Class_State.Combox_Field(ComboBox_Type).ToString() == "Birth")
                         {
-                            if(ComboBox_Level.SelectedItem.ToString() == "All")
+                            if (ComboBox_Level.SelectedItem.ToString() == "All")
                             {
                                 SQL_Query += " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
                                 Count_Where = " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " = '" + BirthTimePicker.Value.ToShortDateString() + "'";
@@ -209,7 +216,7 @@ namespace Diary_Mei
                         }
                         else
                         {
-                            if(ComboBox_Level.SelectedItem.ToString() == "All")
+                            if (ComboBox_Level.SelectedItem.ToString() == "All")
                             {
                                 SQL_Query += " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
                                 Count_Where = " Archive_Type = 'Archive' AND " + Class_State.Combox_Field(ComboBox_Type).ToString() + " LIKE '%" + TextBox_Keyword.Text.Trim() + "%'";
@@ -228,7 +235,7 @@ namespace Diary_Mei
 
             //
 
-            PrintDatas(dataGridView_Archive_Print,Count_Where,SQL_Query,TableName);
+            PrintDatas(dataGridView_Archive_Print, Count_Where, SQL_Query, TableName);
 
 
         }
@@ -239,36 +246,39 @@ namespace Diary_Mei
         /// </summary>
         private void PrintDatas(DataGridView Get_DataGridView, string AllRows_SQL, string Query_SQL, string TableName)
         {
+            Set_Page_Button(0);
             Class_SQL_Deal.Open_Connection();
             //
-            int AllRows = Class_SQL_Deal.Query_AllRows("Archive_Table", AllRows_SQL);
+            All_Rows = Class_SQL_Deal.Query_AllRows("Archive_Table", AllRows_SQL);
             //
-            int StartRows = 0;
-            //
-            int PrintRows = 10;
-            //
-            int JudgeElse = 0;
-            //
-            if(AllRows == 0)
+            if (All_Rows == 0)//只有一页
             {
                 Get_DataGridView.DataSource = null;
+                TSLPagesPrint.Text = "0";
                 return;
             }
-            else if(AllRows > 0 && AllRows <= PrintRows)
+            else if (All_Rows > 0 && All_Rows <= PrintRows)
             {
-                Get_DataGridView.DataSource = Class_SQL_Deal.DataTable_Query(Query_SQL, TableName,StartRows, PrintRows);
+                Get_DataGridView.DataSource = Class_SQL_Deal.DataTable_Query(Query_SQL, TableName, StartRows, PrintRows);
+                TSLPagesPrint.Text = "1";
                 return;
             }
             else
             {
-                JudgeElse = AllRows % PrintRows;
-                if(JudgeElse == 0)
+                JudgeElse = All_Rows % PrintRows;//整页
+                if (JudgeElse == 0)
                 {
+                    Set_Page_Button(1);
+                    All_Pages = All_Rows / PrintRows;
                     Get_DataGridView.DataSource = Class_SQL_Deal.DataTable_Query(Query_SQL, TableName, StartRows, PrintRows);
+                    TSLPagesPrint.Text = Convert.ToString(All_Pages);
                 }
-                else
+                else//一页半的情况
                 {
+                    Set_Page_Button(1);
+                    All_Pages = All_Rows / PrintRows + 1;
                     Get_DataGridView.DataSource = Class_SQL_Deal.DataTable_Query(Query_SQL, TableName, StartRows, PrintRows);
+                    TSLPagesPrint.Text = Convert.ToString(All_Pages);
                 }
             }
         }
@@ -296,5 +306,71 @@ namespace Diary_Mei
             TextBox_Keyword.Text = string.Empty;
             BirthTimePicker.Text = DateTime.Now.ToShortDateString();
         }
+
+        private void TSBFirstPage_Click(object sender, EventArgs e)
+        {
+            dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, 0, PrintRows);
+            StartRows = 0;
+            Now_Pages = 1;
+        }
+
+        private void TSBPreviousPage_Click(object sender, EventArgs e)
+        {
+            if(Now_Pages > 1)
+            {
+                Now_Pages--;
+                StartRows -= PrintRows;
+                dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, StartRows, PrintRows);
+            }
+        }
+
+        private void TSBNextPage_Click(object sender, EventArgs e)
+        {
+            if(Now_Pages < All_Pages)
+            {
+                Now_Pages++;
+                StartRows += PrintRows;
+                dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, StartRows, PrintRows);
+            }
+        }
+
+        private void TSBLastPage_Click(object sender, EventArgs e)
+        {
+            if(All_Pages > 0)
+            {
+                Now_Pages = All_Pages;
+                StartRows = (All_Pages - 1) * PrintRows;
+                dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, StartRows, PrintRows);
+            }
+        }
+
+
+
+
+        #region 设定分页安妮的可操作性
+        /// <summary>
+        /// 设定分页按钮的可操作性 0为关闭， 1为打开
+        /// </summary>
+        /// <param name="Set_Value"></param>
+        private void Set_Page_Button(int Set_Value)
+        {
+            if(Set_Value == 1)
+            {
+                Class_Control_Deal.Set_Button_True(TSBFirstPage);
+                Class_Control_Deal.Set_Button_True(TSBNextPage);
+                Class_Control_Deal.Set_Button_True(TSBPreviousPage);
+                Class_Control_Deal.Set_Button_True(TSBLastPage);
+            }
+            if(Set_Value == 0)
+            {
+                Class_Control_Deal.Set_Button_False(TSBFirstPage);
+                Class_Control_Deal.Set_Button_False(TSBNextPage);
+                Class_Control_Deal.Set_Button_False(TSBPreviousPage);
+                Class_Control_Deal.Set_Button_False(TSBLastPage);
+            }
+        }
+
+        #endregion
+
     }
 }

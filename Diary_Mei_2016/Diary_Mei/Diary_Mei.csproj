@@ -62,7 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class_Control_Check.cs" />
+    <Compile Include="Class_Control_Deal.cs" />
     <Compile Include="Editor_Contact.cs">
       <SubType>Form</SubType>
     </Compile>

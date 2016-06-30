@@ -47,7 +47,7 @@ namespace Diary_Mei
 
         private void Button_Save_Click(object sender, EventArgs e)
         {
-            if(Class_Control_Check.Check_TextBox_Null(textBox_Name) == 0)
+            if(Class_Control_Deal.Check_TextBox_Null(textBox_Name) == 0)
             {
                 MessageBox.Show("姓名不能为空！","Tips",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }

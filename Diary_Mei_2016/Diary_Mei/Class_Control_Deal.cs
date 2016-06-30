@@ -10,7 +10,7 @@ namespace Diary_Mei
     /// <summary>
     /// 控件检测类
     /// </summary>
-    class Class_Control_Check
+    class Class_Control_Deal
     {
         #region 检测文本框是否为空
         /// <summary>
@@ -30,5 +30,35 @@ namespace Diary_Mei
             }
         }
         #endregion
+
+
+
+
+        #region 设定按钮可操作
+        /// <summary>
+        /// 设定按钮为可操作
+        /// </summary>
+        /// <param name="Get_Button"></param>
+        public static void Set_Button_True(ToolStripButton Get_Button)
+        {
+            Get_Button.Enabled = true;
+        }
+
+        #endregion
+
+
+
+        #region 设定按钮不可操作
+        /// <summary>
+        /// 设定按钮为可操作
+        /// </summary>
+        /// <param name="Get_Button"></param>
+        public static void Set_Button_False(ToolStripButton Get_Button)
+        {
+            Get_Button.Enabled = false;
+        }
+
+        #endregion
+
     }
 }
