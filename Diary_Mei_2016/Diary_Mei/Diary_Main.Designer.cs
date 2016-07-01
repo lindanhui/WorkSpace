@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Diary_Main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Menu_Panel = new System.Windows.Forms.Panel();
             this.Button_Close = new System.Windows.Forms.Button();
             this.Button_Picture = new System.Windows.Forms.Button();
@@ -65,7 +65,6 @@
             this.Label_Level = new System.Windows.Forms.Label();
             this.Button_Delete = new System.Windows.Forms.Button();
             this.ComboBox_Type = new System.Windows.Forms.ComboBox();
-            this.Button_Editor = new System.Windows.Forms.Button();
             this.ComboBox_Level = new System.Windows.Forms.ComboBox();
             this.Button_Add = new System.Windows.Forms.Button();
             this.Label_Type = new System.Windows.Forms.Label();
@@ -75,6 +74,11 @@
             this.Label_Client_Address = new System.Windows.Forms.Label();
             this.Label_Client_Phone = new System.Windows.Forms.Label();
             this.Label_Client_Name = new System.Windows.Forms.Label();
+            this.TSLabel_Now = new System.Windows.Forms.ToolStripLabel();
+            this.TStripLabel_Pages = new System.Windows.Forms.ToolStripLabel();
+            this.TStripLabel_Count = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Menu_Panel.SuspendLayout();
             this.Panel_Welcome.SuspendLayout();
             this.Panel_Client_Friend.SuspendLayout();
@@ -278,44 +282,44 @@
             this.dataGridView_Archive_Print.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_Archive_Print.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_Archive_Print.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Archive_Print.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Archive_Print.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView_Archive_Print.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Archive_Print.ColumnHeadersVisible = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Archive_Print.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Archive_Print.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView_Archive_Print.GridColor = System.Drawing.Color.White;
             this.dataGridView_Archive_Print.Location = new System.Drawing.Point(-4, 32);
             this.dataGridView_Archive_Print.MultiSelect = false;
             this.dataGridView_Archive_Print.Name = "dataGridView_Archive_Print";
             this.dataGridView_Archive_Print.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Archive_Print.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Archive_Print.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView_Archive_Print.RowHeadersVisible = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dataGridView_Archive_Print.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dataGridView_Archive_Print.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -337,7 +341,6 @@
             this.Panel_Function.Controls.Add(this.Label_Level);
             this.Panel_Function.Controls.Add(this.Button_Delete);
             this.Panel_Function.Controls.Add(this.ComboBox_Type);
-            this.Panel_Function.Controls.Add(this.Button_Editor);
             this.Panel_Function.Controls.Add(this.ComboBox_Level);
             this.Panel_Function.Controls.Add(this.Button_Add);
             this.Panel_Function.Controls.Add(this.Label_Type);
@@ -361,14 +364,19 @@
             this.TSBPreviousPage,
             this.TSBNextPage,
             this.TSBLastPage,
+            this.toolStripSeparator2,
+            this.TSLabel_Now,
+            this.TStripLabel_Count,
+            this.TStripLabel_Pages,
+            this.toolStripSeparator1,
             this.TSLAllPageS,
             this.TSLPagesPrint});
-            this.TSDiary.Location = new System.Drawing.Point(652, 59);
+            this.TSDiary.Location = new System.Drawing.Point(552, 59);
             this.TSDiary.Name = "TSDiary";
             this.TSDiary.Padding = new System.Windows.Forms.Padding(1, 1, 2, 1);
             this.TSDiary.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.TSDiary.ShowItemToolTips = false;
-            this.TSDiary.Size = new System.Drawing.Size(326, 26);
+            this.TSDiary.Size = new System.Drawing.Size(410, 26);
             this.TSDiary.Stretch = true;
             this.TSDiary.TabIndex = 15;
             // 
@@ -431,7 +439,7 @@
             this.button_Clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Clear.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_Clear.Location = new System.Drawing.Point(555, 59);
+            this.button_Clear.Location = new System.Drawing.Point(452, 59);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Size = new System.Drawing.Size(75, 26);
             this.button_Clear.TabIndex = 14;
@@ -463,7 +471,7 @@
             this.Button_Export.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Export.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Export.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Export.Location = new System.Drawing.Point(340, 59);
+            this.Button_Export.Location = new System.Drawing.Point(345, 59);
             this.Button_Export.Name = "Button_Export";
             this.Button_Export.Size = new System.Drawing.Size(75, 26);
             this.Button_Export.TabIndex = 11;
@@ -473,7 +481,7 @@
             // TextBox_Keyword
             // 
             this.TextBox_Keyword.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TextBox_Keyword.Location = new System.Drawing.Point(524, 20);
+            this.TextBox_Keyword.Location = new System.Drawing.Point(531, 20);
             this.TextBox_Keyword.Name = "TextBox_Keyword";
             this.TextBox_Keyword.Size = new System.Drawing.Size(150, 23);
             this.TextBox_Keyword.TabIndex = 10;
@@ -482,7 +490,7 @@
             // 
             this.Label_Keyword.AutoSize = true;
             this.Label_Keyword.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Keyword.Location = new System.Drawing.Point(462, 22);
+            this.Label_Keyword.Location = new System.Drawing.Point(470, 22);
             this.Label_Keyword.Name = "Label_Keyword";
             this.Label_Keyword.Size = new System.Drawing.Size(63, 14);
             this.Label_Keyword.TabIndex = 9;
@@ -505,7 +513,7 @@
             this.Button_Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Delete.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Delete.Location = new System.Drawing.Point(447, 59);
+            this.Button_Delete.Location = new System.Drawing.Point(239, 59);
             this.Button_Delete.Name = "Button_Delete";
             this.Button_Delete.Size = new System.Drawing.Size(75, 26);
             this.Button_Delete.TabIndex = 4;
@@ -559,26 +567,11 @@
             "除父母外，影响最大的三个人",
             "最让自己骄傲的事",
             "备注"});
-            this.ComboBox_Type.Location = new System.Drawing.Point(275, 20);
+            this.ComboBox_Type.Location = new System.Drawing.Point(284, 20);
             this.ComboBox_Type.Name = "ComboBox_Type";
             this.ComboBox_Type.Size = new System.Drawing.Size(150, 22);
             this.ComboBox_Type.TabIndex = 8;
             this.ComboBox_Type.Text = "全部查询";
-            // 
-            // Button_Editor
-            // 
-            this.Button_Editor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Button_Editor.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.Button_Editor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Button_Editor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Editor.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Editor.Location = new System.Drawing.Point(234, 59);
-            this.Button_Editor.Name = "Button_Editor";
-            this.Button_Editor.Size = new System.Drawing.Size(75, 26);
-            this.Button_Editor.TabIndex = 3;
-            this.Button_Editor.Text = "编辑";
-            this.Button_Editor.UseVisualStyleBackColor = false;
-            this.Button_Editor.Click += new System.EventHandler(this.Button_Editor_Click);
             // 
             // ComboBox_Level
             // 
@@ -602,7 +595,7 @@
             this.Button_Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Add.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Add.Location = new System.Drawing.Point(129, 59);
+            this.Button_Add.Location = new System.Drawing.Point(132, 59);
             this.Button_Add.Name = "Button_Add";
             this.Button_Add.Size = new System.Drawing.Size(75, 26);
             this.Button_Add.TabIndex = 2;
@@ -614,7 +607,7 @@
             // 
             this.Label_Type.AutoSize = true;
             this.Label_Type.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Type.Location = new System.Drawing.Point(201, 22);
+            this.Label_Type.Location = new System.Drawing.Point(212, 22);
             this.Label_Type.Name = "Label_Type";
             this.Label_Type.Size = new System.Drawing.Size(77, 14);
             this.Label_Type.TabIndex = 7;
@@ -689,6 +682,34 @@
             this.Label_Client_Name.Text = "姓名";
             this.Label_Client_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TSLabel_Now
+            // 
+            this.TSLabel_Now.Name = "TSLabel_Now";
+            this.TSLabel_Now.Size = new System.Drawing.Size(20, 21);
+            this.TSLabel_Now.Text = "第";
+            // 
+            // TStripLabel_Pages
+            // 
+            this.TStripLabel_Pages.Name = "TStripLabel_Pages";
+            this.TStripLabel_Pages.Size = new System.Drawing.Size(20, 21);
+            this.TStripLabel_Pages.Text = "页";
+            // 
+            // TStripLabel_Count
+            // 
+            this.TStripLabel_Count.Name = "TStripLabel_Count";
+            this.TStripLabel_Count.Size = new System.Drawing.Size(15, 21);
+            this.TStripLabel_Count.Text = "0";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 24);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 24);
+            // 
             // Diary_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -743,7 +764,6 @@
         private System.Windows.Forms.Label Label_Level;
         private System.Windows.Forms.Button Button_Delete;
         private System.Windows.Forms.ComboBox ComboBox_Type;
-        private System.Windows.Forms.Button Button_Editor;
         private System.Windows.Forms.ComboBox ComboBox_Level;
         private System.Windows.Forms.Button Button_Add;
         private System.Windows.Forms.Label Label_Type;
@@ -764,5 +784,10 @@
         private System.Windows.Forms.ToolStripButton TSBLastPage;
         private System.Windows.Forms.ToolStripLabel TSLAllPageS;
         private System.Windows.Forms.ToolStripLabel TSLPagesPrint;
+        private System.Windows.Forms.ToolStripLabel TSLabel_Now;
+        private System.Windows.Forms.ToolStripLabel TStripLabel_Count;
+        private System.Windows.Forms.ToolStripLabel TStripLabel_Pages;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }

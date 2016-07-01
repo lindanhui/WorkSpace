@@ -81,6 +81,12 @@
     <Compile Include="Diary_Main.Designer.cs">
       <DependentUpon>Diary_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Edit_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Form.Designer.cs">
+      <DependentUpon>Edit_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Diary_Main.resx">
       <DependentUpon>Diary_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Form.resx">
+      <DependentUpon>Edit_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

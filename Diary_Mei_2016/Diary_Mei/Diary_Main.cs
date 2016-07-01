@@ -272,12 +272,16 @@ namespace Diary_Mei
                 #endregion
 
                 TSLPagesPrint.Text = "0";
+
+                TStripLabel_Count.Text = "0";
+
                 return;
             }
             else if (All_Rows > 0 && All_Rows <= PrintRows)
             {
                 Get_DataGridView.DataSource = Class_SQL_Deal.DataTable_Query(Query_SQL, TableName, StartRows, PrintRows);
                 TSLPagesPrint.Text = "1";
+                TStripLabel_Count.Text = Convert.ToString(Now_Pages);
                 return;
             }
             else
@@ -289,6 +293,7 @@ namespace Diary_Mei
                     All_Pages = All_Rows / PrintRows;
                     Get_DataGridView.DataSource = Class_SQL_Deal.DataTable_Query(Query_SQL, TableName, StartRows, PrintRows);
                     TSLPagesPrint.Text = Convert.ToString(All_Pages);
+                    TStripLabel_Count.Text = Convert.ToString(Now_Pages);
                 }
                 else//一页半的情况
                 {
@@ -296,6 +301,7 @@ namespace Diary_Mei
                     All_Pages = All_Rows / PrintRows + 1;
                     Get_DataGridView.DataSource = Class_SQL_Deal.DataTable_Query(Query_SQL, TableName, StartRows, PrintRows);
                     TSLPagesPrint.Text = Convert.ToString(All_Pages);
+                    TStripLabel_Count.Text = Convert.ToString(Now_Pages);
                 }
             }
         }
@@ -324,7 +330,6 @@ namespace Diary_Mei
             BirthTimePicker.Text = DateTime.Now.ToShortDateString();
             Set_Page_Button(0);                              //关闭分页按钮
             TSLPagesPrint.Text = "0";                        //将总页数置0
-            dataGridView_Archive_Print.Rows.Clear();         //当查不到信息时进行清空
             dataGridView_Archive_Print.DataSource = null;    //清空DataSource
         }
 
@@ -333,6 +338,7 @@ namespace Diary_Mei
             dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, 0, PrintRows);
             StartRows = 0;
             Now_Pages = 1;
+            TStripLabel_Count.Text = Convert.ToString(Now_Pages);
         }
 
         private void TSBPreviousPage_Click(object sender, EventArgs e)
@@ -342,6 +348,7 @@ namespace Diary_Mei
                 Now_Pages--;
                 StartRows -= PrintRows;
                 dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, StartRows, PrintRows);
+                TStripLabel_Count.Text = Convert.ToString(Now_Pages);
             }
         }
 
@@ -352,6 +359,7 @@ namespace Diary_Mei
                 Now_Pages++;
                 StartRows += PrintRows;
                 dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, StartRows, PrintRows);
+                TStripLabel_Count.Text = Convert.ToString(Now_Pages);
             }
         }
 
@@ -362,6 +370,7 @@ namespace Diary_Mei
                 Now_Pages = All_Pages;
                 StartRows = (All_Pages - 1) * PrintRows;
                 dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, StartRows, PrintRows);
+                TStripLabel_Count.Text = Convert.ToString(Now_Pages);
             }
         }
 

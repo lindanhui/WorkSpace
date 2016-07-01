@@ -16,7 +16,7 @@ namespace Diary_Mei
         {
              Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Diary_Main());
+            Application.Run(new Edit_Form());
         }
     }
 }
