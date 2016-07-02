@@ -18,6 +18,7 @@ namespace Diary_Mei
         int Now_Pages = 1;
         int All_Pages = 0;
         int All_Rows = 0;
+        int Get_RowClick = -1;
         private static String Windows_State = String.Empty;
         private static string TableName = "Archive_Table";
         string SQL_Query = "SELECT Real_Name, Phone, Address, Now_Company FROM Archive_Table WHERE ";
@@ -134,6 +135,7 @@ namespace Diary_Mei
             Now_Pages = 1;
             All_Pages = 0;
             All_Rows = 0;
+            Get_RowClick = -1;
             //
             SQL_Query = "SELECT Real_Name, Phone, Address, Now_Company FROM Archive_Table WHERE ";
             #region 全部查询的时候触发的SQL
@@ -338,6 +340,7 @@ namespace Diary_Mei
             dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, 0, PrintRows);
             StartRows = 0;
             Now_Pages = 1;
+            Get_RowClick = -1;
             TStripLabel_Count.Text = Convert.ToString(Now_Pages);
         }
 
@@ -345,6 +348,7 @@ namespace Diary_Mei
         {
             if (Now_Pages > 1)
             {
+                Get_RowClick = -1;
                 Now_Pages--;
                 StartRows -= PrintRows;
                 dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, StartRows, PrintRows);
@@ -356,6 +360,7 @@ namespace Diary_Mei
         {
             if (Now_Pages < All_Pages)
             {
+                Get_RowClick = -1;
                 Now_Pages++;
                 StartRows += PrintRows;
                 dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, StartRows, PrintRows);
@@ -367,6 +372,7 @@ namespace Diary_Mei
         {
             if (All_Pages > 0)
             {
+                Get_RowClick = -1;
                 Now_Pages = All_Pages;
                 StartRows = (All_Pages - 1) * PrintRows;
                 dataGridView_Archive_Print.DataSource = Class_SQL_Deal.DataTable_Query(SQL_Query, TableName, StartRows, PrintRows);
@@ -402,5 +408,11 @@ namespace Diary_Mei
 
         #endregion
 
+        private void dataGridView_Archive_Print_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Get_RowClick = dataGridView_Archive_Print.CurrentCell.RowIndex;
+           Class_State.Get_Name  = dataGridView_Archive_Print.Rows[Get_RowClick].Cells[0].Value.ToString();
+           Class_State.Get_Phone = dataGridView_Archive_Print.Rows[Get_RowClick].Cells[1].Value.ToString();
+        }
     }
 }

@@ -49,6 +49,7 @@
             this.Panel_Client_Friend = new System.Windows.Forms.Panel();
             this.dataGridView_Archive_Print = new System.Windows.Forms.DataGridView();
             this.Panel_Function = new System.Windows.Forms.Panel();
+            this.button_Invite = new System.Windows.Forms.Button();
             this.TSDiary = new System.Windows.Forms.ToolStrip();
             this.TSBFirstPage = new System.Windows.Forms.ToolStripButton();
             this.TSBPreviousPage = new System.Windows.Forms.ToolStripButton();
@@ -79,7 +80,6 @@
             this.Label_Client_Address = new System.Windows.Forms.Label();
             this.Label_Client_Phone = new System.Windows.Forms.Label();
             this.Label_Client_Name = new System.Windows.Forms.Label();
-            this.button_Invite = new System.Windows.Forms.Button();
             this.Menu_Panel.SuspendLayout();
             this.Panel_Welcome.SuspendLayout();
             this.Panel_Client_Friend.SuspendLayout();
@@ -328,6 +328,7 @@
             this.dataGridView_Archive_Print.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_Archive_Print.Size = new System.Drawing.Size(991, 231);
             this.dataGridView_Archive_Print.TabIndex = 10;
+            this.dataGridView_Archive_Print.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Archive_Print_CellClick);
             // 
             // Panel_Function
             // 
@@ -351,6 +352,20 @@
             this.Panel_Function.Name = "Panel_Function";
             this.Panel_Function.Size = new System.Drawing.Size(997, 97);
             this.Panel_Function.TabIndex = 9;
+            // 
+            // button_Invite
+            // 
+            this.button_Invite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_Invite.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button_Invite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_Invite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Invite.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_Invite.Location = new System.Drawing.Point(369, 58);
+            this.button_Invite.Name = "button_Invite";
+            this.button_Invite.Size = new System.Drawing.Size(70, 23);
+            this.button_Invite.TabIndex = 16;
+            this.button_Invite.Text = "拜访";
+            this.button_Invite.UseVisualStyleBackColor = false;
             // 
             // TSDiary
             // 
@@ -711,20 +726,6 @@
             this.Label_Client_Name.TabIndex = 0;
             this.Label_Client_Name.Text = "姓名";
             this.Label_Client_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button_Invite
-            // 
-            this.button_Invite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_Invite.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button_Invite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button_Invite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Invite.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_Invite.Location = new System.Drawing.Point(369, 58);
-            this.button_Invite.Name = "button_Invite";
-            this.button_Invite.Size = new System.Drawing.Size(70, 23);
-            this.button_Invite.TabIndex = 16;
-            this.button_Invite.Text = "拜访";
-            this.button_Invite.UseVisualStyleBackColor = false;
             // 
             // Diary_Main
             // 

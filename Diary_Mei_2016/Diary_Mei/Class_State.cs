@@ -149,8 +149,11 @@ namespace Diary_Mei
             return Return_String;
         }
 
-
-
+        /// <summary>
+        /// 存储DataGrid点击的值
+        /// </summary>
+        public static string Get_Name = string.Empty;
+        public static string Get_Phone = string.Empty;
 
     }
 }
