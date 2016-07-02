@@ -70,53 +70,55 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.groupBox_PersonalInfo = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_Birth = new System.Windows.Forms.DateTimePicker();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox_Hobby = new System.Windows.Forms.GroupBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
             this.groupBox_Family = new System.Windows.Forms.GroupBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.textBox29 = new System.Windows.Forms.TextBox();
             this.groupBox_Profession = new System.Windows.Forms.GroupBox();
+            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker_Birth = new System.Windows.Forms.DateTimePicker();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label43 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
             this.groupBox_PersonalInfo.SuspendLayout();
             this.groupBox_Hobby.SuspendLayout();
             this.groupBox_Family.SuspendLayout();
@@ -563,6 +565,132 @@
             this.groupBox_PersonalInfo.TabIndex = 43;
             this.groupBox_PersonalInfo.TabStop = false;
             // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(116, 275);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker3.TabIndex = 62;
+            // 
+            // dateTimePicker_Birth
+            // 
+            this.dateTimePicker_Birth.Location = new System.Drawing.Point(348, 20);
+            this.dateTimePicker_Birth.Name = "dateTimePicker_Birth";
+            this.dateTimePicker_Birth.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker_Birth.TabIndex = 61;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(348, 326);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.Size = new System.Drawing.Size(130, 21);
+            this.textBox15.TabIndex = 60;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(116, 326);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(130, 21);
+            this.textBox14.TabIndex = 59;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(348, 278);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.Size = new System.Drawing.Size(130, 21);
+            this.textBox13.TabIndex = 58;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(348, 230);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(130, 21);
+            this.textBox11.TabIndex = 56;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(116, 230);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(130, 21);
+            this.textBox10.TabIndex = 55;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(348, 184);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(130, 21);
+            this.textBox9.TabIndex = 54;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(116, 184);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(130, 21);
+            this.textBox8.TabIndex = 53;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(348, 141);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(130, 21);
+            this.textBox7.TabIndex = 52;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(348, 101);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(130, 21);
+            this.textBox6.TabIndex = 51;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(348, 58);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(130, 21);
+            this.textBox5.TabIndex = 50;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(116, 140);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(130, 21);
+            this.textBox4.TabIndex = 46;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(116, 101);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(130, 21);
+            this.textBox3.TabIndex = 45;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(116, 58);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(130, 21);
+            this.textBox2.TabIndex = 44;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(116, 19);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(130, 21);
+            this.textBox1.TabIndex = 43;
+            // 
             // groupBox_Hobby
             // 
             this.groupBox_Hobby.Controls.Add(this.textBox28);
@@ -597,6 +725,110 @@
             this.groupBox_Hobby.TabIndex = 44;
             this.groupBox_Hobby.TabStop = false;
             // 
+            // textBox28
+            // 
+            this.textBox28.Location = new System.Drawing.Point(132, 516);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.ReadOnly = true;
+            this.textBox28.Size = new System.Drawing.Size(250, 21);
+            this.textBox28.TabIndex = 57;
+            // 
+            // textBox27
+            // 
+            this.textBox27.Location = new System.Drawing.Point(132, 476);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.ReadOnly = true;
+            this.textBox27.Size = new System.Drawing.Size(250, 21);
+            this.textBox27.TabIndex = 56;
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(132, 433);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.ReadOnly = true;
+            this.textBox26.Size = new System.Drawing.Size(250, 21);
+            this.textBox26.TabIndex = 55;
+            // 
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(132, 397);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.ReadOnly = true;
+            this.textBox25.Size = new System.Drawing.Size(250, 21);
+            this.textBox25.TabIndex = 54;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(132, 354);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.ReadOnly = true;
+            this.textBox24.Size = new System.Drawing.Size(250, 21);
+            this.textBox24.TabIndex = 53;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(132, 311);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.ReadOnly = true;
+            this.textBox23.Size = new System.Drawing.Size(250, 21);
+            this.textBox23.TabIndex = 52;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(132, 271);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.ReadOnly = true;
+            this.textBox22.Size = new System.Drawing.Size(250, 21);
+            this.textBox22.TabIndex = 51;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(132, 230);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.ReadOnly = true;
+            this.textBox21.Size = new System.Drawing.Size(250, 21);
+            this.textBox21.TabIndex = 50;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(132, 183);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
+            this.textBox20.Size = new System.Drawing.Size(250, 21);
+            this.textBox20.TabIndex = 49;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(132, 140);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
+            this.textBox19.Size = new System.Drawing.Size(250, 21);
+            this.textBox19.TabIndex = 48;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(132, 101);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(250, 21);
+            this.textBox18.TabIndex = 47;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(132, 58);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(250, 21);
+            this.textBox17.TabIndex = 46;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(132, 20);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(250, 21);
+            this.textBox16.TabIndex = 45;
+            // 
             // groupBox_Family
             // 
             this.groupBox_Family.Controls.Add(this.richTextBox3);
@@ -621,8 +853,75 @@
             this.groupBox_Family.TabIndex = 45;
             this.groupBox_Family.TabStop = false;
             // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(115, 287);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.ReadOnly = true;
+            this.richTextBox3.Size = new System.Drawing.Size(418, 51);
+            this.richTextBox3.TabIndex = 67;
+            this.richTextBox3.Text = "";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(115, 219);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.Size = new System.Drawing.Size(418, 51);
+            this.richTextBox2.TabIndex = 66;
+            this.richTextBox2.Text = "";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(115, 152);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(418, 51);
+            this.richTextBox1.TabIndex = 65;
+            this.richTextBox1.Text = "";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(348, 57);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker2.TabIndex = 64;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(348, 14);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker1.TabIndex = 63;
+            // 
+            // textBox31
+            // 
+            this.textBox31.Location = new System.Drawing.Point(115, 106);
+            this.textBox31.Name = "textBox31";
+            this.textBox31.ReadOnly = true;
+            this.textBox31.Size = new System.Drawing.Size(421, 21);
+            this.textBox31.TabIndex = 62;
+            // 
+            // textBox30
+            // 
+            this.textBox30.Location = new System.Drawing.Point(115, 60);
+            this.textBox30.Name = "textBox30";
+            this.textBox30.ReadOnly = true;
+            this.textBox30.Size = new System.Drawing.Size(130, 21);
+            this.textBox30.TabIndex = 61;
+            // 
+            // textBox29
+            // 
+            this.textBox29.Location = new System.Drawing.Point(116, 17);
+            this.textBox29.Name = "textBox29";
+            this.textBox29.ReadOnly = true;
+            this.textBox29.Size = new System.Drawing.Size(130, 21);
+            this.textBox29.TabIndex = 60;
+            // 
             // groupBox_Profession
             // 
+            this.groupBox_Profession.Controls.Add(this.richTextBox7);
+            this.groupBox_Profession.Controls.Add(this.label44);
             this.groupBox_Profession.Controls.Add(this.richTextBox6);
             this.groupBox_Profession.Controls.Add(this.richTextBox5);
             this.groupBox_Profession.Controls.Add(this.richTextBox4);
@@ -631,9 +930,36 @@
             this.groupBox_Profession.Controls.Add(this.label36);
             this.groupBox_Profession.Location = new System.Drawing.Point(12, 870);
             this.groupBox_Profession.Name = "groupBox_Profession";
-            this.groupBox_Profession.Size = new System.Drawing.Size(950, 239);
+            this.groupBox_Profession.Size = new System.Drawing.Size(950, 306);
             this.groupBox_Profession.TabIndex = 46;
             this.groupBox_Profession.TabStop = false;
+            // 
+            // richTextBox6
+            // 
+            this.richTextBox6.Location = new System.Drawing.Point(115, 167);
+            this.richTextBox6.Name = "richTextBox6";
+            this.richTextBox6.ReadOnly = true;
+            this.richTextBox6.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox6.TabIndex = 70;
+            this.richTextBox6.Text = "";
+            // 
+            // richTextBox5
+            // 
+            this.richTextBox5.Location = new System.Drawing.Point(115, 100);
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.ReadOnly = true;
+            this.richTextBox5.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox5.TabIndex = 69;
+            this.richTextBox5.Text = "";
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Location = new System.Drawing.Point(115, 34);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.ReadOnly = true;
+            this.richTextBox4.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox4.TabIndex = 68;
+            this.richTextBox4.Text = "";
             // 
             // label31
             // 
@@ -671,274 +997,6 @@
             this.label39.Text = "职业规划";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(116, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(130, 21);
-            this.textBox1.TabIndex = 43;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(116, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(130, 21);
-            this.textBox2.TabIndex = 44;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(116, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(130, 21);
-            this.textBox3.TabIndex = 45;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(116, 140);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(130, 21);
-            this.textBox4.TabIndex = 46;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(348, 58);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(130, 21);
-            this.textBox5.TabIndex = 50;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(348, 101);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(130, 21);
-            this.textBox6.TabIndex = 51;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(348, 141);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(130, 21);
-            this.textBox7.TabIndex = 52;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(116, 184);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(130, 21);
-            this.textBox8.TabIndex = 53;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(348, 184);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(130, 21);
-            this.textBox9.TabIndex = 54;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(116, 230);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(130, 21);
-            this.textBox10.TabIndex = 55;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(348, 230);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(130, 21);
-            this.textBox11.TabIndex = 56;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(348, 278);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(130, 21);
-            this.textBox13.TabIndex = 58;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(116, 326);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(130, 21);
-            this.textBox14.TabIndex = 59;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(348, 326);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(130, 21);
-            this.textBox15.TabIndex = 60;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(132, 20);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(250, 21);
-            this.textBox16.TabIndex = 45;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(132, 58);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(250, 21);
-            this.textBox17.TabIndex = 46;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(132, 101);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(250, 21);
-            this.textBox18.TabIndex = 47;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(132, 140);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(250, 21);
-            this.textBox19.TabIndex = 48;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(132, 183);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(250, 21);
-            this.textBox20.TabIndex = 49;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(132, 230);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(250, 21);
-            this.textBox21.TabIndex = 50;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(132, 271);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.ReadOnly = true;
-            this.textBox22.Size = new System.Drawing.Size(250, 21);
-            this.textBox22.TabIndex = 51;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(132, 311);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(250, 21);
-            this.textBox23.TabIndex = 52;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(132, 354);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.ReadOnly = true;
-            this.textBox24.Size = new System.Drawing.Size(250, 21);
-            this.textBox24.TabIndex = 53;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(132, 397);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.ReadOnly = true;
-            this.textBox25.Size = new System.Drawing.Size(250, 21);
-            this.textBox25.TabIndex = 54;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(132, 433);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.ReadOnly = true;
-            this.textBox26.Size = new System.Drawing.Size(250, 21);
-            this.textBox26.TabIndex = 55;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(132, 476);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.ReadOnly = true;
-            this.textBox27.Size = new System.Drawing.Size(250, 21);
-            this.textBox27.TabIndex = 56;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(132, 516);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.ReadOnly = true;
-            this.textBox28.Size = new System.Drawing.Size(250, 21);
-            this.textBox28.TabIndex = 57;
-            // 
-            // dateTimePicker_Birth
-            // 
-            this.dateTimePicker_Birth.Location = new System.Drawing.Point(348, 20);
-            this.dateTimePicker_Birth.Name = "dateTimePicker_Birth";
-            this.dateTimePicker_Birth.Size = new System.Drawing.Size(130, 21);
-            this.dateTimePicker_Birth.TabIndex = 61;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(116, 17);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.ReadOnly = true;
-            this.textBox29.Size = new System.Drawing.Size(130, 21);
-            this.textBox29.TabIndex = 60;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(115, 60);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.ReadOnly = true;
-            this.textBox30.Size = new System.Drawing.Size(130, 21);
-            this.textBox30.TabIndex = 61;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(115, 106);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.ReadOnly = true;
-            this.textBox31.Size = new System.Drawing.Size(421, 21);
-            this.textBox31.TabIndex = 62;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(348, 14);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(130, 21);
-            this.dateTimePicker1.TabIndex = 63;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(348, 57);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(130, 21);
-            this.dateTimePicker2.TabIndex = 64;
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(116, 275);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(130, 21);
-            this.dateTimePicker3.TabIndex = 62;
-            // 
             // label43
             // 
             this.label43.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -951,59 +1009,24 @@
             this.label43.Text = "家庭情况";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // richTextBox1
+            // label44
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(115, 152);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(418, 51);
-            this.richTextBox1.TabIndex = 65;
-            this.richTextBox1.Text = "";
+            this.label44.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label44.Location = new System.Drawing.Point(6, 256);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(110, 23);
+            this.label44.TabIndex = 71;
+            this.label44.Text = "备注信息：";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // richTextBox2
+            // richTextBox7
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(115, 219);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(418, 51);
-            this.richTextBox2.TabIndex = 66;
-            this.richTextBox2.Text = "";
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.Location = new System.Drawing.Point(115, 287);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.ReadOnly = true;
-            this.richTextBox3.Size = new System.Drawing.Size(418, 51);
-            this.richTextBox3.TabIndex = 67;
-            this.richTextBox3.Text = "";
-            // 
-            // richTextBox4
-            // 
-            this.richTextBox4.Location = new System.Drawing.Point(115, 34);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.ReadOnly = true;
-            this.richTextBox4.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox4.TabIndex = 68;
-            this.richTextBox4.Text = "";
-            // 
-            // richTextBox5
-            // 
-            this.richTextBox5.Location = new System.Drawing.Point(115, 100);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.ReadOnly = true;
-            this.richTextBox5.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox5.TabIndex = 69;
-            this.richTextBox5.Text = "";
-            // 
-            // richTextBox6
-            // 
-            this.richTextBox6.Location = new System.Drawing.Point(115, 167);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.ReadOnly = true;
-            this.richTextBox6.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox6.TabIndex = 70;
-            this.richTextBox6.Text = "";
+            this.richTextBox7.Location = new System.Drawing.Point(115, 244);
+            this.richTextBox7.Name = "richTextBox7";
+            this.richTextBox7.ReadOnly = true;
+            this.richTextBox7.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox7.TabIndex = 72;
+            this.richTextBox7.Text = "";
             // 
             // Edit_Form
             // 
@@ -1129,5 +1152,7 @@
         private System.Windows.Forms.RichTextBox richTextBox6;
         private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox richTextBox7;
+        private System.Windows.Forms.Label label44;
     }
 }
