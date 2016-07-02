@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Diary_Main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Menu_Panel = new System.Windows.Forms.Panel();
             this.Button_Close = new System.Windows.Forms.Button();
             this.Button_Picture = new System.Windows.Forms.Button();
@@ -54,6 +54,11 @@
             this.TSBPreviousPage = new System.Windows.Forms.ToolStripButton();
             this.TSBNextPage = new System.Windows.Forms.ToolStripButton();
             this.TSBLastPage = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.TSLabel_Now = new System.Windows.Forms.ToolStripLabel();
+            this.TStripLabel_Count = new System.Windows.Forms.ToolStripLabel();
+            this.TStripLabel_Pages = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.TSLAllPageS = new System.Windows.Forms.ToolStripLabel();
             this.TSLPagesPrint = new System.Windows.Forms.ToolStripLabel();
             this.button_Clear = new System.Windows.Forms.Button();
@@ -74,11 +79,7 @@
             this.Label_Client_Address = new System.Windows.Forms.Label();
             this.Label_Client_Phone = new System.Windows.Forms.Label();
             this.Label_Client_Name = new System.Windows.Forms.Label();
-            this.TSLabel_Now = new System.Windows.Forms.ToolStripLabel();
-            this.TStripLabel_Pages = new System.Windows.Forms.ToolStripLabel();
-            this.TStripLabel_Count = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.button_Invite = new System.Windows.Forms.Button();
             this.Menu_Panel.SuspendLayout();
             this.Panel_Welcome.SuspendLayout();
             this.Panel_Client_Friend.SuspendLayout();
@@ -282,44 +283,44 @@
             this.dataGridView_Archive_Print.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_Archive_Print.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_Archive_Print.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Archive_Print.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Archive_Print.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_Archive_Print.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Archive_Print.ColumnHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Archive_Print.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Archive_Print.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView_Archive_Print.GridColor = System.Drawing.Color.White;
             this.dataGridView_Archive_Print.Location = new System.Drawing.Point(-4, 32);
             this.dataGridView_Archive_Print.MultiSelect = false;
             this.dataGridView_Archive_Print.Name = "dataGridView_Archive_Print";
             this.dataGridView_Archive_Print.ReadOnly = true;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Archive_Print.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Archive_Print.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_Archive_Print.RowHeadersVisible = false;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dataGridView_Archive_Print.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dataGridView_Archive_Print.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -331,6 +332,7 @@
             // Panel_Function
             // 
             this.Panel_Function.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Panel_Function.Controls.Add(this.button_Invite);
             this.Panel_Function.Controls.Add(this.TSDiary);
             this.Panel_Function.Controls.Add(this.button_Clear);
             this.Panel_Function.Controls.Add(this.label1);
@@ -371,7 +373,7 @@
             this.toolStripSeparator1,
             this.TSLAllPageS,
             this.TSLPagesPrint});
-            this.TSDiary.Location = new System.Drawing.Point(552, 59);
+            this.TSDiary.Location = new System.Drawing.Point(555, 56);
             this.TSDiary.Name = "TSDiary";
             this.TSDiary.Padding = new System.Windows.Forms.Padding(1, 1, 2, 1);
             this.TSDiary.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -420,6 +422,34 @@
             this.TSBLastPage.Text = "末页";
             this.TSBLastPage.Click += new System.EventHandler(this.TSBLastPage_Click);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 24);
+            // 
+            // TSLabel_Now
+            // 
+            this.TSLabel_Now.Name = "TSLabel_Now";
+            this.TSLabel_Now.Size = new System.Drawing.Size(20, 21);
+            this.TSLabel_Now.Text = "第";
+            // 
+            // TStripLabel_Count
+            // 
+            this.TStripLabel_Count.Name = "TStripLabel_Count";
+            this.TStripLabel_Count.Size = new System.Drawing.Size(15, 21);
+            this.TStripLabel_Count.Text = "0";
+            // 
+            // TStripLabel_Pages
+            // 
+            this.TStripLabel_Pages.Name = "TStripLabel_Pages";
+            this.TStripLabel_Pages.Size = new System.Drawing.Size(20, 21);
+            this.TStripLabel_Pages.Text = "页";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 24);
+            // 
             // TSLAllPageS
             // 
             this.TSLAllPageS.Name = "TSLAllPageS";
@@ -438,10 +468,10 @@
             this.button_Clear.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.button_Clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Clear.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_Clear.Location = new System.Drawing.Point(452, 59);
+            this.button_Clear.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_Clear.Location = new System.Drawing.Point(458, 58);
             this.button_Clear.Name = "button_Clear";
-            this.button_Clear.Size = new System.Drawing.Size(75, 26);
+            this.button_Clear.Size = new System.Drawing.Size(70, 23);
             this.button_Clear.TabIndex = 14;
             this.button_Clear.Text = "清空";
             this.button_Clear.UseVisualStyleBackColor = false;
@@ -470,10 +500,10 @@
             this.Button_Export.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Button_Export.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Export.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Export.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Export.Location = new System.Drawing.Point(345, 59);
+            this.Button_Export.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_Export.Location = new System.Drawing.Point(279, 58);
             this.Button_Export.Name = "Button_Export";
-            this.Button_Export.Size = new System.Drawing.Size(75, 26);
+            this.Button_Export.Size = new System.Drawing.Size(70, 23);
             this.Button_Export.TabIndex = 11;
             this.Button_Export.Text = "导出";
             this.Button_Export.UseVisualStyleBackColor = false;
@@ -512,10 +542,10 @@
             this.Button_Delete.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Button_Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Delete.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Delete.Location = new System.Drawing.Point(239, 59);
+            this.Button_Delete.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_Delete.Location = new System.Drawing.Point(189, 58);
             this.Button_Delete.Name = "Button_Delete";
-            this.Button_Delete.Size = new System.Drawing.Size(75, 26);
+            this.Button_Delete.Size = new System.Drawing.Size(70, 23);
             this.Button_Delete.TabIndex = 4;
             this.Button_Delete.Text = "删除";
             this.Button_Delete.UseVisualStyleBackColor = false;
@@ -594,10 +624,10 @@
             this.Button_Add.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Button_Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Add.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Add.Location = new System.Drawing.Point(132, 59);
+            this.Button_Add.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_Add.Location = new System.Drawing.Point(103, 58);
             this.Button_Add.Name = "Button_Add";
-            this.Button_Add.Size = new System.Drawing.Size(75, 26);
+            this.Button_Add.Size = new System.Drawing.Size(70, 23);
             this.Button_Add.TabIndex = 2;
             this.Button_Add.Text = "添加";
             this.Button_Add.UseVisualStyleBackColor = false;
@@ -619,10 +649,10 @@
             this.Button_Search.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.Button_Search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Button_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Search.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Search.Location = new System.Drawing.Point(25, 59);
+            this.Button_Search.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_Search.Location = new System.Drawing.Point(20, 58);
             this.Button_Search.Name = "Button_Search";
-            this.Button_Search.Size = new System.Drawing.Size(75, 26);
+            this.Button_Search.Size = new System.Drawing.Size(70, 23);
             this.Button_Search.TabIndex = 1;
             this.Button_Search.Text = "查询";
             this.Button_Search.UseVisualStyleBackColor = false;
@@ -682,33 +712,19 @@
             this.Label_Client_Name.Text = "姓名";
             this.Label_Client_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TSLabel_Now
+            // button_Invite
             // 
-            this.TSLabel_Now.Name = "TSLabel_Now";
-            this.TSLabel_Now.Size = new System.Drawing.Size(20, 21);
-            this.TSLabel_Now.Text = "第";
-            // 
-            // TStripLabel_Pages
-            // 
-            this.TStripLabel_Pages.Name = "TStripLabel_Pages";
-            this.TStripLabel_Pages.Size = new System.Drawing.Size(20, 21);
-            this.TStripLabel_Pages.Text = "页";
-            // 
-            // TStripLabel_Count
-            // 
-            this.TStripLabel_Count.Name = "TStripLabel_Count";
-            this.TStripLabel_Count.Size = new System.Drawing.Size(15, 21);
-            this.TStripLabel_Count.Text = "0";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 24);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 24);
+            this.button_Invite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_Invite.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button_Invite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_Invite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Invite.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_Invite.Location = new System.Drawing.Point(369, 58);
+            this.button_Invite.Name = "button_Invite";
+            this.button_Invite.Size = new System.Drawing.Size(70, 23);
+            this.button_Invite.TabIndex = 16;
+            this.button_Invite.Text = "拜访";
+            this.button_Invite.UseVisualStyleBackColor = false;
             // 
             // Diary_Main
             // 
@@ -789,5 +805,6 @@
         private System.Windows.Forms.ToolStripLabel TStripLabel_Pages;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.Button button_Invite;
     }
 }

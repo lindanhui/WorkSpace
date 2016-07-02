@@ -49,8 +49,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -64,7 +62,6 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -109,19 +106,26 @@
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.textBox29 = new System.Windows.Forms.TextBox();
-            this.groupBox_Profession = new System.Windows.Forms.GroupBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
+            this.panel_All = new System.Windows.Forms.Panel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.richTextBox7 = new System.Windows.Forms.RichTextBox();
+            this.groupBox_Profession = new System.Windows.Forms.GroupBox();
+            this.button_Edit = new System.Windows.Forms.Button();
+            this.button_Close = new System.Windows.Forms.Button();
             this.groupBox_PersonalInfo.SuspendLayout();
             this.groupBox_Hobby.SuspendLayout();
             this.groupBox_Family.SuspendLayout();
+            this.panel_All.SuspendLayout();
             this.groupBox_Profession.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -325,26 +329,6 @@
             this.label19.Text = "父亲姓名：";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label20
-            // 
-            this.label20.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label20.Location = new System.Drawing.Point(6, 111);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(107, 23);
-            this.label20.TabIndex = 20;
-            this.label20.Text = "短期事业目标：";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label21
-            // 
-            this.label21.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label21.Location = new System.Drawing.Point(3, 180);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(110, 23);
-            this.label21.TabIndex = 21;
-            this.label21.Text = "长期事业目标：";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label22
             // 
             this.label22.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -475,16 +459,6 @@
             this.label35.Text = "喜欢的朋友：";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label36
-            // 
-            this.label36.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label36.Location = new System.Drawing.Point(6, 46);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(107, 23);
-            this.label36.TabIndex = 36;
-            this.label36.Text = "最骄傲的事情：";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label37
             // 
             this.label37.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -559,7 +533,7 @@
             this.groupBox_PersonalInfo.Controls.Add(this.label30);
             this.groupBox_PersonalInfo.Controls.Add(this.label5);
             this.groupBox_PersonalInfo.Controls.Add(this.label8);
-            this.groupBox_PersonalInfo.Location = new System.Drawing.Point(12, 42);
+            this.groupBox_PersonalInfo.Location = new System.Drawing.Point(18, 41);
             this.groupBox_PersonalInfo.Name = "groupBox_PersonalInfo";
             this.groupBox_PersonalInfo.Size = new System.Drawing.Size(543, 377);
             this.groupBox_PersonalInfo.TabIndex = 43;
@@ -576,7 +550,7 @@
             // 
             this.dateTimePicker_Birth.Location = new System.Drawing.Point(348, 20);
             this.dateTimePicker_Birth.Name = "dateTimePicker_Birth";
-            this.dateTimePicker_Birth.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker_Birth.Size = new System.Drawing.Size(185, 21);
             this.dateTimePicker_Birth.TabIndex = 61;
             // 
             // textBox15
@@ -584,7 +558,7 @@
             this.textBox15.Location = new System.Drawing.Point(348, 326);
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(130, 21);
+            this.textBox15.Size = new System.Drawing.Size(185, 21);
             this.textBox15.TabIndex = 60;
             // 
             // textBox14
@@ -600,7 +574,7 @@
             this.textBox13.Location = new System.Drawing.Point(348, 278);
             this.textBox13.Name = "textBox13";
             this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(130, 21);
+            this.textBox13.Size = new System.Drawing.Size(185, 21);
             this.textBox13.TabIndex = 58;
             // 
             // textBox11
@@ -608,7 +582,7 @@
             this.textBox11.Location = new System.Drawing.Point(348, 230);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(130, 21);
+            this.textBox11.Size = new System.Drawing.Size(185, 21);
             this.textBox11.TabIndex = 56;
             // 
             // textBox10
@@ -624,7 +598,7 @@
             this.textBox9.Location = new System.Drawing.Point(348, 184);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(130, 21);
+            this.textBox9.Size = new System.Drawing.Size(185, 21);
             this.textBox9.TabIndex = 54;
             // 
             // textBox8
@@ -640,7 +614,7 @@
             this.textBox7.Location = new System.Drawing.Point(348, 141);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(130, 21);
+            this.textBox7.Size = new System.Drawing.Size(185, 21);
             this.textBox7.TabIndex = 52;
             // 
             // textBox6
@@ -648,7 +622,7 @@
             this.textBox6.Location = new System.Drawing.Point(348, 101);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(130, 21);
+            this.textBox6.Size = new System.Drawing.Size(185, 21);
             this.textBox6.TabIndex = 51;
             // 
             // textBox5
@@ -656,7 +630,7 @@
             this.textBox5.Location = new System.Drawing.Point(348, 58);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(130, 21);
+            this.textBox5.Size = new System.Drawing.Size(185, 21);
             this.textBox5.TabIndex = 50;
             // 
             // textBox4
@@ -719,9 +693,9 @@
             this.groupBox_Hobby.Controls.Add(this.label13);
             this.groupBox_Hobby.Controls.Add(this.label12);
             this.groupBox_Hobby.Controls.Add(this.label6);
-            this.groupBox_Hobby.Location = new System.Drawing.Point(568, 42);
+            this.groupBox_Hobby.Location = new System.Drawing.Point(567, 41);
             this.groupBox_Hobby.Name = "groupBox_Hobby";
-            this.groupBox_Hobby.Size = new System.Drawing.Size(394, 775);
+            this.groupBox_Hobby.Size = new System.Drawing.Size(394, 790);
             this.groupBox_Hobby.TabIndex = 44;
             this.groupBox_Hobby.TabStop = false;
             // 
@@ -847,7 +821,7 @@
             this.groupBox_Family.Controls.Add(this.label3);
             this.groupBox_Family.Controls.Add(this.label24);
             this.groupBox_Family.Controls.Add(this.label22);
-            this.groupBox_Family.Location = new System.Drawing.Point(12, 455);
+            this.groupBox_Family.Location = new System.Drawing.Point(18, 469);
             this.groupBox_Family.Name = "groupBox_Family";
             this.groupBox_Family.Size = new System.Drawing.Size(543, 362);
             this.groupBox_Family.TabIndex = 45;
@@ -884,14 +858,14 @@
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(348, 57);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker2.Size = new System.Drawing.Size(185, 21);
             this.dateTimePicker2.TabIndex = 64;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(348, 14);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker1.Size = new System.Drawing.Size(185, 21);
             this.dateTimePicker1.TabIndex = 63;
             // 
             // textBox31
@@ -918,55 +892,12 @@
             this.textBox29.Size = new System.Drawing.Size(130, 21);
             this.textBox29.TabIndex = 60;
             // 
-            // groupBox_Profession
-            // 
-            this.groupBox_Profession.Controls.Add(this.richTextBox7);
-            this.groupBox_Profession.Controls.Add(this.label44);
-            this.groupBox_Profession.Controls.Add(this.richTextBox6);
-            this.groupBox_Profession.Controls.Add(this.richTextBox5);
-            this.groupBox_Profession.Controls.Add(this.richTextBox4);
-            this.groupBox_Profession.Controls.Add(this.label21);
-            this.groupBox_Profession.Controls.Add(this.label20);
-            this.groupBox_Profession.Controls.Add(this.label36);
-            this.groupBox_Profession.Location = new System.Drawing.Point(12, 870);
-            this.groupBox_Profession.Name = "groupBox_Profession";
-            this.groupBox_Profession.Size = new System.Drawing.Size(950, 306);
-            this.groupBox_Profession.TabIndex = 46;
-            this.groupBox_Profession.TabStop = false;
-            // 
-            // richTextBox6
-            // 
-            this.richTextBox6.Location = new System.Drawing.Point(115, 167);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.ReadOnly = true;
-            this.richTextBox6.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox6.TabIndex = 70;
-            this.richTextBox6.Text = "";
-            // 
-            // richTextBox5
-            // 
-            this.richTextBox5.Location = new System.Drawing.Point(115, 100);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.ReadOnly = true;
-            this.richTextBox5.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox5.TabIndex = 69;
-            this.richTextBox5.Text = "";
-            // 
-            // richTextBox4
-            // 
-            this.richTextBox4.Location = new System.Drawing.Point(115, 34);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.ReadOnly = true;
-            this.richTextBox4.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox4.TabIndex = 68;
-            this.richTextBox4.Text = "";
-            // 
             // label31
             // 
             this.label31.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label31.Image = ((System.Drawing.Image)(resources.GetObject("label31.Image")));
             this.label31.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label31.Location = new System.Drawing.Point(222, 15);
+            this.label31.Location = new System.Drawing.Point(232, 14);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(94, 24);
             this.label31.TabIndex = 47;
@@ -978,7 +909,7 @@
             this.label38.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label38.Image = ((System.Drawing.Image)(resources.GetObject("label38.Image")));
             this.label38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label38.Location = new System.Drawing.Point(734, 15);
+            this.label38.Location = new System.Drawing.Point(726, 12);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(94, 28);
             this.label38.TabIndex = 48;
@@ -990,7 +921,7 @@
             this.label39.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label39.Image = ((System.Drawing.Image)(resources.GetObject("label39.Image")));
             this.label39.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label39.Location = new System.Drawing.Point(451, 841);
+            this.label39.Location = new System.Drawing.Point(467, 859);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(94, 28);
             this.label39.TabIndex = 49;
@@ -1002,12 +933,86 @@
             this.label43.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label43.Image = ((System.Drawing.Image)(resources.GetObject("label43.Image")));
             this.label43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label43.Location = new System.Drawing.Point(235, 427);
+            this.label43.Location = new System.Drawing.Point(242, 438);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(94, 28);
             this.label43.TabIndex = 50;
             this.label43.Text = "家庭情况";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel_All
+            // 
+            this.panel_All.AutoScroll = true;
+            this.panel_All.BackColor = System.Drawing.SystemColors.Control;
+            this.panel_All.Controls.Add(this.label31);
+            this.panel_All.Controls.Add(this.label39);
+            this.panel_All.Controls.Add(this.groupBox_Profession);
+            this.panel_All.Controls.Add(this.label43);
+            this.panel_All.Controls.Add(this.groupBox_PersonalInfo);
+            this.panel_All.Controls.Add(this.groupBox_Family);
+            this.panel_All.Controls.Add(this.label38);
+            this.panel_All.Controls.Add(this.groupBox_Hobby);
+            this.panel_All.Location = new System.Drawing.Point(2, 2);
+            this.panel_All.Name = "panel_All";
+            this.panel_All.Size = new System.Drawing.Size(994, 309);
+            this.panel_All.TabIndex = 51;
+            // 
+            // label36
+            // 
+            this.label36.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label36.Location = new System.Drawing.Point(6, 46);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(107, 23);
+            this.label36.TabIndex = 36;
+            this.label36.Text = "最骄傲的事情：";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label20.Location = new System.Drawing.Point(6, 111);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(107, 23);
+            this.label20.TabIndex = 20;
+            this.label20.Text = "短期事业目标：";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label21
+            // 
+            this.label21.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label21.Location = new System.Drawing.Point(3, 180);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(110, 23);
+            this.label21.TabIndex = 21;
+            this.label21.Text = "长期事业目标：";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Location = new System.Drawing.Point(115, 34);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.ReadOnly = true;
+            this.richTextBox4.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox4.TabIndex = 68;
+            this.richTextBox4.Text = "";
+            // 
+            // richTextBox5
+            // 
+            this.richTextBox5.Location = new System.Drawing.Point(115, 100);
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.ReadOnly = true;
+            this.richTextBox5.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox5.TabIndex = 69;
+            this.richTextBox5.Text = "";
+            // 
+            // richTextBox6
+            // 
+            this.richTextBox6.Location = new System.Drawing.Point(115, 167);
+            this.richTextBox6.Name = "richTextBox6";
+            this.richTextBox6.ReadOnly = true;
+            this.richTextBox6.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox6.TabIndex = 70;
+            this.richTextBox6.Text = "";
             // 
             // label44
             // 
@@ -1028,20 +1033,58 @@
             this.richTextBox7.TabIndex = 72;
             this.richTextBox7.Text = "";
             // 
+            // groupBox_Profession
+            // 
+            this.groupBox_Profession.Controls.Add(this.richTextBox7);
+            this.groupBox_Profession.Controls.Add(this.label44);
+            this.groupBox_Profession.Controls.Add(this.richTextBox6);
+            this.groupBox_Profession.Controls.Add(this.richTextBox5);
+            this.groupBox_Profession.Controls.Add(this.richTextBox4);
+            this.groupBox_Profession.Controls.Add(this.label21);
+            this.groupBox_Profession.Controls.Add(this.label20);
+            this.groupBox_Profession.Controls.Add(this.label36);
+            this.groupBox_Profession.Location = new System.Drawing.Point(18, 890);
+            this.groupBox_Profession.Name = "groupBox_Profession";
+            this.groupBox_Profession.Size = new System.Drawing.Size(950, 331);
+            this.groupBox_Profession.TabIndex = 46;
+            this.groupBox_Profession.TabStop = false;
+            // 
+            // button_Edit
+            // 
+            this.button_Edit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_Edit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.button_Edit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Edit.Location = new System.Drawing.Point(277, 318);
+            this.button_Edit.Name = "button_Edit";
+            this.button_Edit.Size = new System.Drawing.Size(75, 23);
+            this.button_Edit.TabIndex = 52;
+            this.button_Edit.Text = "修改";
+            this.button_Edit.UseVisualStyleBackColor = true;
+            // 
+            // button_Close
+            // 
+            this.button_Close.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_Close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Close.Location = new System.Drawing.Point(642, 319);
+            this.button_Close.Name = "button_Close";
+            this.button_Close.Size = new System.Drawing.Size(75, 23);
+            this.button_Close.TabIndex = 53;
+            this.button_Close.Text = "退出";
+            this.button_Close.UseVisualStyleBackColor = true;
+            this.button_Close.Click += new System.EventHandler(this.button_Close_Click);
+            // 
             // Edit_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1001, 361);
-            this.Controls.Add(this.label43);
-            this.Controls.Add(this.label39);
-            this.Controls.Add(this.label38);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.groupBox_Profession);
-            this.Controls.Add(this.groupBox_Family);
-            this.Controls.Add(this.groupBox_Hobby);
-            this.Controls.Add(this.groupBox_PersonalInfo);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(995, 348);
+            this.Controls.Add(this.button_Close);
+            this.Controls.Add(this.button_Edit);
+            this.Controls.Add(this.panel_All);
             this.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -1057,6 +1100,7 @@
             this.groupBox_Hobby.PerformLayout();
             this.groupBox_Family.ResumeLayout(false);
             this.groupBox_Family.PerformLayout();
+            this.panel_All.ResumeLayout(false);
             this.groupBox_Profession.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1084,8 +1128,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
@@ -1099,7 +1141,6 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
@@ -1107,7 +1148,6 @@
         private System.Windows.Forms.GroupBox groupBox_PersonalInfo;
         private System.Windows.Forms.GroupBox groupBox_Hobby;
         private System.Windows.Forms.GroupBox groupBox_Family;
-        private System.Windows.Forms.GroupBox groupBox_Profession;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
@@ -1149,10 +1189,17 @@
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Panel panel_All;
+        private System.Windows.Forms.GroupBox groupBox_Profession;
+        private System.Windows.Forms.RichTextBox richTextBox7;
+        private System.Windows.Forms.Label label44;
         private System.Windows.Forms.RichTextBox richTextBox6;
         private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox7;
-        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button button_Edit;
+        private System.Windows.Forms.Button button_Close;
     }
 }
