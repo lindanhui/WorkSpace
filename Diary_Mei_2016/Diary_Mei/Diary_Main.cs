@@ -425,7 +425,8 @@ namespace Diary_Mei
             {
                 SaveFileDialog Export_Dialog = new SaveFileDialog();
                 Export_Dialog.Filter = "*.xls(Excel表格文件)|*.xls";
-                Export_Dialog.FileName = "联系人信息";
+                string Get_Date = "(" + DateTime.Now.ToShortDateString().Replace("/", "-") + ")";
+                Export_Dialog.FileName = "联系人信息" + Get_Date;
                 if(Export_Dialog.ShowDialog() == DialogResult.OK)
                 {
                     if (System.IO.File.Exists(Export_Dialog.FileName))
