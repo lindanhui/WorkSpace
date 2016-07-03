@@ -411,8 +411,56 @@ namespace Diary_Mei
         private void dataGridView_Archive_Print_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Get_RowClick = dataGridView_Archive_Print.CurrentCell.RowIndex;
-           Class_State.Get_Name  = dataGridView_Archive_Print.Rows[Get_RowClick].Cells[0].Value.ToString();
-           Class_State.Get_Phone = dataGridView_Archive_Print.Rows[Get_RowClick].Cells[1].Value.ToString();
+            Class_State.Get_Name = dataGridView_Archive_Print.Rows[Get_RowClick].Cells[0].Value.ToString();
+            Class_State.Get_Phone = dataGridView_Archive_Print.Rows[Get_RowClick].Cells[1].Value.ToString();
+        }
+
+        private void Button_Export_Click(object sender, EventArgs e)
+        {
+            if (dataGridView_Archive_Print.DataSource == null)
+            {
+                MessageBox.Show("请查询出您要导出的数据！", "Tips", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                SaveFileDialog Export_Dialog = new SaveFileDialog();
+                Export_Dialog.Filter = "*.xls(Excel表格文件)|*.xls";
+                Export_Dialog.FileName = "联系人信息";
+                if(Export_Dialog.ShowDialog() == DialogResult.OK)
+                {
+                    if (System.IO.File.Exists(Export_Dialog.FileName))
+                    {
+                        if (MessageBox.Show("您即将覆盖原有EXCEL表格，若覆盖，请点击确认！", "Tips", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                        {
+                            System.IO.File.Delete(Export_Dialog.FileName);//如果文件存在删除文件。 
+                        }
+                        else
+                        {
+                            return ;
+                        }
+                        //              
+                    }
+                        string Export_Where = SQL_Query.Replace("SELECT Real_Name, Phone, Address, Now_Company FROM Archive_Table WHERE ", string.Empty);
+                        //MessageBox.Show(SQL_Query);
+                        //
+                        string Export_SQL = string.Empty;
+                        //
+                        Export_SQL += "SELECT top 65535 Real_Name AS 姓名, Phone AS 电话, Address AS 住址, Now_Company AS 现任公司, Passed_Company AS 曾任公司, Skills AS 技能, Birth AS 出生日期, ";
+                        Export_SQL += "Qualifications AS 学历, Graduate_School AS 毕业学校, Skilled_Sport AS 擅长的运动, Marriage_State AS 婚姻状态, Spouse_Name AS 配偶姓名, ";
+                        Export_SQL += "Now_Work AS 现任职务, Passed_Work AS 曾任职务, Now_Live AS 现居住地, ";
+                        Export_SQL += "Spouse_Birth AS 配偶生日, Father_Name AS 父亲姓名, Father_Birth AS 父亲生日, Monther_Name AS 母亲姓名, Monther_Birth AS 母亲生日, Sister_Brother_State AS 兄弟姐妹情况, ";
+                        Export_SQL += "Son_Daughter_State AS 儿女情况, Best_Friend AS 最后的朋友, Long_Carrer AS 长期事业目标, Short_Carrer AS 短期事业目标, Like_Dish AS 喜欢的菜系, Like_Travel AS 喜欢的旅游, ";
+                        Export_SQL += "Like_Sport AS 喜欢的运动, Like_Car AS 喜欢的汽车, Like_Topic AS 喜欢的话题, Is_Train AS 是否参加培训, Like_Lecturer AS 喜欢的讲师, Is_Reader AS 是否有阅读习惯, ";
+                        Export_SQL += "Like_Book_Type AS 喜欢的书籍类型, Is_Movie AS 是否有看电影的习惯, Like_Movie_Type AS 喜欢的电影类型, Like_Friend_Type AS 喜欢的朋友类型, The_3_Effect_People AS 影响最大的三个人, ";
+                        Export_SQL += "Pride_Thing AS 最为骄傲的事情, Level_Type AS 类别属性, Notes AS 备注 ";
+                        Export_SQL += "into   [Excel 8.0;database=" + Export_Dialog.FileName + "].[Real_Name] from Archive_Table Where ";//  into   [Excel 8.0;database=" + ExportSFDialog.FileName + "].[ReaderID] from ReaderTable";
+                        Export_SQL += Export_Where;
+                        if (Class_SQL_Deal.Export_EXCEL(Export_SQL) != 0)
+                        {
+                            MessageBox.Show("成功导出联系人信息！","Tips", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        }
+                }
+            }
         }
     }
 }

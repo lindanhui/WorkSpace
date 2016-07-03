@@ -141,5 +141,18 @@ namespace Diary_Mei
 
         #endregion
         //
+
+
+
+        public static int Export_EXCEL(string SQL_Query)
+        {
+            Open_Connection();
+            SQL_Command.Connection = SQL_Connection;
+            SQL_Command.CommandText = SQL_Query;
+            return SQL_Command.ExecuteNonQuery();
+        }
+
+
+
     }
 }

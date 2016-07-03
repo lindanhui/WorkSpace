@@ -522,6 +522,7 @@
             this.Button_Export.TabIndex = 11;
             this.Button_Export.Text = "导出";
             this.Button_Export.UseVisualStyleBackColor = false;
+            this.Button_Export.Click += new System.EventHandler(this.Button_Export_Click);
             // 
             // TextBox_Keyword
             // 
