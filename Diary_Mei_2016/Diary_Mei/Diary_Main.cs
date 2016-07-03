@@ -449,7 +449,7 @@ namespace Diary_Mei
                         Export_SQL += "Qualifications AS 学历, Graduate_School AS 毕业学校, Skilled_Sport AS 擅长的运动, Marriage_State AS 婚姻状态, Spouse_Name AS 配偶姓名, ";
                         Export_SQL += "Now_Work AS 现任职务, Passed_Work AS 曾任职务, Now_Live AS 现居住地, ";
                         Export_SQL += "Spouse_Birth AS 配偶生日, Father_Name AS 父亲姓名, Father_Birth AS 父亲生日, Monther_Name AS 母亲姓名, Monther_Birth AS 母亲生日, Sister_Brother_State AS 兄弟姐妹情况, ";
-                        Export_SQL += "Son_Daughter_State AS 儿女情况, Best_Friend AS 最后的朋友, Long_Carrer AS 长期事业目标, Short_Carrer AS 短期事业目标, Like_Dish AS 喜欢的菜系, Like_Travel AS 喜欢的旅游, ";
+                        Export_SQL += "Son_Daughter_State AS 儿女情况, Best_Friend AS 最好的朋友, Long_Carrer AS 长期事业目标, Short_Carrer AS 短期事业目标, Like_Dish AS 喜欢的菜系, Like_Travel AS 喜欢的旅游, ";
                         Export_SQL += "Like_Sport AS 喜欢的运动, Like_Car AS 喜欢的汽车, Like_Topic AS 喜欢的话题, Is_Train AS 是否参加培训, Like_Lecturer AS 喜欢的讲师, Is_Reader AS 是否有阅读习惯, ";
                         Export_SQL += "Like_Book_Type AS 喜欢的书籍类型, Is_Movie AS 是否有看电影的习惯, Like_Movie_Type AS 喜欢的电影类型, Like_Friend_Type AS 喜欢的朋友类型, The_3_Effect_People AS 影响最大的三个人, ";
                         Export_SQL += "Pride_Thing AS 最为骄傲的事情, Level_Type AS 类别属性, Notes AS 备注 ";
