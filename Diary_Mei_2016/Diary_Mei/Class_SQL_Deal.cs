@@ -55,6 +55,10 @@ namespace Diary_Mei
         /// <returns></returns>
         public static int Check_SQL(String SQL_String)//1为存在，0是不存在
        {
+           if(SQL_Connection.State == ConnectionState.Closed)
+            {
+                Open_Connection();
+            }
            SQL_Command.Connection = SQL_Connection;
            SQL_Command.CommandText = SQL_String;
            OleDbDataReader SQL_DataReader = SQL_Command.ExecuteReader();
@@ -62,12 +66,14 @@ namespace Diary_Mei
            if (SQL_DataReader.HasRows)
            {
                SQL_DataReader.Close();
-               return 1;
+                Close_Connection();
+                return 1;
            }
            else
            {
                SQL_DataReader.Close();
-               return 0;
+                Close_Connection();
+                return 0;
            }
        }
         #endregion
@@ -95,6 +101,10 @@ namespace Diary_Mei
         /// <returns></returns>
         public static int Insert_SQL(String SQL)
         {
+            if(SQL_Connection.State == ConnectionState.Closed)
+            {
+                Open_Connection();
+            }
             SQL_Command.Connection = SQL_Connection;
             SQL_Command.CommandText = SQL;
             return SQL_Command.ExecuteNonQuery();

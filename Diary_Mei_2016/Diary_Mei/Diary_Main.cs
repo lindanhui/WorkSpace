@@ -66,6 +66,8 @@ namespace Diary_Mei
             Class_State.Windows_State = "Archive";
             Panel_Welcome.Visible = false;
             Panel_Client_Friend.Visible = true;
+            dataGridView_Archive_Print.DataSource = null;
+            Get_RowClick = -1;
 
         }
 
@@ -75,6 +77,9 @@ namespace Diary_Mei
             Class_State.Windows_State = "Friend";
             Panel_Welcome.Visible = false;
             Panel_Client_Friend.Visible = true;
+            dataGridView_Archive_Print.DataSource = null;
+            Get_RowClick = -1;
+
         }
 
         private void Button_Diary_Click(object sender, EventArgs e)
@@ -461,6 +466,19 @@ namespace Diary_Mei
                             MessageBox.Show("成功导出联系人信息！","Tips", MessageBoxButtons.OK,MessageBoxIcon.Information);
                         }
                 }
+            }
+        }
+
+        private void button_Invite_Click(object sender, EventArgs e)
+        {
+            if(Get_RowClick == -1)
+            {
+                MessageBox.Show("请选择您要访问的人！", "Tips", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                Form Visit = new Visit_Form();
+                Visit.ShowDialog();
             }
         }
     }
