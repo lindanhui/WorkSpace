@@ -231,7 +231,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Visit_Form";
+            this.Text = "访问登记";
             this.Load += new System.EventHandler(this.Visit_Form_Load);
             this.groupBox_Visit.ResumeLayout(false);
             this.groupBox_Visit.PerformLayout();

@@ -25,7 +25,7 @@ namespace Diary_Mei
         /// </summary>
         public static void Open_Connection()//打开数据库
         {
-            if(SQL_Connection.State == ConnectionState.Closed)
+            if (SQL_Connection.State == ConnectionState.Closed)
             {
                 SQL_Connection.ConnectionString = SQL_URL;
                 SQL_Connection.Open();
@@ -38,14 +38,14 @@ namespace Diary_Mei
         /// 关闭数据库链接
         /// </summary>
         public static void Close_Connection()
-       {
-            if(SQL_Connection.State==ConnectionState.Open)
+        {
+            if (SQL_Connection.State == ConnectionState.Open)
             {
                 SQL_Connection.Close();
             }
-       }
+        }
 
-       #endregion
+        #endregion
         //
         #region 检测数据是否存在
         /// <summary>
@@ -54,28 +54,28 @@ namespace Diary_Mei
         /// <param name="SQL_String"></param>
         /// <returns></returns>
         public static int Check_SQL(String SQL_String)//1为存在，0是不存在
-       {
-           if(SQL_Connection.State == ConnectionState.Closed)
+        {
+            if (SQL_Connection.State == ConnectionState.Closed)
             {
                 Open_Connection();
             }
-           SQL_Command.Connection = SQL_Connection;
-           SQL_Command.CommandText = SQL_String;
-           OleDbDataReader SQL_DataReader = SQL_Command.ExecuteReader();
-           SQL_DataReader.Read();
-           if (SQL_DataReader.HasRows)
-           {
-               SQL_DataReader.Close();
+            SQL_Command.Connection = SQL_Connection;
+            SQL_Command.CommandText = SQL_String;
+            OleDbDataReader SQL_DataReader = SQL_Command.ExecuteReader();
+            SQL_DataReader.Read();
+            if (SQL_DataReader.HasRows)
+            {
+                SQL_DataReader.Close();
                 Close_Connection();
                 return 1;
-           }
-           else
-           {
-               SQL_DataReader.Close();
+            }
+            else
+            {
+                SQL_DataReader.Close();
                 Close_Connection();
                 return 0;
-           }
-       }
+            }
+        }
         #endregion
         //
         #region 更新一条数据记录
@@ -92,7 +92,7 @@ namespace Diary_Mei
         }
         #endregion
         //
-        
+
         #region 插入一条记录
         /// <summary>
         /// 插入一条记录 1代表插入成功
@@ -101,7 +101,7 @@ namespace Diary_Mei
         /// <returns></returns>
         public static int Insert_SQL(String SQL)
         {
-            if(SQL_Connection.State == ConnectionState.Closed)
+            if (SQL_Connection.State == ConnectionState.Closed)
             {
                 Open_Connection();
             }
@@ -113,7 +113,7 @@ namespace Diary_Mei
         //
 
         #region 执行查询语句，并返回DataTable
-        
+
         /// <summary>
         /// 执行查询语句，并返回DataTable
         /// </summary>
@@ -144,7 +144,7 @@ namespace Diary_Mei
 
             SQL_Command.Connection = SQL_Connection;
 
-            SQL_Command.CommandText = "SELECT COUNT(*) FROM "+Table_Name+" WHERE "+Where+"";
+            SQL_Command.CommandText = "SELECT COUNT(*) FROM " + Table_Name + " WHERE " + Where + "";
 
             return (int)SQL_Command.ExecuteScalar();
         }
@@ -163,6 +163,25 @@ namespace Diary_Mei
         }
 
 
+
+        //
+
+
+        /// <summary>
+        /// 执行SQL并返回DataTable
+        /// </summary>
+        /// <param name="SQL"></param>
+        /// <returns></returns>
+        public static DataTable DataTable_Get(String SQL)
+        {
+            Open_Connection();
+            DataSet SQL_DataSet = new DataSet();
+            OleDbDataAdapter SQL_DataAdapter = new OleDbDataAdapter(SQL, SQL_Connection);
+            SQL_DataAdapter.Fill(SQL_DataSet);
+            Close_Connection();
+            SQL_DataAdapter.Dispose();
+            return SQL_DataSet.Tables[0];
+        }
 
     }
 }

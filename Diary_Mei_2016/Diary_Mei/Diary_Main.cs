@@ -339,6 +339,7 @@ namespace Diary_Mei
             Set_Page_Button(0);                              //关闭分页按钮
             TSLPagesPrint.Text = "0";                        //将总页数置0
             dataGridView_Archive_Print.DataSource = null;    //清空DataSource
+            TStripLabel_Count.Text = "0";
         }
 
         private void TSBFirstPage_Click(object sender, EventArgs e)
@@ -488,6 +489,22 @@ namespace Diary_Mei
                 Form Visit = new Visit_Form();
                 Visit.ShowDialog();
             }
+        }
+
+        private void label_Check_Click(object sender, EventArgs e)
+        {
+            Form Get_VisitInfo = new VisitInfo_Form();
+            Get_VisitInfo.ShowDialog();
+        }
+
+        private void label_Check_MouseEnter(object sender, EventArgs e)
+        {
+            this.label_Check.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void label_Check_MouseLeave(object sender, EventArgs e)
+        {
+            this.label_Check.ForeColor = System.Drawing.Color.Silver;
         }
     }
 }
