@@ -58,6 +58,7 @@ namespace Diary_Mei
         {
             Class_State.Windows_State = String.Empty;//重置静态变量
             Timer_Print_Date.Start();
+            label_Visit_Count.Text = Get_Visit_Count() + " 人";
         }
 
         private void Button_Client_Click(object sender, EventArgs e)
@@ -468,7 +469,14 @@ namespace Diary_Mei
                 }
             }
         }
+        //
+        private string Get_Visit_Count()
+        {
+            //string SQL_Count = "SELECT * FROM Visit_Table WHERE DATE() > Visit_Date";
+            return Convert.ToString(Class_SQL_Deal.Query_AllRows("Visit_Table", "DATE() < Visit_Date"));
+        }
 
+        //
         private void button_Invite_Click(object sender, EventArgs e)
         {
             if(Get_RowClick == -1)
