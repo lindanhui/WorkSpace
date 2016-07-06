@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Birth_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Birth_Form.Designer.cs">
+      <DependentUpon>Birth_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class_Control_Deal.cs" />
     <Compile Include="Editor_Contact.cs">
       <SubType>Form</SubType>
@@ -109,6 +115,9 @@
     <Compile Include="Visit_Form.Designer.cs">
       <DependentUpon>Visit_Form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Birth_Form.resx">
+      <DependentUpon>Birth_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Editor_Contact.resx">
       <DependentUpon>Editor_Contact.cs</DependentUpon>
     </EmbeddedResource>

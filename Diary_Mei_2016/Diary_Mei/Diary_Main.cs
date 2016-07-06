@@ -59,6 +59,7 @@ namespace Diary_Mei
             Class_State.Windows_State = String.Empty;//重置静态变量
             Timer_Print_Date.Start();
             label_Visit_Count.Text = Get_Visit_Count() + " 人";
+            label_Birth_Count.Text = Convert.ToString(Class_SQL_Deal.Query_AllRows("Archive_Table", " DateDiff('d', DATE(), Birth) > 31")) + " 人";
         }
 
         private void Button_Client_Click(object sender, EventArgs e)
@@ -328,6 +329,28 @@ namespace Diary_Mei
         private void Button_Delete_Click(object sender, EventArgs e)
         {
             Class_State.Editor_State = "Delete";
+            if(Get_RowClick == -1)
+            {
+                MessageBox.Show("请选择您要删除联系人！","Tips", MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+            else
+            {
+                if (MessageBox.Show("您即将删除联系人"+Class_State.Get_Name+"，删除请点击确认！", "Tips", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    //AND Phone = '" + Class_State.Get_Phone + "'
+                    string SQL_Delete = "Delete * FROM Archive_Table WHERE Real_Name = '" + Class_State.Get_Name + "'  AND Archive_Type = '" + Class_State.Windows_State + "' ";
+                    string SQL_Delete_Visit = "Delete * FROM Visit_Table WHERE  Real_Name = '" + Class_State.Get_Name + "'  AND  Visit_Type = '" + Class_State.Windows_State + "' ";
+                    if(Class_State.Get_Phone != "")
+                    {
+                        SQL_Delete += " AND Phone = '" + Class_State.Get_Phone + "'";
+                        SQL_Delete_Visit += " AND Phone = '" + Class_State.Get_Phone + "'";
+                    }
+                    Class_SQL_Deal.Delete_SQL(SQL_Delete_Visit);
+                    Class_SQL_Deal.Delete_SQL(SQL_Delete);
+                    Button_Search_Click(null,null);
+                }
+
+            }
         }
 
         private void button_Clear_Click_1(object sender, EventArgs e)
@@ -505,6 +528,22 @@ namespace Diary_Mei
         private void label_Check_MouseLeave(object sender, EventArgs e)
         {
             this.label_Check.ForeColor = System.Drawing.Color.Silver;
+        }
+
+        private void label_Birth_Check_Click(object sender, EventArgs e)
+        {
+            Form Birth = new Birth_Form();
+            Birth.ShowDialog();
+        }
+
+        private void label_Birth_Check_MouseEnter(object sender, EventArgs e)
+        {
+            this.label_Birth_Check.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void label_Birth_Check_MouseLeave(object sender, EventArgs e)
+        {
+            this.label_Birth_Check.ForeColor = System.Drawing.Color.Silver;
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Diary_Mei
         /// 系统状态的存储
         /// </summary>
 
-        public static String Windows_State = String.Empty;
+        public static String Windows_State = String.Empty;//Archive, Friend
         public static String Editor_State = String.Empty;
 
         #endregion

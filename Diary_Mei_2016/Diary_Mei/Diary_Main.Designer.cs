@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Diary_Main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Menu_Panel = new System.Windows.Forms.Panel();
             this.Button_Close = new System.Windows.Forms.Button();
             this.Button_Picture = new System.Windows.Forms.Button();
@@ -84,6 +84,9 @@
             this.Label_Client_Address = new System.Windows.Forms.Label();
             this.Label_Client_Phone = new System.Windows.Forms.Label();
             this.Label_Client_Name = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label_Birth_Count = new System.Windows.Forms.Label();
+            this.label_Birth_Check = new System.Windows.Forms.Label();
             this.Menu_Panel.SuspendLayout();
             this.Panel_Welcome.SuspendLayout();
             this.Panel_Client_Friend.SuspendLayout();
@@ -242,6 +245,9 @@
             // 
             // Panel_Welcome
             // 
+            this.Panel_Welcome.Controls.Add(this.label_Birth_Check);
+            this.Panel_Welcome.Controls.Add(this.label_Birth_Count);
+            this.Panel_Welcome.Controls.Add(this.label2);
             this.Panel_Welcome.Controls.Add(this.label_Check);
             this.Panel_Welcome.Controls.Add(this.label_Visit_Count);
             this.Panel_Welcome.Controls.Add(this.label_Print_Tips);
@@ -249,7 +255,7 @@
             this.Panel_Welcome.Controls.Add(this.Label_Welcome);
             this.Panel_Welcome.Location = new System.Drawing.Point(22, 32);
             this.Panel_Welcome.Name = "Panel_Welcome";
-            this.Panel_Welcome.Size = new System.Drawing.Size(942, 274);
+            this.Panel_Welcome.Size = new System.Drawing.Size(942, 318);
             this.Panel_Welcome.TabIndex = 4;
             // 
             // label_Check
@@ -257,8 +263,8 @@
             this.label_Check.BackColor = System.Drawing.SystemColors.Control;
             this.label_Check.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_Check.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_Check.ForeColor = System.Drawing.Color.Silver;
-            this.label_Check.Location = new System.Drawing.Point(229, 246);
+            this.label_Check.ForeColor = System.Drawing.Color.Gray;
+            this.label_Check.Location = new System.Drawing.Point(262, 255);
             this.label_Check.Name = "label_Check";
             this.label_Check.Size = new System.Drawing.Size(48, 23);
             this.label_Check.TabIndex = 4;
@@ -272,8 +278,8 @@
             // 
             this.label_Visit_Count.BackColor = System.Drawing.SystemColors.Control;
             this.label_Visit_Count.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_Visit_Count.ForeColor = System.Drawing.Color.Silver;
-            this.label_Visit_Count.Location = new System.Drawing.Point(188, 246);
+            this.label_Visit_Count.ForeColor = System.Drawing.Color.Gray;
+            this.label_Visit_Count.Location = new System.Drawing.Point(208, 255);
             this.label_Visit_Count.Name = "label_Visit_Count";
             this.label_Visit_Count.Size = new System.Drawing.Size(48, 23);
             this.label_Visit_Count.TabIndex = 3;
@@ -283,8 +289,8 @@
             // 
             this.label_Print_Tips.BackColor = System.Drawing.SystemColors.Control;
             this.label_Print_Tips.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_Print_Tips.ForeColor = System.Drawing.Color.Silver;
-            this.label_Print_Tips.Location = new System.Drawing.Point(4, 246);
+            this.label_Print_Tips.ForeColor = System.Drawing.Color.Gray;
+            this.label_Print_Tips.Location = new System.Drawing.Point(23, 255);
             this.label_Print_Tips.Name = "label_Print_Tips";
             this.label_Print_Tips.Size = new System.Drawing.Size(194, 23);
             this.label_Print_Tips.TabIndex = 2;
@@ -306,7 +312,7 @@
             this.Label_Welcome.AutoSize = true;
             this.Label_Welcome.BackColor = System.Drawing.Color.Transparent;
             this.Label_Welcome.Font = new System.Drawing.Font("幼圆", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Welcome.ForeColor = System.Drawing.Color.Silver;
+            this.Label_Welcome.ForeColor = System.Drawing.Color.Gray;
             this.Label_Welcome.Location = new System.Drawing.Point(320, 80);
             this.Label_Welcome.Name = "Label_Welcome";
             this.Label_Welcome.Size = new System.Drawing.Size(285, 29);
@@ -320,7 +326,7 @@
             this.Panel_Client_Friend.Controls.Add(this.dataGridView_Archive_Print);
             this.Panel_Client_Friend.Controls.Add(this.Panel_Function);
             this.Panel_Client_Friend.Controls.Add(this.Label_Client);
-            this.Panel_Client_Friend.Location = new System.Drawing.Point(-1, 1);
+            this.Panel_Client_Friend.Location = new System.Drawing.Point(0, 1);
             this.Panel_Client_Friend.Name = "Panel_Client_Friend";
             this.Panel_Client_Friend.Size = new System.Drawing.Size(987, 360);
             this.Panel_Client_Friend.TabIndex = 5;
@@ -332,51 +338,51 @@
             this.dataGridView_Archive_Print.AllowUserToDeleteRows = false;
             this.dataGridView_Archive_Print.AllowUserToResizeColumns = false;
             this.dataGridView_Archive_Print.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            this.dataGridView_Archive_Print.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Control;
+            this.dataGridView_Archive_Print.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle41;
             this.dataGridView_Archive_Print.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_Archive_Print.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_Archive_Print.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_Archive_Print.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Archive_Print.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle42.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Archive_Print.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle42;
             this.dataGridView_Archive_Print.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Archive_Print.ColumnHeadersVisible = false;
             this.dataGridView_Archive_Print.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("楷体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Archive_Print.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("楷体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle43.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Archive_Print.DefaultCellStyle = dataGridViewCellStyle43;
             this.dataGridView_Archive_Print.GridColor = System.Drawing.Color.White;
             this.dataGridView_Archive_Print.Location = new System.Drawing.Point(-4, 36);
             this.dataGridView_Archive_Print.MultiSelect = false;
             this.dataGridView_Archive_Print.Name = "dataGridView_Archive_Print";
             this.dataGridView_Archive_Print.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Archive_Print.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Archive_Print.RowHeadersDefaultCellStyle = dataGridViewCellStyle44;
             this.dataGridView_Archive_Print.RowHeadersVisible = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dataGridView_Archive_Print.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dataGridView_Archive_Print.RowsDefaultCellStyle = dataGridViewCellStyle45;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -404,7 +410,7 @@
             this.Panel_Function.Controls.Add(this.Button_Add);
             this.Panel_Function.Controls.Add(this.Label_Type);
             this.Panel_Function.Controls.Add(this.Button_Search);
-            this.Panel_Function.Location = new System.Drawing.Point(-4, 264);
+            this.Panel_Function.Location = new System.Drawing.Point(-4, 265);
             this.Panel_Function.Name = "Panel_Function";
             this.Panel_Function.Size = new System.Drawing.Size(997, 97);
             this.Panel_Function.TabIndex = 9;
@@ -739,7 +745,7 @@
             this.Label_Client.Controls.Add(this.Label_Client_Phone);
             this.Label_Client.Controls.Add(this.Label_Client_Name);
             this.Label_Client.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Client.Location = new System.Drawing.Point(-2, -5);
+            this.Label_Client.Location = new System.Drawing.Point(-3, -5);
             this.Label_Client.Name = "Label_Client";
             this.Label_Client.Size = new System.Drawing.Size(990, 43);
             this.Label_Client.TabIndex = 0;
@@ -784,6 +790,45 @@
             this.Label_Client_Name.TabIndex = 0;
             this.Label_Client_Name.Text = "姓名";
             this.Label_Client_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.ForeColor = System.Drawing.Color.Gray;
+            this.label2.Location = new System.Drawing.Point(-3, 287);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(220, 23);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "当前有将过生日的联系人：";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label_Birth_Count
+            // 
+            this.label_Birth_Count.BackColor = System.Drawing.SystemColors.Control;
+            this.label_Birth_Count.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_Birth_Count.ForeColor = System.Drawing.Color.Gray;
+            this.label_Birth_Count.Location = new System.Drawing.Point(208, 287);
+            this.label_Birth_Count.Name = "label_Birth_Count";
+            this.label_Birth_Count.Size = new System.Drawing.Size(48, 23);
+            this.label_Birth_Count.TabIndex = 7;
+            this.label_Birth_Count.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_Birth_Check
+            // 
+            this.label_Birth_Check.BackColor = System.Drawing.SystemColors.Control;
+            this.label_Birth_Check.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_Birth_Check.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_Birth_Check.ForeColor = System.Drawing.Color.Gray;
+            this.label_Birth_Check.Location = new System.Drawing.Point(262, 287);
+            this.label_Birth_Check.Name = "label_Birth_Check";
+            this.label_Birth_Check.Size = new System.Drawing.Size(48, 23);
+            this.label_Birth_Check.TabIndex = 6;
+            this.label_Birth_Check.Text = "查看";
+            this.label_Birth_Check.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Birth_Check.Click += new System.EventHandler(this.label_Birth_Check_Click);
+            this.label_Birth_Check.MouseEnter += new System.EventHandler(this.label_Birth_Check_MouseEnter);
+            this.label_Birth_Check.MouseLeave += new System.EventHandler(this.label_Birth_Check_MouseLeave);
             // 
             // Diary_Main
             // 
@@ -868,5 +913,8 @@
         private System.Windows.Forms.Label label_Visit_Count;
         private System.Windows.Forms.Label label_Print_Tips;
         private System.Windows.Forms.Label label_Check;
+        private System.Windows.Forms.Label label_Birth_Check;
+        private System.Windows.Forms.Label label_Birth_Count;
+        private System.Windows.Forms.Label label2;
     }
 }

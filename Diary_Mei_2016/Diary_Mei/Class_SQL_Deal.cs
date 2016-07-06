@@ -182,6 +182,26 @@ namespace Diary_Mei
             SQL_DataAdapter.Dispose();
             return SQL_DataSet.Tables[0];
         }
+        //
+
+        /// <summary>
+        /// 删除一条数据，返回1代表成功
+        /// </summary>
+        /// <param name="SQL"></param>
+        /// <returns></returns>
+        public static int Delete_SQL(String SQL)
+        {
+            if (SQL_Connection.State == ConnectionState.Closed)
+            {
+                Open_Connection();
+            }
+            SQL_Command.Connection = SQL_Connection;
+            SQL_Command.CommandText = SQL;
+            return SQL_Command.ExecuteNonQuery();
+        }
+
+        //
+
 
     }
 }
