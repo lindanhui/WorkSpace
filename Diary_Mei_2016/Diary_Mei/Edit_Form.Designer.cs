@@ -67,56 +67,56 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.groupBox_PersonalInfo = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_SpouseBirth = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_Birth = new System.Windows.Forms.DateTimePicker();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_NowWork = new System.Windows.Forms.TextBox();
+            this.textBox_Type = new System.Windows.Forms.TextBox();
+            this.textBox_NowLive = new System.Windows.Forms.TextBox();
+            this.textBox_PassedWork = new System.Windows.Forms.TextBox();
+            this.textBox_SpouseName = new System.Windows.Forms.TextBox();
+            this.textBox_FamilyAddress = new System.Windows.Forms.TextBox();
+            this.textBox_MarryState = new System.Windows.Forms.TextBox();
+            this.textBox_GraduateSchool = new System.Windows.Forms.TextBox();
+            this.textBox_Degree = new System.Windows.Forms.TextBox();
+            this.textBox_Skills = new System.Windows.Forms.TextBox();
+            this.textBox_PassedCompany = new System.Windows.Forms.TextBox();
+            this.textBox_NowCompany = new System.Windows.Forms.TextBox();
+            this.textBox_Phone = new System.Windows.Forms.TextBox();
+            this.textBox_Name = new System.Windows.Forms.TextBox();
             this.groupBox_Hobby = new System.Windows.Forms.GroupBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox_LikeMovie = new System.Windows.Forms.TextBox();
+            this.textBox_IsMovie = new System.Windows.Forms.TextBox();
+            this.textBox_LikeFriend = new System.Windows.Forms.TextBox();
+            this.textBox_LikeTravel = new System.Windows.Forms.TextBox();
+            this.textBox_LikeDish = new System.Windows.Forms.TextBox();
+            this.textBox_LikeCar = new System.Windows.Forms.TextBox();
+            this.textBox_LikeBooks = new System.Windows.Forms.TextBox();
+            this.textBox_IsReader = new System.Windows.Forms.TextBox();
+            this.textBox_LikeTeacher = new System.Windows.Forms.TextBox();
+            this.textBox_IsTrained = new System.Windows.Forms.TextBox();
+            this.textBox_GoodSports = new System.Windows.Forms.TextBox();
+            this.textBox_LikeSport = new System.Windows.Forms.TextBox();
+            this.textBox_LikeTopic = new System.Windows.Forms.TextBox();
             this.groupBox_Family = new System.Windows.Forms.GroupBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.richTextBox_EffectPeople = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_BrotherSister = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_BestFriend = new System.Windows.Forms.RichTextBox();
+            this.dateTimePicker_MontherBirth = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_FartherBirth = new System.Windows.Forms.DateTimePicker();
+            this.textBox_SonSister = new System.Windows.Forms.TextBox();
+            this.textBox_MontherName = new System.Windows.Forms.TextBox();
+            this.textBox_FartherName = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.panel_All = new System.Windows.Forms.Panel();
             this.groupBox_Profession = new System.Windows.Forms.GroupBox();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_Remark = new System.Windows.Forms.RichTextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_LongCarrer = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_ShortCarrer = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_PrideThing = new System.Windows.Forms.RichTextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -501,22 +501,22 @@
             // 
             // groupBox_PersonalInfo
             // 
-            this.groupBox_PersonalInfo.Controls.Add(this.dateTimePicker3);
+            this.groupBox_PersonalInfo.Controls.Add(this.dateTimePicker_SpouseBirth);
             this.groupBox_PersonalInfo.Controls.Add(this.dateTimePicker_Birth);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox15);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox14);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox13);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox11);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox10);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox9);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox8);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox7);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox6);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox5);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox4);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox3);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox2);
-            this.groupBox_PersonalInfo.Controls.Add(this.textBox1);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_NowWork);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_Type);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_NowLive);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_PassedWork);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_SpouseName);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_FamilyAddress);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_MarryState);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_GraduateSchool);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_Degree);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_Skills);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_PassedCompany);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_NowCompany);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_Phone);
+            this.groupBox_PersonalInfo.Controls.Add(this.textBox_Name);
             this.groupBox_PersonalInfo.Controls.Add(this.label_RealName);
             this.groupBox_PersonalInfo.Controls.Add(this.label40);
             this.groupBox_PersonalInfo.Controls.Add(this.label42);
@@ -539,12 +539,12 @@
             this.groupBox_PersonalInfo.TabIndex = 43;
             this.groupBox_PersonalInfo.TabStop = false;
             // 
-            // dateTimePicker3
+            // dateTimePicker_SpouseBirth
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(116, 275);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(130, 21);
-            this.dateTimePicker3.TabIndex = 62;
+            this.dateTimePicker_SpouseBirth.Location = new System.Drawing.Point(116, 275);
+            this.dateTimePicker_SpouseBirth.Name = "dateTimePicker_SpouseBirth";
+            this.dateTimePicker_SpouseBirth.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker_SpouseBirth.TabIndex = 62;
             // 
             // dateTimePicker_Birth
             // 
@@ -553,133 +553,133 @@
             this.dateTimePicker_Birth.Size = new System.Drawing.Size(185, 21);
             this.dateTimePicker_Birth.TabIndex = 61;
             // 
-            // textBox15
+            // textBox_NowWork
             // 
-            this.textBox15.Location = new System.Drawing.Point(348, 326);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(185, 21);
-            this.textBox15.TabIndex = 60;
+            this.textBox_NowWork.Location = new System.Drawing.Point(348, 326);
+            this.textBox_NowWork.Name = "textBox_NowWork";
+            this.textBox_NowWork.ReadOnly = true;
+            this.textBox_NowWork.Size = new System.Drawing.Size(185, 21);
+            this.textBox_NowWork.TabIndex = 60;
             // 
-            // textBox14
+            // textBox_Type
             // 
-            this.textBox14.Location = new System.Drawing.Point(116, 326);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(130, 21);
-            this.textBox14.TabIndex = 59;
+            this.textBox_Type.Location = new System.Drawing.Point(116, 326);
+            this.textBox_Type.Name = "textBox_Type";
+            this.textBox_Type.ReadOnly = true;
+            this.textBox_Type.Size = new System.Drawing.Size(130, 21);
+            this.textBox_Type.TabIndex = 59;
             // 
-            // textBox13
+            // textBox_NowLive
             // 
-            this.textBox13.Location = new System.Drawing.Point(348, 278);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(185, 21);
-            this.textBox13.TabIndex = 58;
+            this.textBox_NowLive.Location = new System.Drawing.Point(348, 278);
+            this.textBox_NowLive.Name = "textBox_NowLive";
+            this.textBox_NowLive.ReadOnly = true;
+            this.textBox_NowLive.Size = new System.Drawing.Size(185, 21);
+            this.textBox_NowLive.TabIndex = 58;
             // 
-            // textBox11
+            // textBox_PassedWork
             // 
-            this.textBox11.Location = new System.Drawing.Point(348, 230);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(185, 21);
-            this.textBox11.TabIndex = 56;
+            this.textBox_PassedWork.Location = new System.Drawing.Point(348, 230);
+            this.textBox_PassedWork.Name = "textBox_PassedWork";
+            this.textBox_PassedWork.ReadOnly = true;
+            this.textBox_PassedWork.Size = new System.Drawing.Size(185, 21);
+            this.textBox_PassedWork.TabIndex = 56;
             // 
-            // textBox10
+            // textBox_SpouseName
             // 
-            this.textBox10.Location = new System.Drawing.Point(116, 230);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(130, 21);
-            this.textBox10.TabIndex = 55;
+            this.textBox_SpouseName.Location = new System.Drawing.Point(116, 230);
+            this.textBox_SpouseName.Name = "textBox_SpouseName";
+            this.textBox_SpouseName.ReadOnly = true;
+            this.textBox_SpouseName.Size = new System.Drawing.Size(130, 21);
+            this.textBox_SpouseName.TabIndex = 55;
             // 
-            // textBox9
+            // textBox_FamilyAddress
             // 
-            this.textBox9.Location = new System.Drawing.Point(348, 184);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(185, 21);
-            this.textBox9.TabIndex = 54;
+            this.textBox_FamilyAddress.Location = new System.Drawing.Point(348, 184);
+            this.textBox_FamilyAddress.Name = "textBox_FamilyAddress";
+            this.textBox_FamilyAddress.ReadOnly = true;
+            this.textBox_FamilyAddress.Size = new System.Drawing.Size(185, 21);
+            this.textBox_FamilyAddress.TabIndex = 54;
             // 
-            // textBox8
+            // textBox_MarryState
             // 
-            this.textBox8.Location = new System.Drawing.Point(116, 184);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(130, 21);
-            this.textBox8.TabIndex = 53;
+            this.textBox_MarryState.Location = new System.Drawing.Point(116, 184);
+            this.textBox_MarryState.Name = "textBox_MarryState";
+            this.textBox_MarryState.ReadOnly = true;
+            this.textBox_MarryState.Size = new System.Drawing.Size(130, 21);
+            this.textBox_MarryState.TabIndex = 53;
             // 
-            // textBox7
+            // textBox_GraduateSchool
             // 
-            this.textBox7.Location = new System.Drawing.Point(348, 141);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(185, 21);
-            this.textBox7.TabIndex = 52;
+            this.textBox_GraduateSchool.Location = new System.Drawing.Point(348, 141);
+            this.textBox_GraduateSchool.Name = "textBox_GraduateSchool";
+            this.textBox_GraduateSchool.ReadOnly = true;
+            this.textBox_GraduateSchool.Size = new System.Drawing.Size(185, 21);
+            this.textBox_GraduateSchool.TabIndex = 52;
             // 
-            // textBox6
+            // textBox_Degree
             // 
-            this.textBox6.Location = new System.Drawing.Point(348, 101);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(185, 21);
-            this.textBox6.TabIndex = 51;
+            this.textBox_Degree.Location = new System.Drawing.Point(348, 101);
+            this.textBox_Degree.Name = "textBox_Degree";
+            this.textBox_Degree.ReadOnly = true;
+            this.textBox_Degree.Size = new System.Drawing.Size(185, 21);
+            this.textBox_Degree.TabIndex = 51;
             // 
-            // textBox5
+            // textBox_Skills
             // 
-            this.textBox5.Location = new System.Drawing.Point(348, 58);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(185, 21);
-            this.textBox5.TabIndex = 50;
+            this.textBox_Skills.Location = new System.Drawing.Point(348, 58);
+            this.textBox_Skills.Name = "textBox_Skills";
+            this.textBox_Skills.ReadOnly = true;
+            this.textBox_Skills.Size = new System.Drawing.Size(185, 21);
+            this.textBox_Skills.TabIndex = 50;
             // 
-            // textBox4
+            // textBox_PassedCompany
             // 
-            this.textBox4.Location = new System.Drawing.Point(116, 140);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(130, 21);
-            this.textBox4.TabIndex = 46;
+            this.textBox_PassedCompany.Location = new System.Drawing.Point(116, 140);
+            this.textBox_PassedCompany.Name = "textBox_PassedCompany";
+            this.textBox_PassedCompany.ReadOnly = true;
+            this.textBox_PassedCompany.Size = new System.Drawing.Size(130, 21);
+            this.textBox_PassedCompany.TabIndex = 46;
             // 
-            // textBox3
+            // textBox_NowCompany
             // 
-            this.textBox3.Location = new System.Drawing.Point(116, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(130, 21);
-            this.textBox3.TabIndex = 45;
+            this.textBox_NowCompany.Location = new System.Drawing.Point(116, 101);
+            this.textBox_NowCompany.Name = "textBox_NowCompany";
+            this.textBox_NowCompany.ReadOnly = true;
+            this.textBox_NowCompany.Size = new System.Drawing.Size(130, 21);
+            this.textBox_NowCompany.TabIndex = 45;
             // 
-            // textBox2
+            // textBox_Phone
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(130, 21);
-            this.textBox2.TabIndex = 44;
+            this.textBox_Phone.Location = new System.Drawing.Point(116, 58);
+            this.textBox_Phone.Name = "textBox_Phone";
+            this.textBox_Phone.ReadOnly = true;
+            this.textBox_Phone.Size = new System.Drawing.Size(130, 21);
+            this.textBox_Phone.TabIndex = 44;
             // 
-            // textBox1
+            // textBox_Name
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(130, 21);
-            this.textBox1.TabIndex = 43;
+            this.textBox_Name.Location = new System.Drawing.Point(116, 19);
+            this.textBox_Name.Name = "textBox_Name";
+            this.textBox_Name.ReadOnly = true;
+            this.textBox_Name.Size = new System.Drawing.Size(130, 21);
+            this.textBox_Name.TabIndex = 43;
             // 
             // groupBox_Hobby
             // 
-            this.groupBox_Hobby.Controls.Add(this.textBox28);
-            this.groupBox_Hobby.Controls.Add(this.textBox27);
-            this.groupBox_Hobby.Controls.Add(this.textBox26);
-            this.groupBox_Hobby.Controls.Add(this.textBox25);
-            this.groupBox_Hobby.Controls.Add(this.textBox24);
-            this.groupBox_Hobby.Controls.Add(this.textBox23);
-            this.groupBox_Hobby.Controls.Add(this.textBox22);
-            this.groupBox_Hobby.Controls.Add(this.textBox21);
-            this.groupBox_Hobby.Controls.Add(this.textBox20);
-            this.groupBox_Hobby.Controls.Add(this.textBox19);
-            this.groupBox_Hobby.Controls.Add(this.textBox18);
-            this.groupBox_Hobby.Controls.Add(this.textBox17);
-            this.groupBox_Hobby.Controls.Add(this.textBox16);
+            this.groupBox_Hobby.Controls.Add(this.textBox_LikeMovie);
+            this.groupBox_Hobby.Controls.Add(this.textBox_IsMovie);
+            this.groupBox_Hobby.Controls.Add(this.textBox_LikeFriend);
+            this.groupBox_Hobby.Controls.Add(this.textBox_LikeTravel);
+            this.groupBox_Hobby.Controls.Add(this.textBox_LikeDish);
+            this.groupBox_Hobby.Controls.Add(this.textBox_LikeCar);
+            this.groupBox_Hobby.Controls.Add(this.textBox_LikeBooks);
+            this.groupBox_Hobby.Controls.Add(this.textBox_IsReader);
+            this.groupBox_Hobby.Controls.Add(this.textBox_LikeTeacher);
+            this.groupBox_Hobby.Controls.Add(this.textBox_IsTrained);
+            this.groupBox_Hobby.Controls.Add(this.textBox_GoodSports);
+            this.groupBox_Hobby.Controls.Add(this.textBox_LikeSport);
+            this.groupBox_Hobby.Controls.Add(this.textBox_LikeTopic);
             this.groupBox_Hobby.Controls.Add(this.label15);
             this.groupBox_Hobby.Controls.Add(this.label16);
             this.groupBox_Hobby.Controls.Add(this.label10);
@@ -699,120 +699,120 @@
             this.groupBox_Hobby.TabIndex = 44;
             this.groupBox_Hobby.TabStop = false;
             // 
-            // textBox28
+            // textBox_LikeMovie
             // 
-            this.textBox28.Location = new System.Drawing.Point(132, 516);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.ReadOnly = true;
-            this.textBox28.Size = new System.Drawing.Size(250, 21);
-            this.textBox28.TabIndex = 57;
+            this.textBox_LikeMovie.Location = new System.Drawing.Point(132, 516);
+            this.textBox_LikeMovie.Name = "textBox_LikeMovie";
+            this.textBox_LikeMovie.ReadOnly = true;
+            this.textBox_LikeMovie.Size = new System.Drawing.Size(250, 21);
+            this.textBox_LikeMovie.TabIndex = 57;
             // 
-            // textBox27
+            // textBox_IsMovie
             // 
-            this.textBox27.Location = new System.Drawing.Point(132, 476);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.ReadOnly = true;
-            this.textBox27.Size = new System.Drawing.Size(250, 21);
-            this.textBox27.TabIndex = 56;
+            this.textBox_IsMovie.Location = new System.Drawing.Point(132, 476);
+            this.textBox_IsMovie.Name = "textBox_IsMovie";
+            this.textBox_IsMovie.ReadOnly = true;
+            this.textBox_IsMovie.Size = new System.Drawing.Size(250, 21);
+            this.textBox_IsMovie.TabIndex = 56;
             // 
-            // textBox26
+            // textBox_LikeFriend
             // 
-            this.textBox26.Location = new System.Drawing.Point(132, 433);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.ReadOnly = true;
-            this.textBox26.Size = new System.Drawing.Size(250, 21);
-            this.textBox26.TabIndex = 55;
+            this.textBox_LikeFriend.Location = new System.Drawing.Point(132, 433);
+            this.textBox_LikeFriend.Name = "textBox_LikeFriend";
+            this.textBox_LikeFriend.ReadOnly = true;
+            this.textBox_LikeFriend.Size = new System.Drawing.Size(250, 21);
+            this.textBox_LikeFriend.TabIndex = 55;
             // 
-            // textBox25
+            // textBox_LikeTravel
             // 
-            this.textBox25.Location = new System.Drawing.Point(132, 397);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.ReadOnly = true;
-            this.textBox25.Size = new System.Drawing.Size(250, 21);
-            this.textBox25.TabIndex = 54;
+            this.textBox_LikeTravel.Location = new System.Drawing.Point(132, 397);
+            this.textBox_LikeTravel.Name = "textBox_LikeTravel";
+            this.textBox_LikeTravel.ReadOnly = true;
+            this.textBox_LikeTravel.Size = new System.Drawing.Size(250, 21);
+            this.textBox_LikeTravel.TabIndex = 54;
             // 
-            // textBox24
+            // textBox_LikeDish
             // 
-            this.textBox24.Location = new System.Drawing.Point(132, 354);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.ReadOnly = true;
-            this.textBox24.Size = new System.Drawing.Size(250, 21);
-            this.textBox24.TabIndex = 53;
+            this.textBox_LikeDish.Location = new System.Drawing.Point(132, 354);
+            this.textBox_LikeDish.Name = "textBox_LikeDish";
+            this.textBox_LikeDish.ReadOnly = true;
+            this.textBox_LikeDish.Size = new System.Drawing.Size(250, 21);
+            this.textBox_LikeDish.TabIndex = 53;
             // 
-            // textBox23
+            // textBox_LikeCar
             // 
-            this.textBox23.Location = new System.Drawing.Point(132, 311);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(250, 21);
-            this.textBox23.TabIndex = 52;
+            this.textBox_LikeCar.Location = new System.Drawing.Point(132, 311);
+            this.textBox_LikeCar.Name = "textBox_LikeCar";
+            this.textBox_LikeCar.ReadOnly = true;
+            this.textBox_LikeCar.Size = new System.Drawing.Size(250, 21);
+            this.textBox_LikeCar.TabIndex = 52;
             // 
-            // textBox22
+            // textBox_LikeBooks
             // 
-            this.textBox22.Location = new System.Drawing.Point(132, 271);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.ReadOnly = true;
-            this.textBox22.Size = new System.Drawing.Size(250, 21);
-            this.textBox22.TabIndex = 51;
+            this.textBox_LikeBooks.Location = new System.Drawing.Point(132, 271);
+            this.textBox_LikeBooks.Name = "textBox_LikeBooks";
+            this.textBox_LikeBooks.ReadOnly = true;
+            this.textBox_LikeBooks.Size = new System.Drawing.Size(250, 21);
+            this.textBox_LikeBooks.TabIndex = 51;
             // 
-            // textBox21
+            // textBox_IsReader
             // 
-            this.textBox21.Location = new System.Drawing.Point(132, 230);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(250, 21);
-            this.textBox21.TabIndex = 50;
+            this.textBox_IsReader.Location = new System.Drawing.Point(132, 230);
+            this.textBox_IsReader.Name = "textBox_IsReader";
+            this.textBox_IsReader.ReadOnly = true;
+            this.textBox_IsReader.Size = new System.Drawing.Size(250, 21);
+            this.textBox_IsReader.TabIndex = 50;
             // 
-            // textBox20
+            // textBox_LikeTeacher
             // 
-            this.textBox20.Location = new System.Drawing.Point(132, 183);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(250, 21);
-            this.textBox20.TabIndex = 49;
+            this.textBox_LikeTeacher.Location = new System.Drawing.Point(132, 183);
+            this.textBox_LikeTeacher.Name = "textBox_LikeTeacher";
+            this.textBox_LikeTeacher.ReadOnly = true;
+            this.textBox_LikeTeacher.Size = new System.Drawing.Size(250, 21);
+            this.textBox_LikeTeacher.TabIndex = 49;
             // 
-            // textBox19
+            // textBox_IsTrained
             // 
-            this.textBox19.Location = new System.Drawing.Point(132, 140);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(250, 21);
-            this.textBox19.TabIndex = 48;
+            this.textBox_IsTrained.Location = new System.Drawing.Point(132, 140);
+            this.textBox_IsTrained.Name = "textBox_IsTrained";
+            this.textBox_IsTrained.ReadOnly = true;
+            this.textBox_IsTrained.Size = new System.Drawing.Size(250, 21);
+            this.textBox_IsTrained.TabIndex = 48;
             // 
-            // textBox18
+            // textBox_GoodSports
             // 
-            this.textBox18.Location = new System.Drawing.Point(132, 101);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(250, 21);
-            this.textBox18.TabIndex = 47;
+            this.textBox_GoodSports.Location = new System.Drawing.Point(132, 101);
+            this.textBox_GoodSports.Name = "textBox_GoodSports";
+            this.textBox_GoodSports.ReadOnly = true;
+            this.textBox_GoodSports.Size = new System.Drawing.Size(250, 21);
+            this.textBox_GoodSports.TabIndex = 47;
             // 
-            // textBox17
+            // textBox_LikeSport
             // 
-            this.textBox17.Location = new System.Drawing.Point(132, 58);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(250, 21);
-            this.textBox17.TabIndex = 46;
+            this.textBox_LikeSport.Location = new System.Drawing.Point(132, 58);
+            this.textBox_LikeSport.Name = "textBox_LikeSport";
+            this.textBox_LikeSport.ReadOnly = true;
+            this.textBox_LikeSport.Size = new System.Drawing.Size(250, 21);
+            this.textBox_LikeSport.TabIndex = 46;
             // 
-            // textBox16
+            // textBox_LikeTopic
             // 
-            this.textBox16.Location = new System.Drawing.Point(132, 20);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(250, 21);
-            this.textBox16.TabIndex = 45;
+            this.textBox_LikeTopic.Location = new System.Drawing.Point(132, 20);
+            this.textBox_LikeTopic.Name = "textBox_LikeTopic";
+            this.textBox_LikeTopic.ReadOnly = true;
+            this.textBox_LikeTopic.Size = new System.Drawing.Size(250, 21);
+            this.textBox_LikeTopic.TabIndex = 45;
             // 
             // groupBox_Family
             // 
-            this.groupBox_Family.Controls.Add(this.richTextBox3);
-            this.groupBox_Family.Controls.Add(this.richTextBox2);
-            this.groupBox_Family.Controls.Add(this.richTextBox1);
-            this.groupBox_Family.Controls.Add(this.dateTimePicker2);
-            this.groupBox_Family.Controls.Add(this.dateTimePicker1);
-            this.groupBox_Family.Controls.Add(this.textBox31);
-            this.groupBox_Family.Controls.Add(this.textBox30);
-            this.groupBox_Family.Controls.Add(this.textBox29);
+            this.groupBox_Family.Controls.Add(this.richTextBox_EffectPeople);
+            this.groupBox_Family.Controls.Add(this.richTextBox_BrotherSister);
+            this.groupBox_Family.Controls.Add(this.richTextBox_BestFriend);
+            this.groupBox_Family.Controls.Add(this.dateTimePicker_MontherBirth);
+            this.groupBox_Family.Controls.Add(this.dateTimePicker_FartherBirth);
+            this.groupBox_Family.Controls.Add(this.textBox_SonSister);
+            this.groupBox_Family.Controls.Add(this.textBox_MontherName);
+            this.groupBox_Family.Controls.Add(this.textBox_FartherName);
             this.groupBox_Family.Controls.Add(this.label7);
             this.groupBox_Family.Controls.Add(this.label23);
             this.groupBox_Family.Controls.Add(this.label19);
@@ -827,70 +827,70 @@
             this.groupBox_Family.TabIndex = 45;
             this.groupBox_Family.TabStop = false;
             // 
-            // richTextBox3
+            // richTextBox_EffectPeople
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(115, 287);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.ReadOnly = true;
-            this.richTextBox3.Size = new System.Drawing.Size(418, 51);
-            this.richTextBox3.TabIndex = 67;
-            this.richTextBox3.Text = "";
+            this.richTextBox_EffectPeople.Location = new System.Drawing.Point(115, 287);
+            this.richTextBox_EffectPeople.Name = "richTextBox_EffectPeople";
+            this.richTextBox_EffectPeople.ReadOnly = true;
+            this.richTextBox_EffectPeople.Size = new System.Drawing.Size(418, 51);
+            this.richTextBox_EffectPeople.TabIndex = 67;
+            this.richTextBox_EffectPeople.Text = "";
             // 
-            // richTextBox2
+            // richTextBox_BrotherSister
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(115, 219);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(418, 51);
-            this.richTextBox2.TabIndex = 66;
-            this.richTextBox2.Text = "";
+            this.richTextBox_BrotherSister.Location = new System.Drawing.Point(115, 219);
+            this.richTextBox_BrotherSister.Name = "richTextBox_BrotherSister";
+            this.richTextBox_BrotherSister.ReadOnly = true;
+            this.richTextBox_BrotherSister.Size = new System.Drawing.Size(418, 51);
+            this.richTextBox_BrotherSister.TabIndex = 66;
+            this.richTextBox_BrotherSister.Text = "";
             // 
-            // richTextBox1
+            // richTextBox_BestFriend
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(115, 152);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(418, 51);
-            this.richTextBox1.TabIndex = 65;
-            this.richTextBox1.Text = "";
+            this.richTextBox_BestFriend.Location = new System.Drawing.Point(115, 152);
+            this.richTextBox_BestFriend.Name = "richTextBox_BestFriend";
+            this.richTextBox_BestFriend.ReadOnly = true;
+            this.richTextBox_BestFriend.Size = new System.Drawing.Size(418, 51);
+            this.richTextBox_BestFriend.TabIndex = 65;
+            this.richTextBox_BestFriend.Text = "";
             // 
-            // dateTimePicker2
+            // dateTimePicker_MontherBirth
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(348, 57);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(185, 21);
-            this.dateTimePicker2.TabIndex = 64;
+            this.dateTimePicker_MontherBirth.Location = new System.Drawing.Point(348, 57);
+            this.dateTimePicker_MontherBirth.Name = "dateTimePicker_MontherBirth";
+            this.dateTimePicker_MontherBirth.Size = new System.Drawing.Size(185, 21);
+            this.dateTimePicker_MontherBirth.TabIndex = 64;
             // 
-            // dateTimePicker1
+            // dateTimePicker_FartherBirth
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(348, 14);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(185, 21);
-            this.dateTimePicker1.TabIndex = 63;
+            this.dateTimePicker_FartherBirth.Location = new System.Drawing.Point(348, 14);
+            this.dateTimePicker_FartherBirth.Name = "dateTimePicker_FartherBirth";
+            this.dateTimePicker_FartherBirth.Size = new System.Drawing.Size(185, 21);
+            this.dateTimePicker_FartherBirth.TabIndex = 63;
             // 
-            // textBox31
+            // textBox_SonSister
             // 
-            this.textBox31.Location = new System.Drawing.Point(115, 106);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.ReadOnly = true;
-            this.textBox31.Size = new System.Drawing.Size(421, 21);
-            this.textBox31.TabIndex = 62;
+            this.textBox_SonSister.Location = new System.Drawing.Point(115, 106);
+            this.textBox_SonSister.Name = "textBox_SonSister";
+            this.textBox_SonSister.ReadOnly = true;
+            this.textBox_SonSister.Size = new System.Drawing.Size(421, 21);
+            this.textBox_SonSister.TabIndex = 62;
             // 
-            // textBox30
+            // textBox_MontherName
             // 
-            this.textBox30.Location = new System.Drawing.Point(115, 60);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.ReadOnly = true;
-            this.textBox30.Size = new System.Drawing.Size(130, 21);
-            this.textBox30.TabIndex = 61;
+            this.textBox_MontherName.Location = new System.Drawing.Point(115, 60);
+            this.textBox_MontherName.Name = "textBox_MontherName";
+            this.textBox_MontherName.ReadOnly = true;
+            this.textBox_MontherName.Size = new System.Drawing.Size(130, 21);
+            this.textBox_MontherName.TabIndex = 61;
             // 
-            // textBox29
+            // textBox_FartherName
             // 
-            this.textBox29.Location = new System.Drawing.Point(116, 17);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.ReadOnly = true;
-            this.textBox29.Size = new System.Drawing.Size(130, 21);
-            this.textBox29.TabIndex = 60;
+            this.textBox_FartherName.Location = new System.Drawing.Point(116, 17);
+            this.textBox_FartherName.Name = "textBox_FartherName";
+            this.textBox_FartherName.ReadOnly = true;
+            this.textBox_FartherName.Size = new System.Drawing.Size(130, 21);
+            this.textBox_FartherName.TabIndex = 60;
             // 
             // label31
             // 
@@ -959,11 +959,11 @@
             // 
             // groupBox_Profession
             // 
-            this.groupBox_Profession.Controls.Add(this.richTextBox7);
+            this.groupBox_Profession.Controls.Add(this.richTextBox_Remark);
             this.groupBox_Profession.Controls.Add(this.label44);
-            this.groupBox_Profession.Controls.Add(this.richTextBox6);
-            this.groupBox_Profession.Controls.Add(this.richTextBox5);
-            this.groupBox_Profession.Controls.Add(this.richTextBox4);
+            this.groupBox_Profession.Controls.Add(this.richTextBox_LongCarrer);
+            this.groupBox_Profession.Controls.Add(this.richTextBox_ShortCarrer);
+            this.groupBox_Profession.Controls.Add(this.richTextBox_PrideThing);
             this.groupBox_Profession.Controls.Add(this.label21);
             this.groupBox_Profession.Controls.Add(this.label20);
             this.groupBox_Profession.Controls.Add(this.label36);
@@ -973,14 +973,14 @@
             this.groupBox_Profession.TabIndex = 46;
             this.groupBox_Profession.TabStop = false;
             // 
-            // richTextBox7
+            // richTextBox_Remark
             // 
-            this.richTextBox7.Location = new System.Drawing.Point(115, 244);
-            this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.ReadOnly = true;
-            this.richTextBox7.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox7.TabIndex = 72;
-            this.richTextBox7.Text = "";
+            this.richTextBox_Remark.Location = new System.Drawing.Point(115, 244);
+            this.richTextBox_Remark.Name = "richTextBox_Remark";
+            this.richTextBox_Remark.ReadOnly = true;
+            this.richTextBox_Remark.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox_Remark.TabIndex = 72;
+            this.richTextBox_Remark.Text = "";
             // 
             // label44
             // 
@@ -992,32 +992,32 @@
             this.label44.Text = "备注信息：";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // richTextBox6
+            // richTextBox_LongCarrer
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(115, 167);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.ReadOnly = true;
-            this.richTextBox6.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox6.TabIndex = 70;
-            this.richTextBox6.Text = "";
+            this.richTextBox_LongCarrer.Location = new System.Drawing.Point(115, 167);
+            this.richTextBox_LongCarrer.Name = "richTextBox_LongCarrer";
+            this.richTextBox_LongCarrer.ReadOnly = true;
+            this.richTextBox_LongCarrer.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox_LongCarrer.TabIndex = 70;
+            this.richTextBox_LongCarrer.Text = "";
             // 
-            // richTextBox5
+            // richTextBox_ShortCarrer
             // 
-            this.richTextBox5.Location = new System.Drawing.Point(115, 100);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.ReadOnly = true;
-            this.richTextBox5.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox5.TabIndex = 69;
-            this.richTextBox5.Text = "";
+            this.richTextBox_ShortCarrer.Location = new System.Drawing.Point(115, 100);
+            this.richTextBox_ShortCarrer.Name = "richTextBox_ShortCarrer";
+            this.richTextBox_ShortCarrer.ReadOnly = true;
+            this.richTextBox_ShortCarrer.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox_ShortCarrer.TabIndex = 69;
+            this.richTextBox_ShortCarrer.Text = "";
             // 
-            // richTextBox4
+            // richTextBox_PrideThing
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(115, 34);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.ReadOnly = true;
-            this.richTextBox4.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox4.TabIndex = 68;
-            this.richTextBox4.Text = "";
+            this.richTextBox_PrideThing.Location = new System.Drawing.Point(115, 34);
+            this.richTextBox_PrideThing.Name = "richTextBox_PrideThing";
+            this.richTextBox_PrideThing.ReadOnly = true;
+            this.richTextBox_PrideThing.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox_PrideThing.TabIndex = 68;
+            this.richTextBox_PrideThing.Text = "";
             // 
             // label21
             // 
@@ -1094,6 +1094,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "修改信息";
+            this.Load += new System.EventHandler(this.Edit_Form_Load);
             this.groupBox_PersonalInfo.ResumeLayout(false);
             this.groupBox_PersonalInfo.PerformLayout();
             this.groupBox_Hobby.ResumeLayout(false);
@@ -1151,51 +1152,51 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.TextBox textBox_NowWork;
+        private System.Windows.Forms.TextBox textBox_Type;
+        private System.Windows.Forms.TextBox textBox_NowLive;
+        private System.Windows.Forms.TextBox textBox_PassedWork;
+        private System.Windows.Forms.TextBox textBox_SpouseName;
+        private System.Windows.Forms.TextBox textBox_FamilyAddress;
+        private System.Windows.Forms.TextBox textBox_MarryState;
+        private System.Windows.Forms.TextBox textBox_GraduateSchool;
+        private System.Windows.Forms.TextBox textBox_Degree;
+        private System.Windows.Forms.TextBox textBox_Skills;
+        private System.Windows.Forms.TextBox textBox_PassedCompany;
+        private System.Windows.Forms.TextBox textBox_NowCompany;
+        private System.Windows.Forms.TextBox textBox_Phone;
+        private System.Windows.Forms.TextBox textBox_Name;
+        private System.Windows.Forms.TextBox textBox_IsTrained;
+        private System.Windows.Forms.TextBox textBox_GoodSports;
+        private System.Windows.Forms.TextBox textBox_LikeSport;
+        private System.Windows.Forms.TextBox textBox_LikeTopic;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_SpouseBirth;
         private System.Windows.Forms.DateTimePicker dateTimePicker_Birth;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox textBox_LikeMovie;
+        private System.Windows.Forms.TextBox textBox_IsMovie;
+        private System.Windows.Forms.TextBox textBox_LikeFriend;
+        private System.Windows.Forms.TextBox textBox_LikeTravel;
+        private System.Windows.Forms.TextBox textBox_LikeDish;
+        private System.Windows.Forms.TextBox textBox_LikeCar;
+        private System.Windows.Forms.TextBox textBox_LikeBooks;
+        private System.Windows.Forms.TextBox textBox_IsReader;
+        private System.Windows.Forms.TextBox textBox_LikeTeacher;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_MontherBirth;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_FartherBirth;
+        private System.Windows.Forms.TextBox textBox_SonSister;
+        private System.Windows.Forms.TextBox textBox_MontherName;
+        private System.Windows.Forms.TextBox textBox_FartherName;
+        private System.Windows.Forms.RichTextBox richTextBox_EffectPeople;
+        private System.Windows.Forms.RichTextBox richTextBox_BrotherSister;
+        private System.Windows.Forms.RichTextBox richTextBox_BestFriend;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Panel panel_All;
         private System.Windows.Forms.GroupBox groupBox_Profession;
-        private System.Windows.Forms.RichTextBox richTextBox7;
+        private System.Windows.Forms.RichTextBox richTextBox_Remark;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.RichTextBox richTextBox5;
-        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox richTextBox_LongCarrer;
+        private System.Windows.Forms.RichTextBox richTextBox_ShortCarrer;
+        private System.Windows.Forms.RichTextBox richTextBox_PrideThing;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label36;

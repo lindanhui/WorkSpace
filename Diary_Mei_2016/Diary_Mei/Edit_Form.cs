@@ -21,5 +21,17 @@ namespace Diary_Mei
         {
             this.Close();
         }
+
+        private void Edit_Form_Load(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch
+            {
+                MessageBox.Show("加载失败！");
+            }
+        }
     }
 }
