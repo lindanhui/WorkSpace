@@ -201,7 +201,29 @@ namespace Diary_Mei
         }
 
         //
+        //
 
 
+/// <summary>
+/// 获取字符串的方法，其中Where是条件语句，Get_Value是你需要获取的字段，TableName是你要获取的表名
+/// </summary>
+/// <param name="Where"></param>
+/// <param name="Get_Value"></param>
+/// <param name="TableName"></param>
+/// <returns></returns>
+        public static string GetString(string Where, string Get_Value, string TableName)
+        {
+            if (SQL_Connection.State == ConnectionState.Closed)
+            {
+                Open_Connection();
+            }
+            OleDbConnection GetDataSetConnection = SQL_Connection;
+            string SQLText = "Select "+Get_Value+" From " + TableName + " Where " +Where+"";
+            DataSet DataSet = new DataSet();
+            OleDbDataAdapter DataSetAdapter = new OleDbDataAdapter(SQLText, GetDataSetConnection);
+            DataSetAdapter.Fill(DataSet);
+            return DataSet.Tables[0].Rows[0][Get_Value].ToString();
+        }
+        //
     }
 }

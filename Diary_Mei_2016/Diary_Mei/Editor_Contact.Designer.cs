@@ -30,6 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor_Contact));
             this.Panel_Client_Add = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.groupBox_Family = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker_Monther = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_Farther = new System.Windows.Forms.DateTimePicker();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox_Father_Name = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox_Effect_People = new System.Windows.Forms.TextBox();
+            this.richTextBox_Son_Daughter_State = new System.Windows.Forms.RichTextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.richTextBox_Sister_Brother_State = new System.Windows.Forms.RichTextBox();
+            this.textBox_Best_Friend = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox_Mother_Name = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.groupBox_Profession = new System.Windows.Forms.GroupBox();
             this.label37 = new System.Windows.Forms.Label();
             this.textBox_Pride_Thing = new System.Windows.Forms.TextBox();
@@ -69,6 +90,7 @@
             this.label32 = new System.Windows.Forms.Label();
             this.textBox_Is_Reading = new System.Windows.Forms.TextBox();
             this.groupBox_PersonalInfo = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker_Spouse = new System.Windows.Forms.DateTimePicker();
             this.label40 = new System.Windows.Forms.Label();
             this.label_Name = new System.Windows.Forms.Label();
             this.comboBox_Level_Type = new System.Windows.Forms.ComboBox();
@@ -100,35 +122,13 @@
             this.label13 = new System.Windows.Forms.Label();
             this.textBox_Spouse_Name = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.richTextBox_Sister_Brother_State = new System.Windows.Forms.RichTextBox();
-            this.richTextBox_Son_Daughter_State = new System.Windows.Forms.RichTextBox();
-            this.textBox_Effect_People = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.textBox_Best_Friend = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox_Mother_Name = new System.Windows.Forms.TextBox();
-            this.textBox_Father_Name = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.Button_Save = new System.Windows.Forms.Button();
             this.Button_Clear = new System.Windows.Forms.Button();
-            this.groupBox_Family = new System.Windows.Forms.GroupBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.dateTimePicker_Spouse = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker_Farther = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker_Monther = new System.Windows.Forms.DateTimePicker();
             this.Panel_Client_Add.SuspendLayout();
+            this.groupBox_Family.SuspendLayout();
             this.groupBox_Profession.SuspendLayout();
             this.groupBox_Hobby.SuspendLayout();
             this.groupBox_PersonalInfo.SuspendLayout();
-            this.groupBox_Family.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_Client_Add
@@ -148,6 +148,217 @@
             this.Panel_Client_Add.Size = new System.Drawing.Size(988, 330);
             this.Panel_Client_Add.TabIndex = 11;
             this.Panel_Client_Add.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Client_Add_Paint);
+            // 
+            // label44
+            // 
+            this.label44.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label44.Image = ((System.Drawing.Image)(resources.GetObject("label44.Image")));
+            this.label44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label44.Location = new System.Drawing.Point(451, 824);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(94, 28);
+            this.label44.TabIndex = 99;
+            this.label44.Text = "职业规划";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label43
+            // 
+            this.label43.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label43.Image = ((System.Drawing.Image)(resources.GetObject("label43.Image")));
+            this.label43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label43.Location = new System.Drawing.Point(252, 423);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(94, 28);
+            this.label43.TabIndex = 98;
+            this.label43.Text = "家庭情况";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label42
+            // 
+            this.label42.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label42.Image = ((System.Drawing.Image)(resources.GetObject("label42.Image")));
+            this.label42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label42.Location = new System.Drawing.Point(735, 13);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(94, 28);
+            this.label42.TabIndex = 97;
+            this.label42.Text = "个人兴趣";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label41
+            // 
+            this.label41.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label41.Image = ((System.Drawing.Image)(resources.GetObject("label41.Image")));
+            this.label41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label41.Location = new System.Drawing.Point(258, 15);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(94, 24);
+            this.label41.TabIndex = 96;
+            this.label41.Text = "个人信息";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // groupBox_Family
+            // 
+            this.groupBox_Family.Controls.Add(this.dateTimePicker_Monther);
+            this.groupBox_Family.Controls.Add(this.dateTimePicker_Farther);
+            this.groupBox_Family.Controls.Add(this.label15);
+            this.groupBox_Family.Controls.Add(this.textBox_Father_Name);
+            this.groupBox_Family.Controls.Add(this.label16);
+            this.groupBox_Family.Controls.Add(this.textBox_Effect_People);
+            this.groupBox_Family.Controls.Add(this.richTextBox_Son_Daughter_State);
+            this.groupBox_Family.Controls.Add(this.label36);
+            this.groupBox_Family.Controls.Add(this.richTextBox_Sister_Brother_State);
+            this.groupBox_Family.Controls.Add(this.textBox_Best_Friend);
+            this.groupBox_Family.Controls.Add(this.label17);
+            this.groupBox_Family.Controls.Add(this.label21);
+            this.groupBox_Family.Controls.Add(this.textBox_Mother_Name);
+            this.groupBox_Family.Controls.Add(this.label18);
+            this.groupBox_Family.Controls.Add(this.label20);
+            this.groupBox_Family.Controls.Add(this.label19);
+            this.groupBox_Family.Location = new System.Drawing.Point(19, 464);
+            this.groupBox_Family.Name = "groupBox_Family";
+            this.groupBox_Family.Size = new System.Drawing.Size(559, 334);
+            this.groupBox_Family.TabIndex = 95;
+            this.groupBox_Family.TabStop = false;
+            // 
+            // dateTimePicker_Monther
+            // 
+            this.dateTimePicker_Monther.Location = new System.Drawing.Point(355, 58);
+            this.dateTimePicker_Monther.Name = "dateTimePicker_Monther";
+            this.dateTimePicker_Monther.Size = new System.Drawing.Size(193, 21);
+            this.dateTimePicker_Monther.TabIndex = 88;
+            // 
+            // dateTimePicker_Farther
+            // 
+            this.dateTimePicker_Farther.Location = new System.Drawing.Point(355, 17);
+            this.dateTimePicker_Farther.Name = "dateTimePicker_Farther";
+            this.dateTimePicker_Farther.Size = new System.Drawing.Size(193, 21);
+            this.dateTimePicker_Farther.TabIndex = 87;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label15.Location = new System.Drawing.Point(28, 15);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(83, 23);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "父亲姓名：";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox_Father_Name
+            // 
+            this.textBox_Father_Name.Location = new System.Drawing.Point(111, 17);
+            this.textBox_Father_Name.Name = "textBox_Father_Name";
+            this.textBox_Father_Name.Size = new System.Drawing.Size(153, 21);
+            this.textBox_Father_Name.TabIndex = 16;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label16.Location = new System.Drawing.Point(282, 17);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(83, 23);
+            this.label16.TabIndex = 22;
+            this.label16.Text = "父亲生日：";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox_Effect_People
+            // 
+            this.textBox_Effect_People.Location = new System.Drawing.Point(109, 294);
+            this.textBox_Effect_People.Name = "textBox_Effect_People";
+            this.textBox_Effect_People.Size = new System.Drawing.Size(439, 21);
+            this.textBox_Effect_People.TabIndex = 37;
+            // 
+            // richTextBox_Son_Daughter_State
+            // 
+            this.richTextBox_Son_Daughter_State.Location = new System.Drawing.Point(109, 158);
+            this.richTextBox_Son_Daughter_State.Name = "richTextBox_Son_Daughter_State";
+            this.richTextBox_Son_Daughter_State.Size = new System.Drawing.Size(439, 60);
+            this.richTextBox_Son_Daughter_State.TabIndex = 85;
+            this.richTextBox_Son_Daughter_State.Text = "";
+            // 
+            // label36
+            // 
+            this.label36.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label36.Location = new System.Drawing.Point(0, 294);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(108, 23);
+            this.label36.TabIndex = 77;
+            this.label36.Text = "影响最大的人：";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // richTextBox_Sister_Brother_State
+            // 
+            this.richTextBox_Sister_Brother_State.Location = new System.Drawing.Point(108, 92);
+            this.richTextBox_Sister_Brother_State.Name = "richTextBox_Sister_Brother_State";
+            this.richTextBox_Sister_Brother_State.Size = new System.Drawing.Size(440, 53);
+            this.richTextBox_Sister_Brother_State.TabIndex = 86;
+            this.richTextBox_Sister_Brother_State.Text = "";
+            // 
+            // textBox_Best_Friend
+            // 
+            this.textBox_Best_Friend.Location = new System.Drawing.Point(109, 240);
+            this.textBox_Best_Friend.Multiline = true;
+            this.textBox_Best_Friend.Name = "textBox_Best_Friend";
+            this.textBox_Best_Friend.Size = new System.Drawing.Size(439, 23);
+            this.textBox_Best_Friend.TabIndex = 22;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label17.Location = new System.Drawing.Point(28, 55);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(83, 23);
+            this.label17.TabIndex = 23;
+            this.label17.Text = "母亲姓名：";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label21.Location = new System.Drawing.Point(0, 240);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(108, 23);
+            this.label21.TabIndex = 45;
+            this.label21.Text = "最要好的朋友：";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox_Mother_Name
+            // 
+            this.textBox_Mother_Name.Location = new System.Drawing.Point(111, 58);
+            this.textBox_Mother_Name.Name = "textBox_Mother_Name";
+            this.textBox_Mother_Name.Size = new System.Drawing.Size(155, 21);
+            this.textBox_Mother_Name.TabIndex = 18;
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label18.Location = new System.Drawing.Point(283, 57);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(83, 23);
+            this.label18.TabIndex = 24;
+            this.label18.Text = "母亲生日：";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label20.Location = new System.Drawing.Point(17, 175);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(83, 23);
+            this.label20.TabIndex = 43;
+            this.label20.Text = "子女状况：";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label19.Location = new System.Drawing.Point(2, 105);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(108, 23);
+            this.label19.TabIndex = 41;
+            this.label19.Text = "兄弟姐妹状况：";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox_Profession
             // 
@@ -559,6 +770,13 @@
             this.groupBox_PersonalInfo.TabIndex = 92;
             this.groupBox_PersonalInfo.TabStop = false;
             // 
+            // dateTimePicker_Spouse
+            // 
+            this.dateTimePicker_Spouse.Location = new System.Drawing.Point(106, 307);
+            this.dateTimePicker_Spouse.Name = "dateTimePicker_Spouse";
+            this.dateTimePicker_Spouse.Size = new System.Drawing.Size(134, 21);
+            this.dateTimePicker_Spouse.TabIndex = 93;
+            // 
             // label40
             // 
             this.label40.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -829,131 +1047,6 @@
             this.label14.Text = "配偶生日：";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // richTextBox_Sister_Brother_State
-            // 
-            this.richTextBox_Sister_Brother_State.Location = new System.Drawing.Point(108, 92);
-            this.richTextBox_Sister_Brother_State.Name = "richTextBox_Sister_Brother_State";
-            this.richTextBox_Sister_Brother_State.Size = new System.Drawing.Size(440, 53);
-            this.richTextBox_Sister_Brother_State.TabIndex = 86;
-            this.richTextBox_Sister_Brother_State.Text = "";
-            // 
-            // richTextBox_Son_Daughter_State
-            // 
-            this.richTextBox_Son_Daughter_State.Location = new System.Drawing.Point(109, 158);
-            this.richTextBox_Son_Daughter_State.Name = "richTextBox_Son_Daughter_State";
-            this.richTextBox_Son_Daughter_State.Size = new System.Drawing.Size(439, 60);
-            this.richTextBox_Son_Daughter_State.TabIndex = 85;
-            this.richTextBox_Son_Daughter_State.Text = "";
-            // 
-            // textBox_Effect_People
-            // 
-            this.textBox_Effect_People.Location = new System.Drawing.Point(109, 294);
-            this.textBox_Effect_People.Name = "textBox_Effect_People";
-            this.textBox_Effect_People.Size = new System.Drawing.Size(439, 21);
-            this.textBox_Effect_People.TabIndex = 37;
-            // 
-            // label36
-            // 
-            this.label36.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label36.Location = new System.Drawing.Point(0, 294);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(108, 23);
-            this.label36.TabIndex = 77;
-            this.label36.Text = "影响最大的人：";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox_Best_Friend
-            // 
-            this.textBox_Best_Friend.Location = new System.Drawing.Point(109, 240);
-            this.textBox_Best_Friend.Multiline = true;
-            this.textBox_Best_Friend.Name = "textBox_Best_Friend";
-            this.textBox_Best_Friend.Size = new System.Drawing.Size(439, 23);
-            this.textBox_Best_Friend.TabIndex = 22;
-            // 
-            // label21
-            // 
-            this.label21.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label21.Location = new System.Drawing.Point(0, 240);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(108, 23);
-            this.label21.TabIndex = 45;
-            this.label21.Text = "最要好的朋友：";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label20.Location = new System.Drawing.Point(17, 175);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(83, 23);
-            this.label20.TabIndex = 43;
-            this.label20.Text = "子女状况：";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label19.Location = new System.Drawing.Point(2, 105);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(108, 23);
-            this.label19.TabIndex = 41;
-            this.label19.Text = "兄弟姐妹状况：";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox_Mother_Name
-            // 
-            this.textBox_Mother_Name.Location = new System.Drawing.Point(111, 58);
-            this.textBox_Mother_Name.Name = "textBox_Mother_Name";
-            this.textBox_Mother_Name.Size = new System.Drawing.Size(155, 21);
-            this.textBox_Mother_Name.TabIndex = 18;
-            // 
-            // textBox_Father_Name
-            // 
-            this.textBox_Father_Name.Location = new System.Drawing.Point(111, 17);
-            this.textBox_Father_Name.Name = "textBox_Father_Name";
-            this.textBox_Father_Name.Size = new System.Drawing.Size(153, 21);
-            this.textBox_Father_Name.TabIndex = 16;
-            // 
-            // label18
-            // 
-            this.label18.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label18.Location = new System.Drawing.Point(283, 57);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(83, 23);
-            this.label18.TabIndex = 24;
-            this.label18.Text = "母亲生日：";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label17.Location = new System.Drawing.Point(28, 55);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(83, 23);
-            this.label17.TabIndex = 23;
-            this.label17.Text = "母亲姓名：";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label16
-            // 
-            this.label16.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(282, 17);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(83, 23);
-            this.label16.TabIndex = 22;
-            this.label16.Text = "父亲生日：";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(28, 15);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(83, 23);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "父亲姓名：";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Button_Save
             // 
             this.Button_Save.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -982,99 +1075,6 @@
             this.Button_Clear.UseVisualStyleBackColor = true;
             this.Button_Clear.Click += new System.EventHandler(this.Button_Clear_Click);
             // 
-            // groupBox_Family
-            // 
-            this.groupBox_Family.Controls.Add(this.dateTimePicker_Monther);
-            this.groupBox_Family.Controls.Add(this.dateTimePicker_Farther);
-            this.groupBox_Family.Controls.Add(this.label15);
-            this.groupBox_Family.Controls.Add(this.textBox_Father_Name);
-            this.groupBox_Family.Controls.Add(this.label16);
-            this.groupBox_Family.Controls.Add(this.textBox_Effect_People);
-            this.groupBox_Family.Controls.Add(this.richTextBox_Son_Daughter_State);
-            this.groupBox_Family.Controls.Add(this.label36);
-            this.groupBox_Family.Controls.Add(this.richTextBox_Sister_Brother_State);
-            this.groupBox_Family.Controls.Add(this.textBox_Best_Friend);
-            this.groupBox_Family.Controls.Add(this.label17);
-            this.groupBox_Family.Controls.Add(this.label21);
-            this.groupBox_Family.Controls.Add(this.textBox_Mother_Name);
-            this.groupBox_Family.Controls.Add(this.label18);
-            this.groupBox_Family.Controls.Add(this.label20);
-            this.groupBox_Family.Controls.Add(this.label19);
-            this.groupBox_Family.Location = new System.Drawing.Point(19, 464);
-            this.groupBox_Family.Name = "groupBox_Family";
-            this.groupBox_Family.Size = new System.Drawing.Size(559, 334);
-            this.groupBox_Family.TabIndex = 95;
-            this.groupBox_Family.TabStop = false;
-            // 
-            // label41
-            // 
-            this.label41.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label41.Image = ((System.Drawing.Image)(resources.GetObject("label41.Image")));
-            this.label41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label41.Location = new System.Drawing.Point(258, 15);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(94, 24);
-            this.label41.TabIndex = 96;
-            this.label41.Text = "个人信息";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label42
-            // 
-            this.label42.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label42.Image = ((System.Drawing.Image)(resources.GetObject("label42.Image")));
-            this.label42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label42.Location = new System.Drawing.Point(735, 13);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(94, 28);
-            this.label42.TabIndex = 97;
-            this.label42.Text = "个人兴趣";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label43
-            // 
-            this.label43.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label43.Image = ((System.Drawing.Image)(resources.GetObject("label43.Image")));
-            this.label43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label43.Location = new System.Drawing.Point(252, 423);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(94, 28);
-            this.label43.TabIndex = 98;
-            this.label43.Text = "家庭情况";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label44
-            // 
-            this.label44.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label44.Image = ((System.Drawing.Image)(resources.GetObject("label44.Image")));
-            this.label44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label44.Location = new System.Drawing.Point(451, 824);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(94, 28);
-            this.label44.TabIndex = 99;
-            this.label44.Text = "职业规划";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // dateTimePicker_Spouse
-            // 
-            this.dateTimePicker_Spouse.Location = new System.Drawing.Point(106, 307);
-            this.dateTimePicker_Spouse.Name = "dateTimePicker_Spouse";
-            this.dateTimePicker_Spouse.Size = new System.Drawing.Size(134, 21);
-            this.dateTimePicker_Spouse.TabIndex = 93;
-            // 
-            // dateTimePicker_Farther
-            // 
-            this.dateTimePicker_Farther.Location = new System.Drawing.Point(355, 17);
-            this.dateTimePicker_Farther.Name = "dateTimePicker_Farther";
-            this.dateTimePicker_Farther.Size = new System.Drawing.Size(193, 21);
-            this.dateTimePicker_Farther.TabIndex = 87;
-            // 
-            // dateTimePicker_Monther
-            // 
-            this.dateTimePicker_Monther.Location = new System.Drawing.Point(355, 58);
-            this.dateTimePicker_Monther.Name = "dateTimePicker_Monther";
-            this.dateTimePicker_Monther.Size = new System.Drawing.Size(193, 21);
-            this.dateTimePicker_Monther.TabIndex = 88;
-            // 
             // Editor_Contact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1092,17 +1092,17 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Editor Contact";
+            this.Text = "信息添加";
             this.Load += new System.EventHandler(this.Editor_Contact_Load);
             this.Panel_Client_Add.ResumeLayout(false);
+            this.groupBox_Family.ResumeLayout(false);
+            this.groupBox_Family.PerformLayout();
             this.groupBox_Profession.ResumeLayout(false);
             this.groupBox_Profession.PerformLayout();
             this.groupBox_Hobby.ResumeLayout(false);
             this.groupBox_Hobby.PerformLayout();
             this.groupBox_PersonalInfo.ResumeLayout(false);
             this.groupBox_PersonalInfo.PerformLayout();
-            this.groupBox_Family.ResumeLayout(false);
-            this.groupBox_Family.PerformLayout();
             this.ResumeLayout(false);
 
         }

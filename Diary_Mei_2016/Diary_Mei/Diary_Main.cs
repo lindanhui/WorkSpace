@@ -545,5 +545,10 @@ namespace Diary_Mei
         {
             this.label_Birth_Check.ForeColor = System.Drawing.Color.Silver;
         }
+
+        private void dataGridView_Archive_Print_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MessageBox.Show("");
+        }
     }
 }

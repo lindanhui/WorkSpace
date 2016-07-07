@@ -111,15 +111,15 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.panel_All = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
             this.groupBox_Profession = new System.Windows.Forms.GroupBox();
+            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.button_Edit = new System.Windows.Forms.Button();
             this.button_Close = new System.Windows.Forms.Button();
             this.groupBox_PersonalInfo.SuspendLayout();
@@ -957,82 +957,6 @@
             this.panel_All.Size = new System.Drawing.Size(994, 309);
             this.panel_All.TabIndex = 51;
             // 
-            // label36
-            // 
-            this.label36.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label36.Location = new System.Drawing.Point(6, 46);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(107, 23);
-            this.label36.TabIndex = 36;
-            this.label36.Text = "最骄傲的事情：";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label20
-            // 
-            this.label20.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label20.Location = new System.Drawing.Point(6, 111);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(107, 23);
-            this.label20.TabIndex = 20;
-            this.label20.Text = "短期事业目标：";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label21
-            // 
-            this.label21.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label21.Location = new System.Drawing.Point(3, 180);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(110, 23);
-            this.label21.TabIndex = 21;
-            this.label21.Text = "长期事业目标：";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // richTextBox4
-            // 
-            this.richTextBox4.Location = new System.Drawing.Point(115, 34);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.ReadOnly = true;
-            this.richTextBox4.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox4.TabIndex = 68;
-            this.richTextBox4.Text = "";
-            // 
-            // richTextBox5
-            // 
-            this.richTextBox5.Location = new System.Drawing.Point(115, 100);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.ReadOnly = true;
-            this.richTextBox5.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox5.TabIndex = 69;
-            this.richTextBox5.Text = "";
-            // 
-            // richTextBox6
-            // 
-            this.richTextBox6.Location = new System.Drawing.Point(115, 167);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.ReadOnly = true;
-            this.richTextBox6.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox6.TabIndex = 70;
-            this.richTextBox6.Text = "";
-            // 
-            // label44
-            // 
-            this.label44.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label44.Location = new System.Drawing.Point(6, 256);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(110, 23);
-            this.label44.TabIndex = 71;
-            this.label44.Text = "备注信息：";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // richTextBox7
-            // 
-            this.richTextBox7.Location = new System.Drawing.Point(115, 244);
-            this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.ReadOnly = true;
-            this.richTextBox7.Size = new System.Drawing.Size(823, 51);
-            this.richTextBox7.TabIndex = 72;
-            this.richTextBox7.Text = "";
-            // 
             // groupBox_Profession
             // 
             this.groupBox_Profession.Controls.Add(this.richTextBox7);
@@ -1048,6 +972,82 @@
             this.groupBox_Profession.Size = new System.Drawing.Size(950, 331);
             this.groupBox_Profession.TabIndex = 46;
             this.groupBox_Profession.TabStop = false;
+            // 
+            // richTextBox7
+            // 
+            this.richTextBox7.Location = new System.Drawing.Point(115, 244);
+            this.richTextBox7.Name = "richTextBox7";
+            this.richTextBox7.ReadOnly = true;
+            this.richTextBox7.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox7.TabIndex = 72;
+            this.richTextBox7.Text = "";
+            // 
+            // label44
+            // 
+            this.label44.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label44.Location = new System.Drawing.Point(6, 256);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(110, 23);
+            this.label44.TabIndex = 71;
+            this.label44.Text = "备注信息：";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // richTextBox6
+            // 
+            this.richTextBox6.Location = new System.Drawing.Point(115, 167);
+            this.richTextBox6.Name = "richTextBox6";
+            this.richTextBox6.ReadOnly = true;
+            this.richTextBox6.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox6.TabIndex = 70;
+            this.richTextBox6.Text = "";
+            // 
+            // richTextBox5
+            // 
+            this.richTextBox5.Location = new System.Drawing.Point(115, 100);
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.ReadOnly = true;
+            this.richTextBox5.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox5.TabIndex = 69;
+            this.richTextBox5.Text = "";
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Location = new System.Drawing.Point(115, 34);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.ReadOnly = true;
+            this.richTextBox4.Size = new System.Drawing.Size(823, 51);
+            this.richTextBox4.TabIndex = 68;
+            this.richTextBox4.Text = "";
+            // 
+            // label21
+            // 
+            this.label21.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label21.Location = new System.Drawing.Point(3, 180);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(110, 23);
+            this.label21.TabIndex = 21;
+            this.label21.Text = "长期事业目标：";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label20.Location = new System.Drawing.Point(6, 111);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(107, 23);
+            this.label20.TabIndex = 20;
+            this.label20.Text = "短期事业目标：";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label36
+            // 
+            this.label36.Font = new System.Drawing.Font("黑体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label36.Location = new System.Drawing.Point(6, 46);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(107, 23);
+            this.label36.TabIndex = 36;
+            this.label36.Text = "最骄傲的事情：";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // button_Edit
             // 
@@ -1093,7 +1093,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "个人信息";
+            this.Text = "修改信息";
             this.groupBox_PersonalInfo.ResumeLayout(false);
             this.groupBox_PersonalInfo.PerformLayout();
             this.groupBox_Hobby.ResumeLayout(false);
