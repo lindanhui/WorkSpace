@@ -24,13 +24,17 @@ namespace Diary_Mei
 
         private void Edit_Form_Load(object sender, EventArgs e)
         {
-            try
+            #region
+            #endregion
+        }
+        /// <summary>
+        /// 设定窗体名称
+        /// </summary>
+        protected void SetForm_Name()
+        {
+            switch (Class_State.Windows_State)
             {
 
-            }
-            catch
-            {
-                MessageBox.Show("加载失败！");
             }
         }
     }
