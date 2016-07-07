@@ -550,6 +550,7 @@ namespace Diary_Mei
         {
             Form Edit = new Edit_Form();
             Edit.ShowDialog();
+            Button_Search_Click(null, null);
         }
     }
 }
