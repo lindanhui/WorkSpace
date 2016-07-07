@@ -60,5 +60,9 @@ namespace Diary_Mei
 
         #endregion
 
+        public static void Set_Readonly(TextBox Get_TextBox)
+        {
+            Get_TextBox.ReadOnly = false;
+        }
     }
 }

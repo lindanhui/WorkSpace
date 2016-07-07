@@ -557,7 +557,6 @@
             // 
             this.textBox_NowWork.Location = new System.Drawing.Point(348, 326);
             this.textBox_NowWork.Name = "textBox_NowWork";
-            this.textBox_NowWork.ReadOnly = true;
             this.textBox_NowWork.Size = new System.Drawing.Size(185, 21);
             this.textBox_NowWork.TabIndex = 60;
             // 
@@ -573,7 +572,6 @@
             // 
             this.textBox_NowLive.Location = new System.Drawing.Point(348, 278);
             this.textBox_NowLive.Name = "textBox_NowLive";
-            this.textBox_NowLive.ReadOnly = true;
             this.textBox_NowLive.Size = new System.Drawing.Size(185, 21);
             this.textBox_NowLive.TabIndex = 58;
             // 
@@ -581,7 +579,6 @@
             // 
             this.textBox_PassedWork.Location = new System.Drawing.Point(348, 230);
             this.textBox_PassedWork.Name = "textBox_PassedWork";
-            this.textBox_PassedWork.ReadOnly = true;
             this.textBox_PassedWork.Size = new System.Drawing.Size(185, 21);
             this.textBox_PassedWork.TabIndex = 56;
             // 
@@ -589,7 +586,6 @@
             // 
             this.textBox_SpouseName.Location = new System.Drawing.Point(116, 230);
             this.textBox_SpouseName.Name = "textBox_SpouseName";
-            this.textBox_SpouseName.ReadOnly = true;
             this.textBox_SpouseName.Size = new System.Drawing.Size(130, 21);
             this.textBox_SpouseName.TabIndex = 55;
             // 
@@ -597,7 +593,6 @@
             // 
             this.textBox_FamilyAddress.Location = new System.Drawing.Point(348, 184);
             this.textBox_FamilyAddress.Name = "textBox_FamilyAddress";
-            this.textBox_FamilyAddress.ReadOnly = true;
             this.textBox_FamilyAddress.Size = new System.Drawing.Size(185, 21);
             this.textBox_FamilyAddress.TabIndex = 54;
             // 
@@ -605,7 +600,6 @@
             // 
             this.textBox_MarryState.Location = new System.Drawing.Point(116, 184);
             this.textBox_MarryState.Name = "textBox_MarryState";
-            this.textBox_MarryState.ReadOnly = true;
             this.textBox_MarryState.Size = new System.Drawing.Size(130, 21);
             this.textBox_MarryState.TabIndex = 53;
             // 
@@ -613,7 +607,6 @@
             // 
             this.textBox_GraduateSchool.Location = new System.Drawing.Point(348, 141);
             this.textBox_GraduateSchool.Name = "textBox_GraduateSchool";
-            this.textBox_GraduateSchool.ReadOnly = true;
             this.textBox_GraduateSchool.Size = new System.Drawing.Size(185, 21);
             this.textBox_GraduateSchool.TabIndex = 52;
             // 
@@ -621,7 +614,6 @@
             // 
             this.textBox_Degree.Location = new System.Drawing.Point(348, 101);
             this.textBox_Degree.Name = "textBox_Degree";
-            this.textBox_Degree.ReadOnly = true;
             this.textBox_Degree.Size = new System.Drawing.Size(185, 21);
             this.textBox_Degree.TabIndex = 51;
             // 
@@ -629,7 +621,6 @@
             // 
             this.textBox_Skills.Location = new System.Drawing.Point(348, 58);
             this.textBox_Skills.Name = "textBox_Skills";
-            this.textBox_Skills.ReadOnly = true;
             this.textBox_Skills.Size = new System.Drawing.Size(185, 21);
             this.textBox_Skills.TabIndex = 50;
             // 
@@ -637,7 +628,6 @@
             // 
             this.textBox_PassedCompany.Location = new System.Drawing.Point(116, 140);
             this.textBox_PassedCompany.Name = "textBox_PassedCompany";
-            this.textBox_PassedCompany.ReadOnly = true;
             this.textBox_PassedCompany.Size = new System.Drawing.Size(130, 21);
             this.textBox_PassedCompany.TabIndex = 46;
             // 
@@ -645,7 +635,6 @@
             // 
             this.textBox_NowCompany.Location = new System.Drawing.Point(116, 101);
             this.textBox_NowCompany.Name = "textBox_NowCompany";
-            this.textBox_NowCompany.ReadOnly = true;
             this.textBox_NowCompany.Size = new System.Drawing.Size(130, 21);
             this.textBox_NowCompany.TabIndex = 45;
             // 
@@ -653,7 +642,6 @@
             // 
             this.textBox_Phone.Location = new System.Drawing.Point(116, 58);
             this.textBox_Phone.Name = "textBox_Phone";
-            this.textBox_Phone.ReadOnly = true;
             this.textBox_Phone.Size = new System.Drawing.Size(130, 21);
             this.textBox_Phone.TabIndex = 44;
             // 
@@ -703,7 +691,6 @@
             // 
             this.textBox_LikeMovie.Location = new System.Drawing.Point(132, 516);
             this.textBox_LikeMovie.Name = "textBox_LikeMovie";
-            this.textBox_LikeMovie.ReadOnly = true;
             this.textBox_LikeMovie.Size = new System.Drawing.Size(250, 21);
             this.textBox_LikeMovie.TabIndex = 57;
             // 
@@ -711,7 +698,6 @@
             // 
             this.textBox_IsMovie.Location = new System.Drawing.Point(132, 476);
             this.textBox_IsMovie.Name = "textBox_IsMovie";
-            this.textBox_IsMovie.ReadOnly = true;
             this.textBox_IsMovie.Size = new System.Drawing.Size(250, 21);
             this.textBox_IsMovie.TabIndex = 56;
             // 
@@ -719,7 +705,6 @@
             // 
             this.textBox_LikeFriend.Location = new System.Drawing.Point(132, 433);
             this.textBox_LikeFriend.Name = "textBox_LikeFriend";
-            this.textBox_LikeFriend.ReadOnly = true;
             this.textBox_LikeFriend.Size = new System.Drawing.Size(250, 21);
             this.textBox_LikeFriend.TabIndex = 55;
             // 
@@ -727,7 +712,6 @@
             // 
             this.textBox_LikeTravel.Location = new System.Drawing.Point(132, 397);
             this.textBox_LikeTravel.Name = "textBox_LikeTravel";
-            this.textBox_LikeTravel.ReadOnly = true;
             this.textBox_LikeTravel.Size = new System.Drawing.Size(250, 21);
             this.textBox_LikeTravel.TabIndex = 54;
             // 
@@ -735,7 +719,6 @@
             // 
             this.textBox_LikeDish.Location = new System.Drawing.Point(132, 354);
             this.textBox_LikeDish.Name = "textBox_LikeDish";
-            this.textBox_LikeDish.ReadOnly = true;
             this.textBox_LikeDish.Size = new System.Drawing.Size(250, 21);
             this.textBox_LikeDish.TabIndex = 53;
             // 
@@ -743,7 +726,6 @@
             // 
             this.textBox_LikeCar.Location = new System.Drawing.Point(132, 311);
             this.textBox_LikeCar.Name = "textBox_LikeCar";
-            this.textBox_LikeCar.ReadOnly = true;
             this.textBox_LikeCar.Size = new System.Drawing.Size(250, 21);
             this.textBox_LikeCar.TabIndex = 52;
             // 
@@ -751,7 +733,6 @@
             // 
             this.textBox_LikeBooks.Location = new System.Drawing.Point(132, 271);
             this.textBox_LikeBooks.Name = "textBox_LikeBooks";
-            this.textBox_LikeBooks.ReadOnly = true;
             this.textBox_LikeBooks.Size = new System.Drawing.Size(250, 21);
             this.textBox_LikeBooks.TabIndex = 51;
             // 
@@ -759,7 +740,6 @@
             // 
             this.textBox_IsReader.Location = new System.Drawing.Point(132, 230);
             this.textBox_IsReader.Name = "textBox_IsReader";
-            this.textBox_IsReader.ReadOnly = true;
             this.textBox_IsReader.Size = new System.Drawing.Size(250, 21);
             this.textBox_IsReader.TabIndex = 50;
             // 
@@ -767,7 +747,6 @@
             // 
             this.textBox_LikeTeacher.Location = new System.Drawing.Point(132, 183);
             this.textBox_LikeTeacher.Name = "textBox_LikeTeacher";
-            this.textBox_LikeTeacher.ReadOnly = true;
             this.textBox_LikeTeacher.Size = new System.Drawing.Size(250, 21);
             this.textBox_LikeTeacher.TabIndex = 49;
             // 
@@ -775,7 +754,6 @@
             // 
             this.textBox_IsTrained.Location = new System.Drawing.Point(132, 140);
             this.textBox_IsTrained.Name = "textBox_IsTrained";
-            this.textBox_IsTrained.ReadOnly = true;
             this.textBox_IsTrained.Size = new System.Drawing.Size(250, 21);
             this.textBox_IsTrained.TabIndex = 48;
             // 
@@ -783,7 +761,6 @@
             // 
             this.textBox_GoodSports.Location = new System.Drawing.Point(132, 101);
             this.textBox_GoodSports.Name = "textBox_GoodSports";
-            this.textBox_GoodSports.ReadOnly = true;
             this.textBox_GoodSports.Size = new System.Drawing.Size(250, 21);
             this.textBox_GoodSports.TabIndex = 47;
             // 
@@ -791,7 +768,6 @@
             // 
             this.textBox_LikeSport.Location = new System.Drawing.Point(132, 58);
             this.textBox_LikeSport.Name = "textBox_LikeSport";
-            this.textBox_LikeSport.ReadOnly = true;
             this.textBox_LikeSport.Size = new System.Drawing.Size(250, 21);
             this.textBox_LikeSport.TabIndex = 46;
             // 
@@ -799,7 +775,6 @@
             // 
             this.textBox_LikeTopic.Location = new System.Drawing.Point(132, 20);
             this.textBox_LikeTopic.Name = "textBox_LikeTopic";
-            this.textBox_LikeTopic.ReadOnly = true;
             this.textBox_LikeTopic.Size = new System.Drawing.Size(250, 21);
             this.textBox_LikeTopic.TabIndex = 45;
             // 
@@ -831,7 +806,6 @@
             // 
             this.richTextBox_EffectPeople.Location = new System.Drawing.Point(115, 287);
             this.richTextBox_EffectPeople.Name = "richTextBox_EffectPeople";
-            this.richTextBox_EffectPeople.ReadOnly = true;
             this.richTextBox_EffectPeople.Size = new System.Drawing.Size(418, 51);
             this.richTextBox_EffectPeople.TabIndex = 67;
             this.richTextBox_EffectPeople.Text = "";
@@ -840,7 +814,6 @@
             // 
             this.richTextBox_BrotherSister.Location = new System.Drawing.Point(115, 219);
             this.richTextBox_BrotherSister.Name = "richTextBox_BrotherSister";
-            this.richTextBox_BrotherSister.ReadOnly = true;
             this.richTextBox_BrotherSister.Size = new System.Drawing.Size(418, 51);
             this.richTextBox_BrotherSister.TabIndex = 66;
             this.richTextBox_BrotherSister.Text = "";
@@ -849,7 +822,6 @@
             // 
             this.richTextBox_BestFriend.Location = new System.Drawing.Point(115, 152);
             this.richTextBox_BestFriend.Name = "richTextBox_BestFriend";
-            this.richTextBox_BestFriend.ReadOnly = true;
             this.richTextBox_BestFriend.Size = new System.Drawing.Size(418, 51);
             this.richTextBox_BestFriend.TabIndex = 65;
             this.richTextBox_BestFriend.Text = "";
@@ -872,7 +844,6 @@
             // 
             this.textBox_SonSister.Location = new System.Drawing.Point(115, 106);
             this.textBox_SonSister.Name = "textBox_SonSister";
-            this.textBox_SonSister.ReadOnly = true;
             this.textBox_SonSister.Size = new System.Drawing.Size(421, 21);
             this.textBox_SonSister.TabIndex = 62;
             // 
@@ -880,7 +851,6 @@
             // 
             this.textBox_MontherName.Location = new System.Drawing.Point(115, 60);
             this.textBox_MontherName.Name = "textBox_MontherName";
-            this.textBox_MontherName.ReadOnly = true;
             this.textBox_MontherName.Size = new System.Drawing.Size(130, 21);
             this.textBox_MontherName.TabIndex = 61;
             // 
@@ -888,7 +858,6 @@
             // 
             this.textBox_FartherName.Location = new System.Drawing.Point(116, 17);
             this.textBox_FartherName.Name = "textBox_FartherName";
-            this.textBox_FartherName.ReadOnly = true;
             this.textBox_FartherName.Size = new System.Drawing.Size(130, 21);
             this.textBox_FartherName.TabIndex = 60;
             // 
@@ -952,9 +921,9 @@
             this.panel_All.Controls.Add(this.groupBox_Family);
             this.panel_All.Controls.Add(this.label38);
             this.panel_All.Controls.Add(this.groupBox_Hobby);
-            this.panel_All.Location = new System.Drawing.Point(2, 2);
+            this.panel_All.Location = new System.Drawing.Point(-4, 2);
             this.panel_All.Name = "panel_All";
-            this.panel_All.Size = new System.Drawing.Size(994, 309);
+            this.panel_All.Size = new System.Drawing.Size(988, 309);
             this.panel_All.TabIndex = 51;
             // 
             // groupBox_Profession
@@ -969,7 +938,7 @@
             this.groupBox_Profession.Controls.Add(this.label36);
             this.groupBox_Profession.Location = new System.Drawing.Point(18, 890);
             this.groupBox_Profession.Name = "groupBox_Profession";
-            this.groupBox_Profession.Size = new System.Drawing.Size(950, 331);
+            this.groupBox_Profession.Size = new System.Drawing.Size(943, 331);
             this.groupBox_Profession.TabIndex = 46;
             this.groupBox_Profession.TabStop = false;
             // 
@@ -977,7 +946,6 @@
             // 
             this.richTextBox_Remark.Location = new System.Drawing.Point(115, 244);
             this.richTextBox_Remark.Name = "richTextBox_Remark";
-            this.richTextBox_Remark.ReadOnly = true;
             this.richTextBox_Remark.Size = new System.Drawing.Size(823, 51);
             this.richTextBox_Remark.TabIndex = 72;
             this.richTextBox_Remark.Text = "";
@@ -996,7 +964,6 @@
             // 
             this.richTextBox_LongCarrer.Location = new System.Drawing.Point(115, 167);
             this.richTextBox_LongCarrer.Name = "richTextBox_LongCarrer";
-            this.richTextBox_LongCarrer.ReadOnly = true;
             this.richTextBox_LongCarrer.Size = new System.Drawing.Size(823, 51);
             this.richTextBox_LongCarrer.TabIndex = 70;
             this.richTextBox_LongCarrer.Text = "";
@@ -1005,7 +972,6 @@
             // 
             this.richTextBox_ShortCarrer.Location = new System.Drawing.Point(115, 100);
             this.richTextBox_ShortCarrer.Name = "richTextBox_ShortCarrer";
-            this.richTextBox_ShortCarrer.ReadOnly = true;
             this.richTextBox_ShortCarrer.Size = new System.Drawing.Size(823, 51);
             this.richTextBox_ShortCarrer.TabIndex = 69;
             this.richTextBox_ShortCarrer.Text = "";
@@ -1014,7 +980,6 @@
             // 
             this.richTextBox_PrideThing.Location = new System.Drawing.Point(115, 34);
             this.richTextBox_PrideThing.Name = "richTextBox_PrideThing";
-            this.richTextBox_PrideThing.ReadOnly = true;
             this.richTextBox_PrideThing.Size = new System.Drawing.Size(823, 51);
             this.richTextBox_PrideThing.TabIndex = 68;
             this.richTextBox_PrideThing.Text = "";
@@ -1055,12 +1020,13 @@
             this.button_Edit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.button_Edit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Edit.Location = new System.Drawing.Point(277, 318);
+            this.button_Edit.Location = new System.Drawing.Point(372, 318);
             this.button_Edit.Name = "button_Edit";
             this.button_Edit.Size = new System.Drawing.Size(75, 23);
             this.button_Edit.TabIndex = 52;
             this.button_Edit.Text = "修改";
             this.button_Edit.UseVisualStyleBackColor = true;
+            this.button_Edit.Click += new System.EventHandler(this.button_Edit_Click);
             // 
             // button_Close
             // 
@@ -1068,7 +1034,7 @@
             this.button_Close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Close.Location = new System.Drawing.Point(642, 319);
+            this.button_Close.Location = new System.Drawing.Point(511, 319);
             this.button_Close.Name = "button_Close";
             this.button_Close.Size = new System.Drawing.Size(75, 23);
             this.button_Close.TabIndex = 53;
@@ -1081,7 +1047,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(995, 348);
+            this.ClientSize = new System.Drawing.Size(983, 348);
             this.Controls.Add(this.button_Close);
             this.Controls.Add(this.button_Edit);
             this.Controls.Add(this.panel_All);
