@@ -34,7 +34,12 @@ namespace Diary_Mei
         {
             switch (Class_State.Windows_State)
             {
-
+                case "Archive":
+                    this.Text = "客户信息修改";
+                    break;
+                case "Friend":
+                    this.Text = "朋友信息修改";
+                    break;
             }
         }
     }

@@ -548,7 +548,8 @@ namespace Diary_Mei
 
         private void dataGridView_Archive_Print_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            MessageBox.Show("");
+            Form Edit = new Edit_Form();
+            Edit.ShowDialog();
         }
     }
 }
