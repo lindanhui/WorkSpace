@@ -343,7 +343,7 @@
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label20.Location = new System.Drawing.Point(17, 175);
+            this.label20.Location = new System.Drawing.Point(26, 175);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(83, 23);
             this.label20.TabIndex = 43;
@@ -353,7 +353,7 @@
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label19.Location = new System.Drawing.Point(2, 105);
+            this.label19.Location = new System.Drawing.Point(3, 105);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(108, 23);
             this.label19.TabIndex = 41;
@@ -901,7 +901,7 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(15, 170);
+            this.label10.Location = new System.Drawing.Point(22, 170);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(83, 23);
             this.label10.TabIndex = 16;
@@ -996,7 +996,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(21, 214);
+            this.label4.Location = new System.Drawing.Point(22, 214);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 23);
             this.label4.TabIndex = 10;
@@ -1023,7 +1023,7 @@
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label13.Location = new System.Drawing.Point(18, 263);
+            this.label13.Location = new System.Drawing.Point(20, 263);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(83, 23);
             this.label13.TabIndex = 19;
@@ -1040,7 +1040,7 @@
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label14.Location = new System.Drawing.Point(18, 307);
+            this.label14.Location = new System.Drawing.Point(21, 307);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(83, 23);
             this.label14.TabIndex = 20;

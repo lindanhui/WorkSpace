@@ -88,6 +88,8 @@ namespace Diary_Mei
         {
             this.Text = "日记本";
             Class_State.Windows_State = "Diary";
+            Panel_Client_Friend.Visible = false;
+            Panel_Welcome.Visible = false;
         }
 
         private void Button_Record_Click(object sender, EventArgs e)
