@@ -442,9 +442,12 @@ namespace Diary_Mei
 
         private void dataGridView_Archive_Print_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Get_RowClick = dataGridView_Archive_Print.CurrentCell.RowIndex;
-            Class_State.Get_Name = dataGridView_Archive_Print.Rows[Get_RowClick].Cells[0].Value.ToString();
-            Class_State.Get_Phone = dataGridView_Archive_Print.Rows[Get_RowClick].Cells[1].Value.ToString();
+            if(dataGridView_Archive_Print.DataSource != null)
+            {
+                Get_RowClick = dataGridView_Archive_Print.CurrentCell.RowIndex;
+                Class_State.Get_Name = dataGridView_Archive_Print.Rows[Get_RowClick].Cells[0].Value.ToString();
+                Class_State.Get_Phone = dataGridView_Archive_Print.Rows[Get_RowClick].Cells[1].Value.ToString();
+            }
         }
 
         private void Button_Export_Click(object sender, EventArgs e)
@@ -550,9 +553,12 @@ namespace Diary_Mei
 
         private void dataGridView_Archive_Print_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            Form Edit = new Edit_Form();
-            Edit.ShowDialog();
-            Button_Search_Click(null, null);
+            if(dataGridView_Archive_Print.DataSource != null)
+            {
+                Form Edit = new Edit_Form();
+                Edit.ShowDialog();
+                Button_Search_Click(null, null);
+            }
         }
     }
 }
