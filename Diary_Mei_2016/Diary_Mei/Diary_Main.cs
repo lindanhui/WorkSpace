@@ -566,11 +566,60 @@ namespace Diary_Mei
 
         private void button_View_Click(object sender, EventArgs e)
         {
-            groupBox_Title.Visible = false;
-            label_ViewAll.Visible = true;
-            if(richTextBox_Diary.Text == "")
+            if(richTextBox_Diary.Text != "")
             {
+                if (MessageBox.Show("您还有未保存的日记，若跳转请点击确认！", "Tips", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    groupBox_Title.Visible = false;
+                    richTextBox_Diary.Visible = false;
+                    groupBox_View.Visible = true;
+                }
+            }
+            else
+            {
+                groupBox_Title.Visible = false;
                 richTextBox_Diary.Visible = false;
+                groupBox_View.Visible = true;
+
+            }
+        }
+
+        private void button_ReturnEdit_Click(object sender, EventArgs e)
+        {
+            groupBox_Title.Visible = true;
+            richTextBox_Diary.Visible = true;
+            groupBox_View.Visible = false;
+        }
+
+        private void button_ClearText_Click(object sender, EventArgs e)
+        {
+            if(richTextBox_Diary.Text != string.Empty || textBox_Title.Text != string.Empty)
+            {
+                if (MessageBox.Show("您即将清空编辑内容，若清空请点击确认！", "Tips", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    richTextBox_Diary.Text = string.Empty;
+                    textBox_Title.Text = string.Empty;
+                }
+            }
+        }
+
+        private void button_SaveDiary_Click(object sender, EventArgs e)
+        {
+            if(richTextBox_Diary.Text==string.Empty&&textBox_Title.Text==string.Empty)
+            {
+                MessageBox.Show("请编辑您要保存的日记！", "Tips", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                string SQL_Insert = string.Empty;
+                SQL_Insert += "INSERT INTO Diary_Table (Diary_Title, Diary_Text, Diary_Date)  VALUES ";
+                SQL_Insert += "('"+textBox_Title.Text+"', '"+richTextBox_Diary.Text+"', '"+dateTimePicker_Diary.Value.ToShortDateString()+"')";
+                if(Class_SQL_Deal.Insert_SQL(SQL_Insert) == 1)
+                {
+                    MessageBox.Show("保存成功！", "Tips", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBox_Title.Text = string.Empty;
+                    richTextBox_Diary.Text = string.Empty;
+                }
             }
         }
     }
