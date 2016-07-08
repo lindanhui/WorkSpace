@@ -379,7 +379,7 @@
             // label37
             // 
             this.label37.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label37.Location = new System.Drawing.Point(10, 20);
+            this.label37.Location = new System.Drawing.Point(14, 17);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(108, 23);
             this.label37.TabIndex = 79;
@@ -388,14 +388,14 @@
             // 
             // textBox_Pride_Thing
             // 
-            this.textBox_Pride_Thing.Location = new System.Drawing.Point(128, 20);
+            this.textBox_Pride_Thing.Location = new System.Drawing.Point(126, 20);
             this.textBox_Pride_Thing.Name = "textBox_Pride_Thing";
-            this.textBox_Pride_Thing.Size = new System.Drawing.Size(816, 21);
+            this.textBox_Pride_Thing.Size = new System.Drawing.Size(817, 21);
             this.textBox_Pride_Thing.TabIndex = 38;
             // 
             // richTextBox_Notes
             // 
-            this.richTextBox_Notes.Location = new System.Drawing.Point(128, 66);
+            this.richTextBox_Notes.Location = new System.Drawing.Point(126, 270);
             this.richTextBox_Notes.Name = "richTextBox_Notes";
             this.richTextBox_Notes.Size = new System.Drawing.Size(816, 54);
             this.richTextBox_Notes.TabIndex = 82;
@@ -404,9 +404,9 @@
             // label38
             // 
             this.label38.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label38.Location = new System.Drawing.Point(32, 81);
+            this.label38.Location = new System.Drawing.Point(37, 286);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(95, 23);
+            this.label38.Size = new System.Drawing.Size(83, 23);
             this.label38.TabIndex = 81;
             this.label38.Text = "备注信息：";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -415,7 +415,7 @@
             // 
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label23.Location = new System.Drawing.Point(7, 170);
+            this.label23.Location = new System.Drawing.Point(2, 97);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(120, 23);
             this.label23.TabIndex = 49;
@@ -424,7 +424,7 @@
             // 
             // richTextBox_Long_Carrer
             // 
-            this.richTextBox_Long_Carrer.Location = new System.Drawing.Point(128, 241);
+            this.richTextBox_Long_Carrer.Location = new System.Drawing.Point(126, 168);
             this.richTextBox_Long_Carrer.Name = "richTextBox_Long_Carrer";
             this.richTextBox_Long_Carrer.Size = new System.Drawing.Size(816, 83);
             this.richTextBox_Long_Carrer.TabIndex = 83;
@@ -432,7 +432,7 @@
             // 
             // richTextBox_Short_Carrer
             // 
-            this.richTextBox_Short_Carrer.Location = new System.Drawing.Point(128, 137);
+            this.richTextBox_Short_Carrer.Location = new System.Drawing.Point(126, 61);
             this.richTextBox_Short_Carrer.Name = "richTextBox_Short_Carrer";
             this.richTextBox_Short_Carrer.Size = new System.Drawing.Size(816, 88);
             this.richTextBox_Short_Carrer.TabIndex = 84;
@@ -441,7 +441,7 @@
             // label22
             // 
             this.label22.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label22.Location = new System.Drawing.Point(7, 271);
+            this.label22.Location = new System.Drawing.Point(2, 200);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(120, 23);
             this.label22.TabIndex = 47;
