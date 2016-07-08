@@ -68,6 +68,7 @@ namespace Diary_Mei
             Class_State.Windows_State = "Archive";
             Panel_Welcome.Visible = false;
             Panel_Client_Friend.Visible = true;
+            panel_Diary.Visible = false;
             dataGridView_Archive_Print.DataSource = null;
             Get_RowClick = -1;
 
@@ -79,6 +80,7 @@ namespace Diary_Mei
             Class_State.Windows_State = "Friend";
             Panel_Welcome.Visible = false;
             Panel_Client_Friend.Visible = true;
+            panel_Diary.Visible = false;
             dataGridView_Archive_Print.DataSource = null;
             Get_RowClick = -1;
 
@@ -90,6 +92,7 @@ namespace Diary_Mei
             Class_State.Windows_State = "Diary";
             Panel_Client_Friend.Visible = false;
             Panel_Welcome.Visible = false;
+            panel_Diary.Visible = true;
         }
 
         private void Button_Record_Click(object sender, EventArgs e)
@@ -558,6 +561,16 @@ namespace Diary_Mei
                 Form Edit = new Edit_Form();
                 Edit.ShowDialog();
                 Button_Search_Click(null, null);
+            }
+        }
+
+        private void button_View_Click(object sender, EventArgs e)
+        {
+            groupBox_Title.Visible = false;
+            label_ViewAll.Visible = true;
+            if(richTextBox_Diary.Text == "")
+            {
+                richTextBox_Diary.Visible = false;
             }
         }
     }
