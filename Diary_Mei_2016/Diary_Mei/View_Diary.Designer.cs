@@ -76,6 +76,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label_Title);
             this.Controls.Add(this.button_Close);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "View_Diary";
