@@ -573,6 +573,8 @@ namespace Diary_Mei
                     groupBox_Title.Visible = false;
                     richTextBox_Diary.Visible = false;
                     groupBox_View.Visible = true;
+                    dataGridView_Diary.Visible = true;
+                    dataGridView_Diary.DataSource = Class_SQL_Deal.DataTable_Get("SELECT  Diary_Title,Diary_Text, Diary_Date FROM Diary_Table ");//加载日记数据
                 }
             }
             else
@@ -580,6 +582,8 @@ namespace Diary_Mei
                 groupBox_Title.Visible = false;
                 richTextBox_Diary.Visible = false;
                 groupBox_View.Visible = true;
+                dataGridView_Diary.Visible = true;
+                dataGridView_Diary.DataSource = Class_SQL_Deal.DataTable_Get("SELECT  Diary_Title,Diary_Text, Diary_Date FROM Diary_Table ");//加载日记数据
 
             }
         }
@@ -589,6 +593,7 @@ namespace Diary_Mei
             groupBox_Title.Visible = true;
             richTextBox_Diary.Visible = true;
             groupBox_View.Visible = false;
+            dataGridView_Diary.Visible = false;
         }
 
         private void button_ClearText_Click(object sender, EventArgs e)
@@ -621,6 +626,25 @@ namespace Diary_Mei
                     richTextBox_Diary.Text = string.Empty;
                 }
             }
+        }
+
+        private void button_SearchDiary_Click(object sender, EventArgs e)
+        {
+            string SQL_Query_Diary = string.Empty;
+            SQL_Query_Diary = "SELECT  Diary_Title,Diary_Text, Diary_Date FROM Diary_Table ";
+            SQL_Query_Diary += "WHERE Diary_Date BETWEEN #"+dateTimePicker_StartTime.Value.ToShortDateString()+"# AND #"+dateTimePicker_EndTime.Value.ToShortDateString()+"#";
+            dataGridView_Diary.DataSource = Class_SQL_Deal.DataTable_Get(SQL_Query_Diary);
+            
+        }
+
+        private void dataGridView_Diary_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Class_State.Get_DiaryTitle = dataGridView_Diary.Rows[dataGridView_Diary.CurrentCell.RowIndex].Cells[0].Value.ToString();
+            Class_State.Get_DiaryContent = dataGridView_Diary.Rows[dataGridView_Diary.CurrentCell.RowIndex].Cells[1].Value.ToString();
+            Form View_Diary = new View_Diary();
+            View_Diary.ShowDialog();
+            Class_State.Get_DiaryContent = string.Empty;
+            //Class_State.Get_DiaryTitle = string.Empty;
         }
     }
 }

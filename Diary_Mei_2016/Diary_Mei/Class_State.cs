@@ -14,7 +14,6 @@ namespace Diary_Mei
         /// <summary>
         /// 系统状态的存储
         /// </summary>
-
         public static String Windows_State = String.Empty;//Archive, Friend
         public static String Editor_State = String.Empty;
 
@@ -154,6 +153,28 @@ namespace Diary_Mei
         /// </summary>
         public static string Get_Name = string.Empty;
         public static string Get_Phone = string.Empty;
+        //
+        //
+        /// <summary>
+        /// 存储第一次进入日记查询的值
+        /// </summary>
+        public static int Diary_Query = 0;//存储第一次进入查询的值
+        //
+        //
+        /// <summary>
+        /// 获取日记标题
+        /// </summary>
+        //public static string Get_DiaryTitle = string.Empty;
+        //
+        //
+
+
+
+        /// <summary>
+        /// 获取日记内容
+        /// </summary>
+        public static string Get_DiaryContent = string.Empty;
+
 
     }
 }

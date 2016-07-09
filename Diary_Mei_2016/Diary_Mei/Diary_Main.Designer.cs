@@ -30,11 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Diary_Main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Menu_Panel = new System.Windows.Forms.Panel();
             this.Button_Close = new System.Windows.Forms.Button();
             this.Button_Picture = new System.Windows.Forms.Button();
@@ -88,21 +90,25 @@
             this.Label_Client_Phone = new System.Windows.Forms.Label();
             this.Label_Client_Name = new System.Windows.Forms.Label();
             this.panel_Diary = new System.Windows.Forms.Panel();
-            this.label_Title = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox_Title = new System.Windows.Forms.TextBox();
-            this.dateTimePicker_Diary = new System.Windows.Forms.DateTimePicker();
-            this.groupBox_Title = new System.Windows.Forms.GroupBox();
-            this.richTextBox_Diary = new System.Windows.Forms.RichTextBox();
-            this.button_View = new System.Windows.Forms.Button();
-            this.label_ViewAll = new System.Windows.Forms.Label();
-            this.button_SaveDiary = new System.Windows.Forms.Button();
-            this.button_ReturnEdit = new System.Windows.Forms.Button();
-            this.button_ClearText = new System.Windows.Forms.Button();
-            this.button_SearchDiary = new System.Windows.Forms.Button();
             this.groupBox_View = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker_StartTime = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker_StartTime = new System.Windows.Forms.DateTimePicker();
+            this.label_ViewAll = new System.Windows.Forms.Label();
+            this.button_ReturnEdit = new System.Windows.Forms.Button();
+            this.button_SearchDiary = new System.Windows.Forms.Button();
+            this.richTextBox_Diary = new System.Windows.Forms.RichTextBox();
+            this.groupBox_Title = new System.Windows.Forms.GroupBox();
+            this.button_ClearText = new System.Windows.Forms.Button();
+            this.button_SaveDiary = new System.Windows.Forms.Button();
+            this.button_View = new System.Windows.Forms.Button();
+            this.textBox_Title = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker_Diary = new System.Windows.Forms.DateTimePicker();
+            this.label_Title = new System.Windows.Forms.Label();
+            this.dataGridView_Diary = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker_EndTime = new System.Windows.Forms.DateTimePicker();
             this.Menu_Panel.SuspendLayout();
@@ -113,8 +119,10 @@
             this.TSDiary.SuspendLayout();
             this.Label_Client.SuspendLayout();
             this.panel_Diary.SuspendLayout();
-            this.groupBox_Title.SuspendLayout();
             this.groupBox_View.SuspendLayout();
+            this.groupBox_Title.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Diary)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Menu_Panel
@@ -400,51 +408,51 @@
             this.dataGridView_Archive_Print.AllowUserToDeleteRows = false;
             this.dataGridView_Archive_Print.AllowUserToResizeColumns = false;
             this.dataGridView_Archive_Print.AllowUserToResizeRows = false;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Control;
-            this.dataGridView_Archive_Print.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            this.dataGridView_Archive_Print.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_Archive_Print.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_Archive_Print.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_Archive_Print.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_Archive_Print.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle32.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Archive_Print.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Archive_Print.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView_Archive_Print.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Archive_Print.ColumnHeadersVisible = false;
             this.dataGridView_Archive_Print.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("楷体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle33.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Archive_Print.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("楷体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Archive_Print.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_Archive_Print.GridColor = System.Drawing.Color.White;
             this.dataGridView_Archive_Print.Location = new System.Drawing.Point(-4, 36);
             this.dataGridView_Archive_Print.MultiSelect = false;
             this.dataGridView_Archive_Print.Name = "dataGridView_Archive_Print";
             this.dataGridView_Archive_Print.ReadOnly = true;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Archive_Print.RowHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Archive_Print.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_Archive_Print.RowHeadersVisible = false;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dataGridView_Archive_Print.RowsDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dataGridView_Archive_Print.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.SystemColors.Control;
             this.dataGridView_Archive_Print.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -856,6 +864,7 @@
             // 
             // panel_Diary
             // 
+            this.panel_Diary.Controls.Add(this.dataGridView_Diary);
             this.panel_Diary.Controls.Add(this.groupBox_View);
             this.panel_Diary.Controls.Add(this.richTextBox_Diary);
             this.panel_Diary.Controls.Add(this.groupBox_Title);
@@ -866,41 +875,87 @@
             this.panel_Diary.TabIndex = 4;
             this.panel_Diary.Visible = false;
             // 
-            // label_Title
+            // groupBox_View
             // 
-            this.label_Title.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_Title.Location = new System.Drawing.Point(66, 21);
-            this.label_Title.Name = "label_Title";
-            this.label_Title.Size = new System.Drawing.Size(66, 23);
-            this.label_Title.TabIndex = 1;
-            this.label_Title.Text = "标题：";
-            this.label_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.groupBox_View.Controls.Add(this.groupBox1);
+            this.groupBox_View.Controls.Add(this.dateTimePicker_EndTime);
+            this.groupBox_View.Controls.Add(this.label5);
+            this.groupBox_View.Controls.Add(this.label4);
+            this.groupBox_View.Controls.Add(this.dateTimePicker_StartTime);
+            this.groupBox_View.Controls.Add(this.button_ReturnEdit);
+            this.groupBox_View.Controls.Add(this.button_SearchDiary);
+            this.groupBox_View.Location = new System.Drawing.Point(-5, -7);
+            this.groupBox_View.Name = "groupBox_View";
+            this.groupBox_View.Size = new System.Drawing.Size(997, 92);
+            this.groupBox_View.TabIndex = 10;
+            this.groupBox_View.TabStop = false;
+            this.groupBox_View.Visible = false;
             // 
-            // label3
+            // label4
             // 
-            this.label3.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(348, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 23);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "日期：";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(68, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 16);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "开始日期：";
             // 
-            // textBox_Title
+            // dateTimePicker_StartTime
             // 
-            this.textBox_Title.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox_Title.Location = new System.Drawing.Point(120, 22);
-            this.textBox_Title.Name = "textBox_Title";
-            this.textBox_Title.Size = new System.Drawing.Size(200, 23);
-            this.textBox_Title.TabIndex = 3;
+            this.dateTimePicker_StartTime.Location = new System.Drawing.Point(155, 21);
+            this.dateTimePicker_StartTime.Name = "dateTimePicker_StartTime";
+            this.dateTimePicker_StartTime.Size = new System.Drawing.Size(136, 21);
+            this.dateTimePicker_StartTime.TabIndex = 10;
             // 
-            // dateTimePicker_Diary
+            // label_ViewAll
             // 
-            this.dateTimePicker_Diary.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dateTimePicker_Diary.Location = new System.Drawing.Point(411, 22);
-            this.dateTimePicker_Diary.Name = "dateTimePicker_Diary";
-            this.dateTimePicker_Diary.Size = new System.Drawing.Size(173, 23);
-            this.dateTimePicker_Diary.TabIndex = 4;
+            this.label_ViewAll.AutoSize = true;
+            this.label_ViewAll.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_ViewAll.Location = new System.Drawing.Point(54, 17);
+            this.label_ViewAll.Name = "label_ViewAll";
+            this.label_ViewAll.Size = new System.Drawing.Size(72, 16);
+            this.label_ViewAll.TabIndex = 7;
+            this.label_ViewAll.Text = "日记标题";
+            // 
+            // button_ReturnEdit
+            // 
+            this.button_ReturnEdit.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button_ReturnEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_ReturnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_ReturnEdit.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_ReturnEdit.Location = new System.Drawing.Point(818, 21);
+            this.button_ReturnEdit.Name = "button_ReturnEdit";
+            this.button_ReturnEdit.Size = new System.Drawing.Size(80, 23);
+            this.button_ReturnEdit.TabIndex = 8;
+            this.button_ReturnEdit.Text = "返回编辑";
+            this.button_ReturnEdit.UseVisualStyleBackColor = true;
+            this.button_ReturnEdit.Click += new System.EventHandler(this.button_ReturnEdit_Click);
+            // 
+            // button_SearchDiary
+            // 
+            this.button_SearchDiary.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button_SearchDiary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_SearchDiary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_SearchDiary.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_SearchDiary.Location = new System.Drawing.Point(669, 21);
+            this.button_SearchDiary.Name = "button_SearchDiary";
+            this.button_SearchDiary.Size = new System.Drawing.Size(80, 23);
+            this.button_SearchDiary.TabIndex = 9;
+            this.button_SearchDiary.Text = "查询日记";
+            this.button_SearchDiary.UseVisualStyleBackColor = true;
+            this.button_SearchDiary.Click += new System.EventHandler(this.button_SearchDiary_Click);
+            // 
+            // richTextBox_Diary
+            // 
+            this.richTextBox_Diary.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.richTextBox_Diary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox_Diary.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.richTextBox_Diary.Location = new System.Drawing.Point(-2, 47);
+            this.richTextBox_Diary.Name = "richTextBox_Diary";
+            this.richTextBox_Diary.Size = new System.Drawing.Size(993, 316);
+            this.richTextBox_Diary.TabIndex = 6;
+            this.richTextBox_Diary.Text = "";
             // 
             // groupBox_Title
             // 
@@ -917,40 +972,19 @@
             this.groupBox_Title.TabIndex = 5;
             this.groupBox_Title.TabStop = false;
             // 
-            // richTextBox_Diary
+            // button_ClearText
             // 
-            this.richTextBox_Diary.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.richTextBox_Diary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox_Diary.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.richTextBox_Diary.Location = new System.Drawing.Point(-2, 47);
-            this.richTextBox_Diary.Name = "richTextBox_Diary";
-            this.richTextBox_Diary.Size = new System.Drawing.Size(993, 316);
-            this.richTextBox_Diary.TabIndex = 6;
-            this.richTextBox_Diary.Text = "";
-            // 
-            // button_View
-            // 
-            this.button_View.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button_View.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button_View.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_View.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_View.Location = new System.Drawing.Point(633, 21);
-            this.button_View.Name = "button_View";
-            this.button_View.Size = new System.Drawing.Size(80, 23);
-            this.button_View.TabIndex = 5;
-            this.button_View.Text = "查看列表";
-            this.button_View.UseVisualStyleBackColor = true;
-            this.button_View.Click += new System.EventHandler(this.button_View_Click);
-            // 
-            // label_ViewAll
-            // 
-            this.label_ViewAll.AutoSize = true;
-            this.label_ViewAll.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_ViewAll.Location = new System.Drawing.Point(72, 23);
-            this.label_ViewAll.Name = "label_ViewAll";
-            this.label_ViewAll.Size = new System.Drawing.Size(72, 16);
-            this.label_ViewAll.TabIndex = 7;
-            this.label_ViewAll.Text = "日记列表";
+            this.button_ClearText.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button_ClearText.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_ClearText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_ClearText.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_ClearText.Location = new System.Drawing.Point(750, 21);
+            this.button_ClearText.Name = "button_ClearText";
+            this.button_ClearText.Size = new System.Drawing.Size(80, 23);
+            this.button_ClearText.TabIndex = 7;
+            this.button_ClearText.Text = "清空编辑";
+            this.button_ClearText.UseVisualStyleBackColor = true;
+            this.button_ClearText.Click += new System.EventHandler(this.button_ClearText_Click);
             // 
             // button_SaveDiary
             // 
@@ -966,85 +1000,130 @@
             this.button_SaveDiary.UseVisualStyleBackColor = true;
             this.button_SaveDiary.Click += new System.EventHandler(this.button_SaveDiary_Click);
             // 
-            // button_ReturnEdit
+            // button_View
             // 
-            this.button_ReturnEdit.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button_ReturnEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button_ReturnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ReturnEdit.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_ReturnEdit.Location = new System.Drawing.Point(852, 21);
-            this.button_ReturnEdit.Name = "button_ReturnEdit";
-            this.button_ReturnEdit.Size = new System.Drawing.Size(80, 23);
-            this.button_ReturnEdit.TabIndex = 8;
-            this.button_ReturnEdit.Text = "返回编辑";
-            this.button_ReturnEdit.UseVisualStyleBackColor = true;
-            this.button_ReturnEdit.Click += new System.EventHandler(this.button_ReturnEdit_Click);
+            this.button_View.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button_View.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_View.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_View.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_View.Location = new System.Drawing.Point(633, 21);
+            this.button_View.Name = "button_View";
+            this.button_View.Size = new System.Drawing.Size(80, 23);
+            this.button_View.TabIndex = 5;
+            this.button_View.Text = "查看列表";
+            this.button_View.UseVisualStyleBackColor = true;
+            this.button_View.Click += new System.EventHandler(this.button_View_Click);
             // 
-            // button_ClearText
+            // textBox_Title
             // 
-            this.button_ClearText.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button_ClearText.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button_ClearText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ClearText.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_ClearText.Location = new System.Drawing.Point(750, 21);
-            this.button_ClearText.Name = "button_ClearText";
-            this.button_ClearText.Size = new System.Drawing.Size(80, 23);
-            this.button_ClearText.TabIndex = 7;
-            this.button_ClearText.Text = "清空编辑";
-            this.button_ClearText.UseVisualStyleBackColor = true;
-            this.button_ClearText.Click += new System.EventHandler(this.button_ClearText_Click);
+            this.textBox_Title.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox_Title.Location = new System.Drawing.Point(120, 22);
+            this.textBox_Title.Name = "textBox_Title";
+            this.textBox_Title.Size = new System.Drawing.Size(200, 23);
+            this.textBox_Title.TabIndex = 3;
             // 
-            // button_SearchDiary
+            // label3
             // 
-            this.button_SearchDiary.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button_SearchDiary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button_SearchDiary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_SearchDiary.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_SearchDiary.Location = new System.Drawing.Point(725, 21);
-            this.button_SearchDiary.Name = "button_SearchDiary";
-            this.button_SearchDiary.Size = new System.Drawing.Size(80, 23);
-            this.button_SearchDiary.TabIndex = 9;
-            this.button_SearchDiary.Text = "查询日记";
-            this.button_SearchDiary.UseVisualStyleBackColor = true;
+            this.label3.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(348, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "日期：";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // groupBox_View
+            // dateTimePicker_Diary
             // 
-            this.groupBox_View.Controls.Add(this.dateTimePicker_EndTime);
-            this.groupBox_View.Controls.Add(this.label5);
-            this.groupBox_View.Controls.Add(this.label4);
-            this.groupBox_View.Controls.Add(this.dateTimePicker_StartTime);
-            this.groupBox_View.Controls.Add(this.label_ViewAll);
-            this.groupBox_View.Controls.Add(this.button_ReturnEdit);
-            this.groupBox_View.Controls.Add(this.button_SearchDiary);
-            this.groupBox_View.Location = new System.Drawing.Point(-5, -7);
-            this.groupBox_View.Name = "groupBox_View";
-            this.groupBox_View.Size = new System.Drawing.Size(997, 59);
-            this.groupBox_View.TabIndex = 10;
-            this.groupBox_View.TabStop = false;
-            this.groupBox_View.Visible = false;
+            this.dateTimePicker_Diary.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dateTimePicker_Diary.Location = new System.Drawing.Point(411, 22);
+            this.dateTimePicker_Diary.Name = "dateTimePicker_Diary";
+            this.dateTimePicker_Diary.Size = new System.Drawing.Size(173, 23);
+            this.dateTimePicker_Diary.TabIndex = 4;
             // 
-            // dateTimePicker_StartTime
+            // label_Title
             // 
-            this.dateTimePicker_StartTime.Location = new System.Drawing.Point(267, 21);
-            this.dateTimePicker_StartTime.Name = "dateTimePicker_StartTime";
-            this.dateTimePicker_StartTime.Size = new System.Drawing.Size(136, 21);
-            this.dateTimePicker_StartTime.TabIndex = 10;
+            this.label_Title.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_Title.Location = new System.Drawing.Point(66, 21);
+            this.label_Title.Name = "label_Title";
+            this.label_Title.Size = new System.Drawing.Size(66, 23);
+            this.label_Title.TabIndex = 1;
+            this.label_Title.Text = "标题：";
+            this.label_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // dataGridView_Diary
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(176, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 16);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "开始日期：";
+            this.dataGridView_Diary.AllowUserToAddRows = false;
+            this.dataGridView_Diary.AllowUserToDeleteRows = false;
+            this.dataGridView_Diary.AllowUserToResizeColumns = false;
+            this.dataGridView_Diary.AllowUserToResizeRows = false;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView_Diary.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView_Diary.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_Diary.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView_Diary.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView_Diary.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView_Diary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Diary.ColumnHeadersVisible = false;
+            this.dataGridView_Diary.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("楷体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Diary.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView_Diary.GridColor = System.Drawing.Color.White;
+            this.dataGridView_Diary.Location = new System.Drawing.Point(-4, 83);
+            this.dataGridView_Diary.MultiSelect = false;
+            this.dataGridView_Diary.Name = "dataGridView_Diary";
+            this.dataGridView_Diary.ReadOnly = true;
+            this.dataGridView_Diary.RowHeadersVisible = false;
+            this.dataGridView_Diary.RowTemplate.Height = 23;
+            this.dataGridView_Diary.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView_Diary.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_Diary.Size = new System.Drawing.Size(995, 277);
+            this.dataGridView_Diary.TabIndex = 11;
+            this.dataGridView_Diary.Visible = false;
+            this.dataGridView_Diary.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Diary_CellDoubleClick);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(390, 17);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "日记内容";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(691, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 16);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "编辑日期";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label_ViewAll);
+            this.groupBox1.Location = new System.Drawing.Point(-10, 51);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1012, 40);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(441, 23);
+            this.label5.Location = new System.Drawing.Point(358, 23);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 16);
             this.label5.TabIndex = 12;
@@ -1052,7 +1131,7 @@
             // 
             // dateTimePicker_EndTime
             // 
-            this.dateTimePicker_EndTime.Location = new System.Drawing.Point(532, 21);
+            this.dateTimePicker_EndTime.Location = new System.Drawing.Point(444, 21);
             this.dateTimePicker_EndTime.Name = "dateTimePicker_EndTime";
             this.dateTimePicker_EndTime.Size = new System.Drawing.Size(136, 21);
             this.dateTimePicker_EndTime.TabIndex = 13;
@@ -1087,10 +1166,13 @@
             this.TSDiary.PerformLayout();
             this.Label_Client.ResumeLayout(false);
             this.panel_Diary.ResumeLayout(false);
-            this.groupBox_Title.ResumeLayout(false);
-            this.groupBox_Title.PerformLayout();
             this.groupBox_View.ResumeLayout(false);
             this.groupBox_View.PerformLayout();
+            this.groupBox_Title.ResumeLayout(false);
+            this.groupBox_Title.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Diary)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1163,9 +1245,13 @@
         private System.Windows.Forms.Button button_ClearText;
         private System.Windows.Forms.GroupBox groupBox_View;
         private System.Windows.Forms.Button button_SearchDiary;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_EndTime;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker_StartTime;
+        private System.Windows.Forms.DataGridView dataGridView_Diary;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_EndTime;
+        private System.Windows.Forms.Label label5;
     }
 }
