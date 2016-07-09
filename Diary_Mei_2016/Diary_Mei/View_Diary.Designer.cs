@@ -80,6 +80,8 @@
             this.MinimizeBox = false;
             this.Name = "View_Diary";
             this.Opacity = 0.92D;
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "查看日记";
             this.Load += new System.EventHandler(this.View_Diary_Load);
