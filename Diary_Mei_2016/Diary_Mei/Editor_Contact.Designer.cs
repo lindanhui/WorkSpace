@@ -1089,7 +1089,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Editor_Contact";
-            this.Opacity = 0.92D;
+            this.Opacity = 0.95D;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
