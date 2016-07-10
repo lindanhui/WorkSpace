@@ -35,6 +35,7 @@
             // 
             // button_Close
             // 
+            this.button_Close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_Close.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
