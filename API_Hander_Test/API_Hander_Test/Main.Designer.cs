@@ -121,6 +121,7 @@
             this.richTextBox_Return_Data.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBox_Return_Data.Location = new System.Drawing.Point(112, 228);
             this.richTextBox_Return_Data.Name = "richTextBox_Return_Data";
+            this.richTextBox_Return_Data.ReadOnly = true;
             this.richTextBox_Return_Data.Size = new System.Drawing.Size(752, 125);
             this.richTextBox_Return_Data.TabIndex = 6;
             this.richTextBox_Return_Data.Text = "";
@@ -288,6 +289,7 @@
             this.button_Export_Txt.TabIndex = 23;
             this.button_Export_Txt.Text = "导出TXT";
             this.button_Export_Txt.UseVisualStyleBackColor = true;
+            this.button_Export_Txt.Click += new System.EventHandler(this.button_Export_Txt_Click);
             // 
             // label3
             // 

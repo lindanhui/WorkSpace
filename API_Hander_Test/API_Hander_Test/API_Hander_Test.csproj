@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base_Deal_Class.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
