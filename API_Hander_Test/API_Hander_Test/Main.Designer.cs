@@ -35,7 +35,7 @@
             this.label_Submit_Data = new System.Windows.Forms.Label();
             this.richTextBox_Submit_Data = new System.Windows.Forms.RichTextBox();
             this.label_Return_Data = new System.Windows.Forms.Label();
-            this.richTextBox_Retyrn_Data = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_Return_Data = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_MID = new System.Windows.Forms.TextBox();
             this.label_Title = new System.Windows.Forms.Label();
@@ -43,6 +43,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label_Submit_Type = new System.Windows.Forms.Label();
             this.comboBox_Submit_Type = new System.Windows.Forms.ComboBox();
+            this.label_Deal = new System.Windows.Forms.Label();
+            this.label_Message = new System.Windows.Forms.Label();
+            this.label_Message_Print = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label_URL
@@ -69,12 +72,13 @@
             this.button_Submit.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.button_Submit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Submit.Location = new System.Drawing.Point(272, 514);
+            this.button_Submit.Location = new System.Drawing.Point(326, 464);
             this.button_Submit.Name = "button_Submit";
-            this.button_Submit.Size = new System.Drawing.Size(533, 23);
+            this.button_Submit.Size = new System.Drawing.Size(714, 23);
             this.button_Submit.TabIndex = 2;
             this.button_Submit.Text = "Submit";
             this.button_Submit.UseVisualStyleBackColor = true;
+            this.button_Submit.Click += new System.EventHandler(this.button_Submit_Click);
             // 
             // label_Submit_Data
             // 
@@ -102,14 +106,14 @@
             this.label_Return_Data.TabIndex = 5;
             this.label_Return_Data.Text = "返回数据：";
             // 
-            // richTextBox_Retyrn_Data
+            // richTextBox_Return_Data
             // 
-            this.richTextBox_Retyrn_Data.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox_Retyrn_Data.Location = new System.Drawing.Point(115, 295);
-            this.richTextBox_Retyrn_Data.Name = "richTextBox_Retyrn_Data";
-            this.richTextBox_Retyrn_Data.Size = new System.Drawing.Size(924, 96);
-            this.richTextBox_Retyrn_Data.TabIndex = 6;
-            this.richTextBox_Retyrn_Data.Text = "";
+            this.richTextBox_Return_Data.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox_Return_Data.Location = new System.Drawing.Point(115, 295);
+            this.richTextBox_Return_Data.Name = "richTextBox_Return_Data";
+            this.richTextBox_Return_Data.Size = new System.Drawing.Size(924, 96);
+            this.richTextBox_Return_Data.TabIndex = 6;
+            this.richTextBox_Return_Data.Text = "";
             // 
             // label1
             // 
@@ -175,13 +179,45 @@
             this.comboBox_Submit_Type.Name = "comboBox_Submit_Type";
             this.comboBox_Submit_Type.Size = new System.Drawing.Size(122, 22);
             this.comboBox_Submit_Type.TabIndex = 13;
-            this.comboBox_Submit_Type.Text = "POST";
+            this.comboBox_Submit_Type.Text = "GET";
+            // 
+            // label_Deal
+            // 
+            this.label_Deal.AutoSize = true;
+            this.label_Deal.Location = new System.Drawing.Point(273, 468);
+            this.label_Deal.Name = "label_Deal";
+            this.label_Deal.Size = new System.Drawing.Size(47, 14);
+            this.label_Deal.TabIndex = 14;
+            this.label_Deal.Text = "Deal:";
+            // 
+            // label_Message
+            // 
+            this.label_Message.AutoSize = true;
+            this.label_Message.Location = new System.Drawing.Point(26, 510);
+            this.label_Message.Name = "label_Message";
+            this.label_Message.Size = new System.Drawing.Size(71, 14);
+            this.label_Message.TabIndex = 15;
+            this.label_Message.Text = "Message:";
+            // 
+            // label_Message_Print
+            // 
+            this.label_Message_Print.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label_Message_Print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_Message_Print.Location = new System.Drawing.Point(112, 503);
+            this.label_Message_Print.Name = "label_Message_Print";
+            this.label_Message_Print.Size = new System.Drawing.Size(927, 31);
+            this.label_Message_Print.TabIndex = 16;
+            this.label_Message_Print.Text = "NULL";
+            this.label_Message_Print.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // APIDeal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1051, 548);
+            this.ClientSize = new System.Drawing.Size(1051, 550);
+            this.Controls.Add(this.label_Message_Print);
+            this.Controls.Add(this.label_Message);
+            this.Controls.Add(this.label_Deal);
             this.Controls.Add(this.comboBox_Submit_Type);
             this.Controls.Add(this.label_Submit_Type);
             this.Controls.Add(this.textBox1);
@@ -189,7 +225,7 @@
             this.Controls.Add(this.label_Title);
             this.Controls.Add(this.textBox_MID);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox_Retyrn_Data);
+            this.Controls.Add(this.richTextBox_Return_Data);
             this.Controls.Add(this.label_Return_Data);
             this.Controls.Add(this.richTextBox_Submit_Data);
             this.Controls.Add(this.label_Submit_Data);
@@ -202,6 +238,7 @@
             this.Name = "APIDeal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "APITest";
+            this.Load += new System.EventHandler(this.APIDeal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,7 +252,7 @@
         private System.Windows.Forms.Label label_Submit_Data;
         private System.Windows.Forms.RichTextBox richTextBox_Submit_Data;
         private System.Windows.Forms.Label label_Return_Data;
-        private System.Windows.Forms.RichTextBox richTextBox_Retyrn_Data;
+        private System.Windows.Forms.RichTextBox richTextBox_Return_Data;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox_MID;
         private System.Windows.Forms.Label label_Title;
@@ -223,6 +260,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label_Submit_Type;
         private System.Windows.Forms.ComboBox comboBox_Submit_Type;
+        private System.Windows.Forms.Label label_Deal;
+        private System.Windows.Forms.Label label_Message;
+        private System.Windows.Forms.Label label_Message_Print;
     }
 }
 
