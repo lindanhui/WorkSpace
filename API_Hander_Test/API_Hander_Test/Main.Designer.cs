@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(APIDeal));
             this.label_URL = new System.Windows.Forms.Label();
-            this.richTextBox_URL = new System.Windows.Forms.RichTextBox();
             this.button_Submit = new System.Windows.Forms.Button();
             this.label_Submit_Data = new System.Windows.Forms.Label();
             this.richTextBox_Submit_Data = new System.Windows.Forms.RichTextBox();
@@ -50,11 +49,12 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button_Transform = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox_code = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button_Export_Txt = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button_Export_Html = new System.Windows.Forms.Button();
+            this.textBox_URL = new System.Windows.Forms.TextBox();
+            this.comboBox_Code = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,14 +67,6 @@
             this.label_URL.Size = new System.Drawing.Size(76, 14);
             this.label_URL.TabIndex = 0;
             this.label_URL.Text = "URL路径：";
-            // 
-            // richTextBox_URL
-            // 
-            this.richTextBox_URL.Location = new System.Drawing.Point(112, 52);
-            this.richTextBox_URL.Name = "richTextBox_URL";
-            this.richTextBox_URL.Size = new System.Drawing.Size(752, 70);
-            this.richTextBox_URL.TabIndex = 1;
-            this.richTextBox_URL.Text = "";
             // 
             // button_Submit
             // 
@@ -261,13 +253,6 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "请求编码：";
             // 
-            // textBox_code
-            // 
-            this.textBox_code.Location = new System.Drawing.Point(115, 474);
-            this.textBox_code.Name = "textBox_code";
-            this.textBox_code.Size = new System.Drawing.Size(147, 23);
-            this.textBox_code.TabIndex = 21;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label_Field_Instruction);
@@ -309,19 +294,43 @@
             this.button_Export_Html.Name = "button_Export_Html";
             this.button_Export_Html.Size = new System.Drawing.Size(252, 25);
             this.button_Export_Html.TabIndex = 25;
-            this.button_Export_Html.Text = "转换HTML";
+            this.button_Export_Html.Text = "转换XML";
             this.button_Export_Html.UseVisualStyleBackColor = true;
+            this.button_Export_Html.Click += new System.EventHandler(this.button_Export_Html_Click);
+            // 
+            // textBox_URL
+            // 
+            this.textBox_URL.Location = new System.Drawing.Point(112, 52);
+            this.textBox_URL.Multiline = true;
+            this.textBox_URL.Name = "textBox_URL";
+            this.textBox_URL.Size = new System.Drawing.Size(753, 75);
+            this.textBox_URL.TabIndex = 26;
+            // 
+            // comboBox_Code
+            // 
+            this.comboBox_Code.FormattingEnabled = true;
+            this.comboBox_Code.Items.AddRange(new object[] {
+            "UTF-8",
+            "Unicode",
+            "BigEndianUnicode",
+            "ASCII"});
+            this.comboBox_Code.Location = new System.Drawing.Point(114, 472);
+            this.comboBox_Code.Name = "comboBox_Code";
+            this.comboBox_Code.Size = new System.Drawing.Size(145, 22);
+            this.comboBox_Code.TabIndex = 27;
+            this.comboBox_Code.Text = "UTF-8";
             // 
             // APIDeal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1220, 549);
+            this.Controls.Add(this.comboBox_Code);
+            this.Controls.Add(this.textBox_URL);
             this.Controls.Add(this.button_Export_Html);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button_Export_Txt);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox_code);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button_Transform);
             this.Controls.Add(this.label_Message_Print);
@@ -339,7 +348,6 @@
             this.Controls.Add(this.richTextBox_Submit_Data);
             this.Controls.Add(this.label_Submit_Data);
             this.Controls.Add(this.button_Submit);
-            this.Controls.Add(this.richTextBox_URL);
             this.Controls.Add(this.label_URL);
             this.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -360,7 +368,6 @@
         #endregion
 
         private System.Windows.Forms.Label label_URL;
-        private System.Windows.Forms.RichTextBox richTextBox_URL;
         private System.Windows.Forms.Button button_Submit;
         private System.Windows.Forms.Label label_Submit_Data;
         private System.Windows.Forms.RichTextBox richTextBox_Submit_Data;
@@ -380,11 +387,12 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button_Transform;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox_code;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button_Export_Txt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button_Export_Html;
+        private System.Windows.Forms.TextBox textBox_URL;
+        private System.Windows.Forms.ComboBox comboBox_Code;
     }
 }
 
