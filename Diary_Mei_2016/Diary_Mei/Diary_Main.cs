@@ -27,7 +27,34 @@ namespace Diary_Mei
         {
             InitializeComponent();
         }
-
+        private void Choose_Panel(string Panel_Type)
+        {
+            switch (Panel_Type)
+            {
+                case "Archive":
+                    Panel_Client_Friend.Visible = true;
+                    panel_Diary.Visible = false;
+                    Panel_Welcome.Visible = false;
+                    break;
+                case "Friend":
+                    Panel_Client_Friend.Visible = true;
+                    panel_Diary.Visible = false;
+                    panel_Record.Visible = false;
+                    break;
+                case "Diary":
+                    panel_Diary.Visible = true;
+                    Panel_Client_Friend.Visible = false;
+                    panel_Record.Visible = false;
+                    break;
+                case "Record":
+                    panel_Record.Visible = true;
+                    panel_Diary.Visible = false;
+                    Panel_Client_Friend.Visible = false;
+                    break;
+                case "Picture":
+                    break;
+            }
+        }
         private void Button_Clear_Click(object sender, EventArgs e)
         {
 
@@ -66,9 +93,7 @@ namespace Diary_Mei
         {
             this.Text = "客户档案";
             Class_State.Windows_State = "Archive";
-            Panel_Welcome.Visible = false;
-            Panel_Client_Friend.Visible = true;
-            panel_Diary.Visible = false;
+            Choose_Panel("Archive");
             dataGridView_Archive_Print.DataSource = null;
             Get_RowClick = -1;
 
@@ -78,9 +103,7 @@ namespace Diary_Mei
         {
             this.Text = "朋友档案";
             Class_State.Windows_State = "Friend";
-            Panel_Welcome.Visible = false;
-            Panel_Client_Friend.Visible = true;
-            panel_Diary.Visible = false;
+            Choose_Panel("Friend");
             dataGridView_Archive_Print.DataSource = null;
             Get_RowClick = -1;
 
@@ -90,15 +113,14 @@ namespace Diary_Mei
         {
             this.Text = "日记本";
             Class_State.Windows_State = "Diary";
-            Panel_Client_Friend.Visible = false;
-            Panel_Welcome.Visible = false;
-            panel_Diary.Visible = true;
+            Choose_Panel("Diary");
         }
 
         private void Button_Record_Click(object sender, EventArgs e)
         {
             this.Text = "录音";
             Class_State.Windows_State = "Record";
+            Choose_Panel("Record");
         }
 
         private void Button_Picture_Click(object sender, EventArgs e)
