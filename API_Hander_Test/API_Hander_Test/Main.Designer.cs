@@ -300,9 +300,11 @@
             // 
             // textBox_URL
             // 
+            this.textBox_URL.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox_URL.Location = new System.Drawing.Point(112, 52);
             this.textBox_URL.Multiline = true;
             this.textBox_URL.Name = "textBox_URL";
+            this.textBox_URL.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.textBox_URL.Size = new System.Drawing.Size(753, 75);
             this.textBox_URL.TabIndex = 26;
             // 

@@ -60,6 +60,7 @@ namespace API_Hander_Test
         private void button_Transform_Click(object sender, EventArgs e)
         {
             textBox_URL.Text = textBox_URL.Text.Replace("api.", "sl.api.").Replace("token", textBox_token.Text.Trim());
+            Base_Deal_Class.Message_Alert(label_Message_Print, "转换成功！");
         }
 
         private void button_Export_Txt_Click(object sender, EventArgs e)
