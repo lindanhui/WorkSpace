@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -55,7 +56,6 @@ namespace API_Hander_Test
 
         private void APIDeal_Load(object sender, EventArgs e)
         {
-
         }
          
         private void button_Transform_Click(object sender, EventArgs e)
