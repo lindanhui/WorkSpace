@@ -38,6 +38,7 @@
             this.ClientSize = new System.Drawing.Size(788, 418);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "APIDeal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "APITest";
             this.ResumeLayout(false);
 
