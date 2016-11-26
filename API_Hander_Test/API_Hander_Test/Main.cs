@@ -16,5 +16,13 @@ namespace API_Hander_Test
         {
             InitializeComponent();
         }
+
+        private void textBox_MID_Click(object sender, EventArgs e)
+        {
+            if(textBox_MID.Text=="请输入MID")
+            {
+                textBox_MID.Clear();
+            }
+        }
     }
 }
