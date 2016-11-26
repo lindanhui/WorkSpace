@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace API_Hander_Test
 {
-    public partial class Form1 : Form
+    public partial class APIDeal : Form
     {
-        public Form1()
+        public APIDeal()
         {
             InitializeComponent();
         }
