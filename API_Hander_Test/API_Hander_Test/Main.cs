@@ -34,6 +34,7 @@ namespace API_Hander_Test
             }
             else
             {
+                label_Message_Print.Text = "";
                 string Request_URL = richTextBox_URL.Text.Trim();
                 string Request_Data = richTextBox_Submit_Data.Text;
                 string Request_Type = comboBox_Submit_Type.Text.Trim();
@@ -52,6 +53,11 @@ namespace API_Hander_Test
 
         private void APIDeal_Load(object sender, EventArgs e)
         {
+        }
+
+        private void button_Transform_Click(object sender, EventArgs e)
+        {
+            richTextBox_URL.Text =  richTextBox_URL.Text.Replace("api.", "sl.apl.").Replace("token", textBox_token.Text.Trim());
         }
     }
 }
