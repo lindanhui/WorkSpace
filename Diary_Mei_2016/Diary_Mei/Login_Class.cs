@@ -13,7 +13,7 @@ namespace Diary_Mei
         #region 数据库初始定义
         private static SqlConnection SQL_Connection = new SqlConnection();
         private static SqlCommand SQL_Command = new SqlCommand();
-        const string SQL_URL = "SERVER=120.77.147.210,1433;DATABASE=lindatabase;PWD=qq@123456;UID=admin;";
+        const string SQL_URL = "SERVER=120.77.147.210,1433;DATABASE=lindatabase;PWD=sql@123456;UID=wgx;";
         #endregion
         //
         #region 打开数据库
