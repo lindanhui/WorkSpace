@@ -17,23 +17,23 @@ namespace API_Hander_Test
 
             return Return_String;
         }
-        private static string Deal_POST_Request(string Request_URL,string Encode)
+        private static string Deal_POST_Request(string Request_URL,string Post_Data,string Encode)
         {
             string Return_String = string.Empty; 
                     
             switch (Encode)
             {
                 case "UTF-8":
-                    Return_String = UrlRequest.HttpPost(Request_URL, "", Encoding.UTF8);
+                    Return_String = UrlRequest.HttpPost(Request_URL, Post_Data);
                     break;
                 case "Unicode":
-                    Return_String = UrlRequest.HttpPost(Request_URL, "", Encoding.Unicode);
+                    Return_String = UrlRequest.HttpPostXclub(Request_URL, Post_Data, Encoding.Unicode);
                     break;
                 case "BigEndianUnicode":
-                    Return_String = UrlRequest.HttpPost(Request_URL, "", Encoding.BigEndianUnicode);
+                    Return_String = UrlRequest.HttpPost(Request_URL, Post_Data, Encoding.BigEndianUnicode);
                     break;
                 case "ASCII":
-                    Return_String = UrlRequest.HttpPost(Request_URL, "", Encoding.ASCII);
+                    Return_String = UrlRequest.HttpPost(Request_URL, Post_Data, Encoding.ASCII);
                     break;
             }
             
@@ -50,9 +50,9 @@ namespace API_Hander_Test
             {
                 Return_String = Deal_Get_Request(Request_URL);
             }
-            if(Type=="POST"&&Request_Data=="")
+            if(Type=="POST")
             {
-                Return_String = Deal_POST_Request(Request_URL,Encode);
+                Return_String = Deal_POST_Request(Request_URL, Request_Data, Encode);
             }
 
             return Return_String;

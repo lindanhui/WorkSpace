@@ -43,7 +43,7 @@ namespace API_Hander_Test
 
                 try
                 {
-                    richTextBox_Return_Data.Text = Request_Deal_Class.All_Deal_Request(Request_URL, Request_Type);
+                    richTextBox_Return_Data.Text = Request_Deal_Class.All_Deal_Request(Request_URL, Request_Type, Request_Data);
                     Base_Deal_Class.Message_Alert(label_Message_Print, "请求成功！");
                 }
                 catch (Exception ex_string)
